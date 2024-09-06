@@ -87,6 +87,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8904271366035984804}
+    - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8117903646056411975}
   m_SourcePrefab: {fileID: 100100000, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
 --- !u!1 &1081204343994979798 stripped
 GameObject:
@@ -125,7 +128,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.52986336, y: -5.6297965}
+  m_Offset: {x: -0.49555618, y: -5.255926}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -136,5 +139,50 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8545213, y: 2.7220564}
+  m_Size: {x: 2.7859073, y: 1.9743156}
+  m_EdgeRadius: 0
+--- !u!61 &8117903646056411975
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081204343994979798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.018211663, y: -6.5352545}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6191815, y: 0.5005436}
   m_EdgeRadius: 0

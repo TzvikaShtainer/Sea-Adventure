@@ -10,6 +10,10 @@ public class InGameUIManager : MonoBehaviour
     [Header("In Game menus Container")]
     [SerializeField] private Transform menusContainer;
     
+    [Header("Player UI")]
+    [SerializeField] private Transform playerUIMenu;
+    [SerializeField] private Button pauseButton;
+    
     [Header("Pause Menu")]
     [SerializeField] private Transform pauseMenu;
     [SerializeField] private Button pauseContinueButton;
@@ -23,10 +27,12 @@ public class InGameUIManager : MonoBehaviour
     
     private string mainSceneName = "MainMenuScene";
     private bool isPaused = false;
-    private bool isDeath = false;
+    //private bool isDeath = false;
 
-    private void Start()
+    private void Awake()
     {
+        pauseButton.onClick.AddListener(OnPauseClicked);
+        
         pauseContinueButton.onClick.AddListener(OnContinueButtonClicked);
         pauseRestartButton.onClick.AddListener(OnRestartButtonClicked);
         pauseReturnToMainMenuButton.onClick.AddListener(OnReturnToMainMenuButtonClicked);
@@ -34,36 +40,34 @@ public class InGameUIManager : MonoBehaviour
         deathRestartButton.onClick.AddListener(OnRestartButtonClicked);
         deathReturnToMainMenuButton.onClick.AddListener(OnReturnToMainMenuButtonClicked);
 
+        SetUpGameScreens();
+    }
+
+    private void Start()
+    {
+        PlayerController.onPlayerDeath += PlayerController_OnPlayerDeath;
+    }
+    
+    private void SetUpGameScreens()
+    {
         foreach (Transform child in menusContainer)
         {
-           // Debug.Log(child.name);
+            if (child == playerUIMenu)
+                continue;
+            
             DisableScreen(child);
         }
     }
 
-    private void Update()
+    private void OnPauseClicked()
     {
-        CheckForEscPress();
+        PauseGame();
     }
-
-    private void CheckForEscPress()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (isPaused)
-            {
-                OnContinueButtonClicked();
-            }
-            else
-            {
-                PauseGame();
-            }
-        }
-    }
-
+    
     private void OnContinueButtonClicked()
     {
         DisableScreen(pauseMenu);
+        EnableScreen(playerUIMenu);
         Time.timeScale = 1f;         
         isPaused = false;
     }
@@ -77,15 +81,16 @@ public class InGameUIManager : MonoBehaviour
     
     public void OnRestartButtonClicked()
     {
-        isDeath = false;
+        //isDeath = false;
         Time.timeScale = 1f; 
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+        LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
     
     private void OnReturnToMainMenuButtonClicked()
     {
-        isDeath = false;
+        //isDeath = false;
         Time.timeScale = 1f; 
         
         LoadSceneAsync(mainSceneName);
@@ -123,8 +128,14 @@ public class InGameUIManager : MonoBehaviour
 
     private void PlayerController_OnPlayerDeath()
     {
-        isDeath = true;
-        Time.timeScale = 0f; 
+        //isDeath = true;
+        Time.timeScale = 0f;
+
+        foreach (Transform child in menusContainer)
+        {
+            Debug.Log(child.name);
+        }
+        
         EnableScreen(deathMenu);
     }
 }
