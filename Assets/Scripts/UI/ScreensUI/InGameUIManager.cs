@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class InGameUIManager : MonoBehaviour
     
     [Header("Player UI")]
     [SerializeField] private Transform playerUIMenu;
+    [SerializeField] private TextMeshProUGUI distanceText;
+    [SerializeField] private TextMeshProUGUI maxDistanceText;
     [SerializeField] private Button pauseButton;
     
     [Header("Pause Menu")]
@@ -46,8 +49,11 @@ public class InGameUIManager : MonoBehaviour
     private void Start()
     {
         PlayerController.onPlayerDeath += PlayerController_OnPlayerDeath;
+        
+        GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
+        GameManager.onMaxDistanceChanged += GameManager_OnMaxDistanceChanged;
     }
-    
+
     private void SetUpGameScreens()
     {
         foreach (Transform child in menusContainer)
@@ -57,6 +63,8 @@ public class InGameUIManager : MonoBehaviour
             
             DisableScreen(child);
         }
+
+        UpdateMaxDistanceText(GameManager.instance.GetMaxDistance());
     }
 
     private void OnPauseClicked()
@@ -137,5 +145,20 @@ public class InGameUIManager : MonoBehaviour
         }
         
         EnableScreen(deathMenu);
+    }
+    
+    private void GameManager_OnDistanceChanged(float distanceTraveled)
+    {
+        distanceText.text =  Mathf.FloorToInt(distanceTraveled).ToString() + " M";
+    }
+    
+    private void GameManager_OnMaxDistanceChanged(float newMaxDistanceTraveled)
+    {
+        UpdateMaxDistanceText(newMaxDistanceTraveled);
+    }
+
+    private void UpdateMaxDistanceText(float newMaxDistanceTraveled)
+    {
+        maxDistanceText.text = "BEST: " + Mathf.FloorToInt(newMaxDistanceTraveled).ToString() + "M";
     }
 }
