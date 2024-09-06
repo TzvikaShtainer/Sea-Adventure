@@ -159,6 +159,7 @@ public class InGameUIManager : MonoBehaviour
 
     private void UpdateMaxDistanceText(float newMaxDistanceTraveled)
     {
+        Debug.Log(newMaxDistanceTraveled);
         maxDistanceText.text = "BEST: " + Mathf.FloorToInt(newMaxDistanceTraveled).ToString() + "M";
     }
 }
