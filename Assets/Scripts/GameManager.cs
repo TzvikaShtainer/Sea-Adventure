@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     {
         distanceMultiplier += accelerationRate * Time.deltaTime;
         
+        
         distanceTraveled += Time.deltaTime * distanceMultiplier;
         
         onDistanceChanged?.Invoke(distanceTraveled);

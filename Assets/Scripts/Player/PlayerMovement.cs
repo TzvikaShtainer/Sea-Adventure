@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] private float smoothingTime = 0.1f; 
     private float currentVelocityY;
+    
+    private bool isJumping = false;
 
     void Update()
     {
@@ -64,6 +66,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        isJumping = true;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+        
+        //isJumping = false;
+    }
+
+    public bool GetJumpState()
+    {
+        return isJumping;
     }
 }
