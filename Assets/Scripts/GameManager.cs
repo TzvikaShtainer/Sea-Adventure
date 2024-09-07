@@ -64,13 +64,13 @@ public class GameManager : MonoBehaviour
 
     private void SaveMaxDistanceTraveled()
     {
-        if (maxDistanceTraveled > _gameDataSo.MaxDistanceTraveled)
+        if (distanceTraveled > _gameDataSo.MaxDistanceTraveled)
         {
             _gameDataSo.MaxDistanceTraveled = distanceTraveled;
         }
     }
 
-    public float GetMaxDistance()
+    public float LoadMaxDistance()
     {
         return _gameDataSo.MaxDistanceTraveled;
     }

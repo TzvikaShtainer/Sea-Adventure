@@ -28,6 +28,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2871256d7d44cfb46b9c7bbffd93c62f, type: 3}
+    - target: {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: maxSpawnPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: maxSpawnPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: minSpawnPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: minSpawnPosition.y
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 3133141243515193618, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2

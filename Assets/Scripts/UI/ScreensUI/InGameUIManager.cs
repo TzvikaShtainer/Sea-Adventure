@@ -42,8 +42,6 @@ public class InGameUIManager : MonoBehaviour
         
         deathRestartButton.onClick.AddListener(OnRestartButtonClicked);
         deathReturnToMainMenuButton.onClick.AddListener(OnReturnToMainMenuButtonClicked);
-
-        SetUpGameScreens();
     }
 
     private void Start()
@@ -52,6 +50,8 @@ public class InGameUIManager : MonoBehaviour
         
         GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
         GameManager.onMaxDistanceChanged += GameManager_OnMaxDistanceChanged;
+        
+        SetUpGameScreens();
     }
 
     private void SetUpGameScreens()
@@ -64,7 +64,7 @@ public class InGameUIManager : MonoBehaviour
             DisableScreen(child);
         }
 
-        UpdateMaxDistanceText(GameManager.instance.GetMaxDistance());
+        UpdateMaxDistanceText(GameManager.instance.LoadMaxDistance());
     }
 
     private void OnPauseClicked()

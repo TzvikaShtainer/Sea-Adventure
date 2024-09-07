@@ -25,6 +25,7 @@ public class EnemyFactory
         }
         
         enemyToCreate?.Spawn(spawnPosition);
+        
         return enemyToCreate;
     }
 }
