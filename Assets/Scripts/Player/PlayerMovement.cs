@@ -48,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (Input.GetKey(KeyCode.Space))
+        //need to change to touch input
+        if (Input.GetKey(KeyCode.Space)) 
         {
             Jump();
         }
