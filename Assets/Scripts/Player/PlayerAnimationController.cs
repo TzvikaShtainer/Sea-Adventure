@@ -11,7 +11,6 @@ namespace Player
         private const string IS_Jumping = "IsJumping";
         private void Update()
         {
-            Debug.Log(playerMovement.GetJumpState());
             animator.SetBool(IS_Jumping, playerMovement.GetJumpState());
         }
     }

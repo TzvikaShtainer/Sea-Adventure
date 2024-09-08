@@ -76,4 +76,9 @@ public class PlayerMovement : MonoBehaviour
     {
         return isJumping;
     }
+
+    public void ReturnToIdleState()
+    {
+        isJumping = false;
+    }
 }

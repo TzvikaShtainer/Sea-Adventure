@@ -46,12 +46,23 @@ public class InGameUIManager : MonoBehaviour
 
     private void Start()
     {
+        SetUpGameScreens();
+    }
+
+    private void OnEnable()
+    {
         PlayerController.onPlayerDeath += PlayerController_OnPlayerDeath;
         
         GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
         GameManager.onMaxDistanceChanged += GameManager_OnMaxDistanceChanged;
+    }
+
+    private void OnDisable()
+    {
+        PlayerController.onPlayerDeath -= PlayerController_OnPlayerDeath;
         
-        SetUpGameScreens();
+        GameManager.onDistanceChanged -= GameManager_OnDistanceChanged;
+        GameManager.onMaxDistanceChanged -= GameManager_OnMaxDistanceChanged;
     }
 
     private void SetUpGameScreens()
