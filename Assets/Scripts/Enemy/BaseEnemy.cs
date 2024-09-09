@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseEnemy : MonoBehaviour, IEnemy
+public class BaseEnemy : MonoBehaviour, ISpawn
 {
     public delegate void OnEnemyDead();
     public static event OnEnemyDead onEnemyDead;

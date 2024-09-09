@@ -7,8 +7,8 @@ using Random = UnityEngine.Random;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float spawnTime = 2f;
-    [SerializeField] private float minSpawnDistance = 2f;
     [SerializeField] private float xPosToSpawn;
+    [SerializeField] private EnemyType enemyType;
     
     private EnemyFactory enemyFactory;
     private float spawnTimer;
@@ -36,8 +36,8 @@ public class EnemySpawner : MonoBehaviour
     
     private void SpawnEnemy()
     {
-        BaseEnemy enemy = GetRandomEnemyToSpawn();
-
+        BaseEnemy enemy = enemyFactory.CreateEnemy(enemyType, Vector2.zero);
+        
         if (enemy == null)
             return;
         
@@ -46,12 +46,5 @@ public class EnemySpawner : MonoBehaviour
             Random.Range(enemy.GetMinYPosToSpawn(), enemy.GetMaxYPosToSpawn()));
         
         enemy.Spawn(spawnPosition);
-    }
-    
-    private BaseEnemy GetRandomEnemyToSpawn()
-    {
-        EnemyType randomEnemyToSpawn = (EnemyType)Random.Range(0, System.Enum.GetValues(typeof(EnemyType)).Length);
-        BaseEnemy enemy = enemyFactory.CreateEnemy(randomEnemyToSpawn, Vector2.zero);
-        return enemy;
     }
 }

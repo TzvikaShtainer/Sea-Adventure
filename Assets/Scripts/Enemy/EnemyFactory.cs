@@ -5,7 +5,9 @@ using UnityEngine;
 public enum EnemyType
 {
     FishingRod,
-    SwordFish
+    SwordFish,
+    SeaUrchin,
+    SeaMine
 }
 public class EnemyFactory
 {
@@ -16,11 +18,19 @@ public class EnemyFactory
         switch (enemyType)
         {
             case EnemyType.FishingRod:
-                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("FishingRod"));
+                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/FishingRod"));
                 break;
             
             case EnemyType.SwordFish:
-                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("SwordFish"));
+                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/SwordFish"));
+                break;
+            
+            case EnemyType.SeaUrchin:
+                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/SeaUrchin"));
+                break;
+            
+            case EnemyType.SeaMine:
+                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/SeaMine"));
                 break;
         }
         

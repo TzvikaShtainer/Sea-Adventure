@@ -96,6 +96,14 @@ PrefabInstance:
       propertyPath: minYPosToSpawn
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: maxYPosToSpawn
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: minYPosToSpawn
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4

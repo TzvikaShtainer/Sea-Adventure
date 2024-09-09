@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 7656805468879268302}
   - component: {fileID: 2234444358957976452}
   - component: {fileID: 9216845724294343926}
-  - component: {fileID: 3077021067037417754}
-  - component: {fileID: 7198831221687628569}
+  - component: {fileID: 7608934883083211605}
   m_Layer: 6
   m_Name: BasicMovingEnemy
   m_TagString: Enemy
@@ -123,7 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 7656805468879268302}
   leftSpeed: 3
---- !u!114 &3077021067037417754
+  accelerationRate: 10
+--- !u!114 &7608934883083211605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,24 +132,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3419606936987138739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 533b7fe058e74e549d1f77b7089d8f6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 653af134958c51e44a8900dbf6839f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnPosition: {x: 0, y: 0}
-  maxSpawnPosition: {x: 0, y: 0}
-  _baseEnemy: {fileID: 0}
---- !u!114 &7198831221687628569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3419606936987138739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a18714cc4d46dbab3613e08109386e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  minYPosToSpawn: 0
+  maxYPosToSpawn: 0
 --- !u!1 &6378077860974569157
 GameObject:
   m_ObjectHideFlags: 0
