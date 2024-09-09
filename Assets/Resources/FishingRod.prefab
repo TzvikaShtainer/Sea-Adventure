@@ -44,6 +44,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishingRod
       objectReference: {fileID: 0}
+    - target: {fileID: 7198831221687628569, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: maxYPosToSpawn
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198831221687628569, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: minYPosToSpawn
+      value: 5.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -102,6 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7654326662125778464, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+    - {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -111,9 +120,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8117903646056411975}
-    - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -6692020401927537698}
   m_SourcePrefab: {fileID: 100100000, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
 --- !u!1 &1081204343994979798 stripped
 GameObject:
@@ -210,15 +216,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6191815, y: 0.5005436}
   m_EdgeRadius: 0
---- !u!114 &-6692020401927537698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081204343994979798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70a18714cc4d46dbab3613e08109386e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

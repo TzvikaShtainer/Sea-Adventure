@@ -391,6 +391,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228676690}
   m_CullTransparentMesh: 1
+--- !u!1001 &245428330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1815663240334287290, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_Name
+      value: SwordFish (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
 --- !u!1 &412087577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1423,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1652006816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1081204343994979798, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_Name
+      value: FishingRod
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
 --- !u!1 &1706325807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1527,8 @@ MonoBehaviour:
   spawnTime: 2
   minSpawnDistance: 2
   xPosToSpawn: 18
+  minYPosToSpawn: -4
+  maxYPosToSpawn: 4
   activeEnemyPositions: []
 --- !u!1 &1754739671
 GameObject:
@@ -1956,6 +2072,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2082322897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1081204343994979798, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_Name
+      value: FishingRod (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352823858742760569, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e461dee80647fc46aa05ff5680d8ee7, type: 3}
 --- !u!1001 &2911513789563743362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2025,3 +2198,6 @@ SceneRoots:
   - {fileID: 705041783}
   - {fileID: 1296334120}
   - {fileID: 811817645}
+  - {fileID: 245428330}
+  - {fileID: 1652006816}
+  - {fileID: 2082322897}

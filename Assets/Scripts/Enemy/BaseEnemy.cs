@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour, IEnemy
 {
-    public Vector2 MinSpawnPosition { get; private set; }
-    public Vector2 MaxSpawnPosition { get; private set; }
-    public Vector2 PositionToRemove { get; protected set; } // just until obj pool i think
+    public delegate void OnEnemyDead();
+    public static event OnEnemyDead onEnemyDead;
+    
+    [SerializeField] private float minYPosToSpawn;
+    [SerializeField] private float maxYPosToSpawn;
+    
+    private void Update()
+    {
+        if (transform.position.x < -9.5) //just for now
+        {
+            gameObject.SetActive(false);
+                
+            onEnemyDead?.Invoke();
+        }
+    }
     
     public void Spawn(Vector2 position)
     {
@@ -14,19 +26,13 @@ public class BaseEnemy : MonoBehaviour, IEnemy
         gameObject.SetActive(true);
     }
 
-    private void SetMinMaxPosition(Vector2 newMin, Vector2 newMax)
+    public float GetMinYPosToSpawn()
     {
-        MinSpawnPosition = newMin;
-        MaxSpawnPosition = newMax;
+        return minYPosToSpawn; 
     }
     
-    public void SetSpawnBoundaries(Vector2 newMin, Vector2 newMax)
+    public float GetMaxYPosToSpawn()
     {
-        SetMinMaxPosition(newMin, newMax);
-    }
-
-    public void SetPositionToRemove(Vector2 position)
-    {
-        PositionToRemove = position;
+        return maxYPosToSpawn; 
     }
 }

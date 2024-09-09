@@ -88,6 +88,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordFish
       objectReference: {fileID: 0}
+    - target: {fileID: 7198831221687628569, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: maxYPosToSpawn
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198831221687628569, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: minYPosToSpawn
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -148,7 +156,8 @@ PrefabInstance:
       propertyPath: accelerationRate
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6378077860974569157, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
     m_AddedGameObjects: []
