@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Size.y
-      value: 0.94183606
+      value: 0.8118228
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Offset.x
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Offset.y
-      value: -0.2174913
+      value: -0.15248466
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -188,6 +188,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1493089181472288763}
+    - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7103380135765374009}
   m_SourcePrefab: {fileID: 100100000, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
 --- !u!1 &1815663240334287290 stripped
 GameObject:
@@ -226,7 +229,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.41199446, y: 0.49802905}
+  m_Offset: {x: 0.2440612, y: 0.6009562}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -237,7 +240,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90412617, y: 0.48139417}
+  m_Size: {x: 0.61159676, y: 0.6872486}
   m_EdgeRadius: 0
 --- !u!61 &8588142377475781529
 BoxCollider2D:
@@ -316,7 +319,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.3557806, y: -0.0741632}
+  m_Offset: {x: -2.3557806, y: 0.039598636}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -327,7 +330,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8695545, y: 0.2015996}
+  m_Size: {x: 1.8695545, y: 0.12575926}
   m_EdgeRadius: 0
 --- !u!95 &2417096856534940211
 Animator:
@@ -434,7 +437,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.94655275, y: 0.013999224}
+  m_Offset: {x: -1.0819832, y: -0.06184192}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -445,5 +448,50 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.49981594, y: 1.0266662}
+  m_Size: {x: 0.7706766, y: 0.6366272}
+  m_EdgeRadius: 0
+--- !u!61 &7103380135765374009
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815663240334287290}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.73674065, y: 0.3954569}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.78, y: 2.11}
+    newSize: {x: 6.78, y: 2.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3194512, y: 0.23564398}
   m_EdgeRadius: 0
