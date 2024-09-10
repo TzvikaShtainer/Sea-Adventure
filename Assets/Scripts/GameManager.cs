@@ -36,9 +36,14 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        PlayerController.onPlayerDeath += PlayerController_OnPlayerDeath;
+        PlayerHealthSystem.onDeath += PlayerHealthSystem_OnDeath;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealthSystem.onDeath -= PlayerHealthSystem_OnDeath;
     }
 
     private void Update()
@@ -56,7 +61,7 @@ public class GameManager : MonoBehaviour
         onDistanceChanged?.Invoke(distanceTraveled);
     }
     
-    private void PlayerController_OnPlayerDeath()
+    private void PlayerHealthSystem_OnDeath()
     {
         SaveMaxDistanceTraveled();
 

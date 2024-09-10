@@ -51,7 +51,7 @@ public class InGameUIManager : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerController.onPlayerDeath += PlayerController_OnPlayerDeath;
+        PlayerHealthSystem.onDeath += PlayerHealthSystem_OnDeath;
         
         GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
         GameManager.onMaxDistanceChanged += GameManager_OnMaxDistanceChanged;
@@ -59,7 +59,7 @@ public class InGameUIManager : MonoBehaviour
 
     private void OnDisable()
     {
-        PlayerController.onPlayerDeath -= PlayerController_OnPlayerDeath;
+        PlayerHealthSystem.onDeath -= PlayerHealthSystem_OnDeath;
         
         GameManager.onDistanceChanged -= GameManager_OnDistanceChanged;
         GameManager.onMaxDistanceChanged -= GameManager_OnMaxDistanceChanged;
@@ -145,7 +145,7 @@ public class InGameUIManager : MonoBehaviour
         screenToDisable.gameObject.SetActive(false);
     }
 
-    private void PlayerController_OnPlayerDeath()
+    private void PlayerHealthSystem_OnDeath()
     {
         //isDeath = true;
         Time.timeScale = 0f;
