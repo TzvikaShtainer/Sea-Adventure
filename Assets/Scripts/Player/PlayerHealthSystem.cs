@@ -16,7 +16,7 @@ public class PlayerHealthSystem : MonoBehaviour
 
     private void Start()
     {
-        SetMaxHealth(health);
+        SetHealth(health);
     }
 
     public void TakeDamage(float amt)
@@ -39,10 +39,9 @@ public class PlayerHealthSystem : MonoBehaviour
         }
     }
 
-    public void SetMaxHealth(float healthValue)
+    public void SetHealth(float healthValue)
     {
         health = healthValue;
-        maxHealth = health;
         
         onHealthChange?.Invoke(health, 0, maxHealth);
     }
@@ -50,5 +49,17 @@ public class PlayerHealthSystem : MonoBehaviour
     public float GetCurrHealth()
     {
         return health;
+    }
+
+    public void AddHealth(float amount)
+    {
+        health += amount;
+        
+        if (health >= maxHealth)
+        {
+            health = maxHealth;
+        }
+        
+        onHealthChange?.Invoke(health, amount, maxHealth);
     }
 }

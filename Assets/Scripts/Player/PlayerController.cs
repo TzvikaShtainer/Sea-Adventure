@@ -25,6 +25,16 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    private void OnEnable()
+    {
+        AddLifePowerUp.onAddLifePowerUp += AddLifePowerUp_OnAddLifePowerUp;
+    }
+
+    private void OnDisable()
+    {
+        AddLifePowerUp.onAddLifePowerUp -= AddLifePowerUp_OnAddLifePowerUp;
+    }
 
     private async void OnTriggerEnter2D(Collider2D other)
     {
@@ -66,5 +76,10 @@ public class PlayerController : MonoBehaviour
     public float GetPlayerSize()
     {
         return playerTransform.transform.localScale.x;
+    }
+    
+    private void AddLifePowerUp_OnAddLifePowerUp(float lifeAmtToAdd)
+    {
+        playerHealth.AddHealth(lifeAmtToAdd);
     }
 }

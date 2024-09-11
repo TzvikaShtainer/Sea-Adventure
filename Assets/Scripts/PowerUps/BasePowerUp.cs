@@ -7,7 +7,7 @@ namespace PowerUps
     public abstract class BasePowerUp : MonoBehaviour
     {
         [SerializeField] protected PlayerController playerController;
-        private float powerUpTime;
+        private float powerUpTime = 0;
 
         protected void SetPowerUpTime(float newPowerUpTime)
         {
