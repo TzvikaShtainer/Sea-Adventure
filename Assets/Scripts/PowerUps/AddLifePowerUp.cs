@@ -7,13 +7,13 @@ using UnityEngine;
 public class AddLifePowerUp : BasePowerUp
 {
     [SerializeField] private float lifeAmtToAdd;
-    public delegate void OnAddLifePowerUp(float lifeAmtToAdd);
-    public static event OnAddLifePowerUp onAddLifePowerUp;
+    public delegate void OnAddLifePowerUpActivate(float lifeAmtToAdd);
+    public static event OnAddLifePowerUpActivate onAddLifePowerUpActivate;
 
 
 
     protected override void ActivePowerUp()
     {
-        onAddLifePowerUp?.Invoke(lifeAmtToAdd);
+        onAddLifePowerUpActivate?.Invoke(lifeAmtToAdd);
     }
 }

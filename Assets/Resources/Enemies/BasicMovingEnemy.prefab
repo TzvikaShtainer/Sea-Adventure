@@ -135,8 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653af134958c51e44a8900dbf6839f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
   minYPosToSpawn: 0
   maxYPosToSpawn: 0
+  enemyAnimationController: {fileID: 0}
+  moveToPlayer: {fileID: 9216845724294343926}
 --- !u!1 &6378077860974569157
 GameObject:
   m_ObjectHideFlags: 0

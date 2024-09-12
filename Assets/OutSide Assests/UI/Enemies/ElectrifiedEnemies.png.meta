@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c8d4b1c8e8ff634f95fafcc9fae1fa8
+guid: b8fef46ef58d20b40aceee517d5526b5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1498
+        width: 387
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dc60ad7163f6e4c912f6e96a3a09fa
+      internalID: 1374036783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_1
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1504
+        width: 387
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09794ef1fba67a0498c7cbd8c60a8a17
+      internalID: 125384526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 962
+        width: 375
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67593de48e400c45afc3a63f7cb3175
+      internalID: -207464452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1027
+        width: 278
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a578ca978c59ac94b961dd1cf65f69ba
+      internalID: -270760806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 427
+        width: 916
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15dbc8c5384bf94683f4af09367fc34
+      internalID: -479594592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectrifiedEnemies_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 29
+        width: 916
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80af61a907f8d341960fa3657b6118d
+      internalID: 2014251842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ElectrifiedEnemies_0: 1374036783
+      ElectrifiedEnemies_1: 125384526
+      ElectrifiedEnemies_2: -207464452
+      ElectrifiedEnemies_3: -270760806
+      ElectrifiedEnemies_4: -479594592
+      ElectrifiedEnemies_5: 2014251842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

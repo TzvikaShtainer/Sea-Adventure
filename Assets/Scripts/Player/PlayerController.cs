@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using PowerUps;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] Transform playerTransform;
 
+    [SerializeField] private GameObject shieldSprite;
+    [SerializeField] private bool hasShield;
+    
+    public delegate void OnPlayerHasShield();
+    public event OnPlayerHasShield onPlayerHasShield;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -28,19 +35,31 @@ public class PlayerController : MonoBehaviour
     
     private void OnEnable()
     {
-        AddLifePowerUp.onAddLifePowerUp += AddLifePowerUp_OnAddLifePowerUp;
+        AddLifePowerUp.onAddLifePowerUpActivate += AddLifePowerUp_OnAddLifePowerUp;
+        ShieldPowerUp.onShieldPowerUpActivate += ShieldPowerUp_OnShieldPowerUpActivate;
+        ShieldPowerUp.onShieldPowerUpDeactivate += ShieldPowerUp_OnShieldPowerUpDeactivate;
     }
 
     private void OnDisable()
     {
-        AddLifePowerUp.onAddLifePowerUp -= AddLifePowerUp_OnAddLifePowerUp;
+        AddLifePowerUp.onAddLifePowerUpActivate -= AddLifePowerUp_OnAddLifePowerUp;
+        ShieldPowerUp.onShieldPowerUpActivate -= ShieldPowerUp_OnShieldPowerUpActivate;
+        ShieldPowerUp.onShieldPowerUpDeactivate -= ShieldPowerUp_OnShieldPowerUpDeactivate;
     }
 
     private async void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy") && !isDamaged)
         {
-             await HandleDamage();
+            if (hasShield)
+            {
+                BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+                enemy.Electrified();
+            }
+            else
+            {
+                await HandleDamage();
+            }
         }
 
         if (other.CompareTag("PowerUp"))
@@ -81,5 +100,17 @@ public class PlayerController : MonoBehaviour
     private void AddLifePowerUp_OnAddLifePowerUp(float lifeAmtToAdd)
     {
         playerHealth.AddHealth(lifeAmtToAdd);
+    }
+    
+    private void ShieldPowerUp_OnShieldPowerUpActivate()
+    {
+        hasShield = true;
+        shieldSprite.SetActive(true);
+    }
+    
+    private void ShieldPowerUp_OnShieldPowerUpDeactivate()
+    {
+        hasShield = false;
+        shieldSprite.SetActive(false);
     }
 }
