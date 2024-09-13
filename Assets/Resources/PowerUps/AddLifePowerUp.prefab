@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -50,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: leftSpeed
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: enemyRigidBody
@@ -59,6 +71,22 @@ PrefabInstance:
     - target: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Name
       value: AddLifePowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Radius
+      value: 1.3302479
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.02184848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7759059335488178934, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5162b83bea31250429d0957df33a9b24, type: 3}
+    - target: {fileID: 8557174646559999975, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Name
+      value: AddLifeVisuals
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

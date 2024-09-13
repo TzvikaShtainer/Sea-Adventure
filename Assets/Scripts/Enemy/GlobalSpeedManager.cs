@@ -29,7 +29,7 @@ public class GlobalSpeedManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(CurrentSpeed);
+        //Debug.Log(CurrentSpeed);
         CurrentSpeed = Mathf.Min(maxSpeed, CurrentSpeed + speedIncreaseRate * Time.deltaTime);
     }
 }

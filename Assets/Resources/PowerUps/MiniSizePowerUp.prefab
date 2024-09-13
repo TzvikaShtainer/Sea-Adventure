@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 2205735712943528591}
-  leftSpeed: 3
-  accelerationRate: 10
+  leftSpeed: 1.5
+  enemyType: 1
 --- !u!114 &1600917645964806774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3b847f01cf4373a70addd703ecb074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  resizeTime: 3
+  playerController: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+  resizeTime: 10
   resizeSize: 0.15
 --- !u!114 &1835425901776561991
 MonoBehaviour:
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 9016304118608068029}
   - component: {fileID: 1226789820942090640}
   m_Layer: 0
-  m_Name: MiniSizePowerUp
+  m_Name: MiniSizePowerUpVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

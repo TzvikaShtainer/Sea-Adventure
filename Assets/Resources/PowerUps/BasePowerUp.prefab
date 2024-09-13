@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 564423586369580096}
   - component: {fileID: 7528575724506318415}
   - component: {fileID: 6240244899353744834}
-  - component: {fileID: 642120498647460307}
   m_Layer: 0
   m_Name: BasePowerUp
   m_TagString: PowerUp
@@ -50,8 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 564423586369580096}
-  leftSpeed: 3
-  accelerationRate: 10
+  leftSpeed: 1.5
+  enemyType: 1
 --- !u!50 &564423586369580096
 Rigidbody2D:
   serializedVersion: 4
@@ -108,7 +107,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -128,20 +127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceHeight: 0.5
   bounceSpeed: 2
---- !u!114 &642120498647460307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6900400972780812390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da0209b5505eee40b08f090b6d8f4bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  shieldTime: 10
 --- !u!1 &8557174646559999975
 GameObject:
   m_ObjectHideFlags: 0

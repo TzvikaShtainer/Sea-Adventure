@@ -18,9 +18,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject shieldSprite;
     [SerializeField] private bool hasShield;
     
-    public delegate void OnPlayerHasShield();
-    public event OnPlayerHasShield onPlayerHasShield;
-    
     private void Awake()
     {
         if (Instance == null)
@@ -36,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         AddLifePowerUp.onAddLifePowerUpActivate += AddLifePowerUp_OnAddLifePowerUp;
+        
         ShieldPowerUp.onShieldPowerUpActivate += ShieldPowerUp_OnShieldPowerUpActivate;
         ShieldPowerUp.onShieldPowerUpDeactivate += ShieldPowerUp_OnShieldPowerUpDeactivate;
     }
@@ -43,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         AddLifePowerUp.onAddLifePowerUpActivate -= AddLifePowerUp_OnAddLifePowerUp;
+        
         ShieldPowerUp.onShieldPowerUpActivate -= ShieldPowerUp_OnShieldPowerUpActivate;
         ShieldPowerUp.onShieldPowerUpDeactivate -= ShieldPowerUp_OnShieldPowerUpDeactivate;
     }
@@ -71,13 +70,15 @@ public class PlayerController : MonoBehaviour
     private async Task HandleDamage()
     {
         playerHealth.TakeDamage(1); //all enemies do the same damage for now
+        
         isDamaged = true;
-        await Task.Delay(1000);
+        
+        await Task.Delay(1000); //1sec delay for hit
         
         isDamaged = false;
     }
     
-    private static void HandlePowerUp(Collider2D other)
+    private void HandlePowerUp(Collider2D other)
     {
         BasePowerUp takeable = other.GetComponent<BasePowerUp>();
         

@@ -60,12 +60,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: leftSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Name
       value: ShieldPowerUp
       objectReference: {fileID: 0}
+    - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Radius
+      value: 1.3532623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.037755072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557174646559999975, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Name
+      value: ShieldPowerUpVisuals
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5480574808818747982}
   m_SourcePrefab: {fileID: 100100000, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+--- !u!1 &3186506314359078975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+  m_PrefabInstance: {fileID: 8357441225610344537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5480574808818747982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186506314359078975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da0209b5505eee40b08f090b6d8f4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  shieldTime: 10

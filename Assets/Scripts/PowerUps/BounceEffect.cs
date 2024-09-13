@@ -11,6 +11,8 @@ public class BounceEffect : MonoBehaviour
     private void Start()
     {
         startPosition = transform.position;
+        bounceHeight = Random.Range(0.5f, 0.8f);
+        bounceSpeed = Random.Range(1, 2);
     }
 
     private void Update()
