@@ -129,8 +129,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
-      propertyPath: accelerationRate
+      propertyPath: leftSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: accelerationRate
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7654326662125778464, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}

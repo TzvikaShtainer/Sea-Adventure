@@ -173,8 +173,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: enemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: leftSpeed
-      value: 7
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: accelerationRate
@@ -527,7 +531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2417096856534940211}
-  _baseEnemy: {fileID: 6908019946694412380}
 --- !u!114 &5309385686232348671 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
@@ -544,14 +547,3 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7656805468879268302, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
   m_PrefabInstance: {fileID: 3910930410603305737}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6908019946694412380 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
-  m_PrefabInstance: {fileID: 3910930410603305737}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815663240334287290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653af134958c51e44a8900dbf6839f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

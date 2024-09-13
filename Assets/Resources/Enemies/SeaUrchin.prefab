@@ -80,6 +80,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: enemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: leftSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7198831221687628569, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
     - {fileID: 3077021067037417754, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
@@ -227,15 +235,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6109861932038996558}
-  _baseEnemy: {fileID: 4853838536258534332}
---- !u!114 &4853838536258534332 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
-  m_PrefabInstance: {fileID: 3081607393042917609}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410095833524867674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 653af134958c51e44a8900dbf6839f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

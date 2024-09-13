@@ -25,8 +25,9 @@ public class BaseEnemy : MonoBehaviour, ISpawn
     {
         if (transform.position.x < -9.5 || transform.position.y < -5) //just for now
         {
-            gameObject.SetActive(false);
-                
+            //gameObject.SetActive(false);
+            Destroy(gameObject); 
+            
             onEnemyDead?.Invoke();
         }
     }
