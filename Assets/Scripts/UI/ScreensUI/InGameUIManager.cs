@@ -27,6 +27,7 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private Transform deathMenu;
     [SerializeField] private Button deathRestartButton;
     [SerializeField] private Button deathReturnToMainMenuButton;
+    [SerializeField] private TextMeshProUGUI endGameDistanceText;
     
     private string mainSceneName = "MainMenuScene";
     private bool isPaused = false;
@@ -161,6 +162,8 @@ public class InGameUIManager : MonoBehaviour
     private void GameManager_OnDistanceChanged(float distanceTraveled)
     {
         distanceText.text =  Mathf.FloorToInt(distanceTraveled).ToString() + " M";
+        
+        endGameDistanceText.text = "DISTANCE:  \n" + Mathf.FloorToInt(distanceTraveled).ToString() + "M";
     }
     
     private void GameManager_OnMaxDistanceChanged(float newMaxDistanceTraveled)
