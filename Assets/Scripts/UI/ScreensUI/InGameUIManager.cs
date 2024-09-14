@@ -151,10 +151,10 @@ public class InGameUIManager : MonoBehaviour
         //isDeath = true;
         Time.timeScale = 0f;
 
-        foreach (Transform child in menusContainer)
-        {
-            Debug.Log(child.name);
-        }
+        // foreach (Transform child in menusContainer)
+        // {
+        //     Debug.Log(child.name);
+        // }
         
         EnableScreen(deathMenu);
     }

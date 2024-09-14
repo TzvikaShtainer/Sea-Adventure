@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
     - target: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: maxYPosToSpawn
-      value: -1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: minYPosToSpawn

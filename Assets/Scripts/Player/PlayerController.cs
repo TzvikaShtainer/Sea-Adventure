@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField]private PlayerHealthSystem playerHealth;
     [SerializeField] private bool isDamaged;
+    [SerializeField] private int hitDelay;
+    
+    [SerializeField] private PowerUpManager powerUpManager;
+    [SerializeField] private bool isTookPowerUp;
     
     [SerializeField] Transform playerTransform;
 
@@ -61,9 +65,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (other.CompareTag("PowerUp"))
+        if (other.CompareTag("PowerUp") && !isTookPowerUp)
         {
-            HandlePowerUp(other);
+             HandlePowerUp(other);
         }
     }
 
@@ -73,18 +77,28 @@ public class PlayerController : MonoBehaviour
         
         isDamaged = true;
         
-        await Task.Delay(1000); //1sec delay for hit
+        await Task.Delay(hitDelay);
         
         isDamaged = false;
     }
     
-    private void HandlePowerUp(Collider2D other)
+    private async void HandlePowerUp(Collider2D other)
     {
         BasePowerUp takeable = other.GetComponent<BasePowerUp>();
+
+        if (takeable != null && !isTookPowerUp)
+        {
+            isTookPowerUp = true;
+            
+            powerUpManager.ActivatePowerUp(takeable);
+            
+            takeable.gameObject.SetActive(false); //for now need to handle this in the power up
+
+            //await Task.Delay(1000); //
+
+            isTookPowerUp = false;
+        }
         
-        takeable.Active();
-        
-        other.gameObject.SetActive(false);
     }
 
     public void SetPlayerSize(float newSize)
