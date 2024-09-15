@@ -77,9 +77,31 @@ public class PlayerController : MonoBehaviour
         
         isDamaged = true;
         
-        await Task.Delay(hitDelay);
+        await HandleHitEffect();
         
         isDamaged = false;
+    }
+
+    private async Task HandleHitEffect()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>(); 
+        Color originalColor = spriteRenderer.color; 
+
+        float blinkDuration = 0.5f; 
+        float blinkInterval = 0.1f; 
+
+        float elapsedTime = 0f;
+        while (elapsedTime < blinkDuration)
+        {
+            
+            spriteRenderer.color = (elapsedTime % (blinkInterval * 2) < blinkInterval) ? Color.white : Color.red;
+            
+            await Task.Delay((int)(blinkInterval * 1000));
+
+            elapsedTime += blinkInterval;
+        }
+        
+        spriteRenderer.color = originalColor;
     }
     
     private async void HandlePowerUp(Collider2D other)

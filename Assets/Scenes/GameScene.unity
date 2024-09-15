@@ -1092,17 +1092,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830442756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1952526376}
+  m_Father: {fileID: 1848955565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1820, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830442758
 MonoBehaviour:
@@ -2520,6 +2520,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6928910804927864762, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
       insertIndex: 0
       addedObject: {fileID: 601793156}
+    - targetCorrespondingSourceObject: {fileID: 6928910804927864762, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 830442757}
     - targetCorrespondingSourceObject: {fileID: 5003224807292843934, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 360300930}
@@ -2818,7 +2821,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1848955565}
-  - {fileID: 830442757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3001,13 +3003,21 @@ PrefabInstance:
       propertyPath: powerUpManager
       value: 
       objectReference: {fileID: 1148513240}
+    - target: {fileID: 645853982591365288, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 645853982591365288, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1033133234517727512, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: health
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5735466445463990293, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_LocalScale.x
