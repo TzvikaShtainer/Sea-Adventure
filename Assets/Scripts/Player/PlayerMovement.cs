@@ -16,6 +16,17 @@ public class PlayerMovement : MonoBehaviour
     private float currentVelocityY;
     
     private bool isJumping = false;
+    [SerializeField] private bool isTouchInput;
+
+    private void OnEnable()
+    {
+        TouchInputHandler.onStickValueUpdated += TouchInputHandler_OnStickValueUpdated;
+    }
+    
+    private void OnDisable()
+    {
+        TouchInputHandler.onStickValueUpdated -= TouchInputHandler_OnStickValueUpdated;
+    }
 
     void Update()
     {
@@ -28,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(0, rb.velocity.y);
 
         HandleBoundaries();
+    }
+    
+    private void TouchInputHandler_OnStickValueUpdated(bool isGettingTouchInputValue)
+    {
+        isTouchInput = isGettingTouchInputValue;
     }
 
     private void HandleBoundaries()
@@ -49,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     private void HandleMovement()
     {
         //need to change to touch input
-        if (Input.GetKey(KeyCode.Space)) 
+        if (Input.GetKey(KeyCode.Space) || isTouchInput) 
         {
             Jump();
         }
