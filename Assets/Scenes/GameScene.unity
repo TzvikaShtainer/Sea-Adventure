@@ -2235,6 +2235,10 @@ PrefabInstance:
       value: -265
       objectReference: {fileID: 0}
     - target: {fileID: 6059162692120319883, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
+      propertyPath: touchUI
+      value: 
+      objectReference: {fileID: 830442757}
+    - target: {fileID: 6059162692120319883, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 412087579}

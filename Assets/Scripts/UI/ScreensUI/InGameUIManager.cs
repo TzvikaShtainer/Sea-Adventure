@@ -29,6 +29,9 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private Button deathReturnToMainMenuButton;
     [SerializeField] private TextMeshProUGUI endGameDistanceText;
     
+    [Header("Touch")]
+    [SerializeField] private Transform touchUI;
+    
     private string mainSceneName = "MainMenuScene";
     private bool isPaused = false;
     //private bool isDeath = false;
@@ -77,6 +80,8 @@ public class InGameUIManager : MonoBehaviour
         }
 
         UpdateMaxDistanceText(GameManager.instance.LoadMaxDistance());
+        
+        touchUI.gameObject.SetActive(true);
     }
 
     private void OnPauseClicked()
@@ -157,6 +162,8 @@ public class InGameUIManager : MonoBehaviour
         // }
         
         EnableScreen(deathMenu);
+        
+        DisableScreen(touchUI);
     }
     
     private void GameManager_OnDistanceChanged(float distanceTraveled)
