@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     
-    [SerializeField] private float jumpForce = 10f;     
+    [SerializeField] private float jumpForce;     
     [SerializeField] private float maxVerticalSpeed = 5f;
     [SerializeField] private float maxY;
     [SerializeField] private float minY;
@@ -17,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     
     private bool isJumping = false;
     [SerializeField] private bool isTouchInput;
+
+    [SerializeField] private TextMeshProUGUI test;
 
     private void OnEnable()
     {
@@ -64,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        //need to change to touch input
         if (Input.GetKey(KeyCode.Space) || isTouchInput) 
         {
             Jump();
@@ -85,8 +87,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isJumping = true;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
-        
-        //isJumping = false;
     }
 
     public bool GetJumpState()

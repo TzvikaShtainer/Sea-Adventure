@@ -92,7 +92,8 @@ public class InGameUIManager : MonoBehaviour
     private void OnContinueButtonClicked()
     {
         DisableScreen(pauseMenu);
-        EnableScreen(playerUIMenu);
+        playerUIMenu.gameObject.SetActive(true);
+        touchUI.gameObject.SetActive(true);
         Time.timeScale = 1f;         
         isPaused = false;
     }
