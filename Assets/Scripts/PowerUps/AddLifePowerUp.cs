@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using PowerUps;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AddLifePowerUp : BasePowerUp
@@ -11,6 +12,10 @@ public class AddLifePowerUp : BasePowerUp
     public static event OnAddLifePowerUpActivate onAddLifePowerUpActivate;
 
 
+    void Start()
+    {
+        SetPowerUpTime(0, 0);
+    }
 
     protected override void ActivePowerUp()
     {

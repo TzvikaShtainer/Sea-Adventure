@@ -129,6 +129,7 @@ MonoBehaviour:
   playerController: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
   resizeTime: 10
   resizeSize: 0.45
+  blinkEffectTime: 3
 --- !u!114 &7869374454926399833
 MonoBehaviour:
   m_ObjectHideFlags: 0

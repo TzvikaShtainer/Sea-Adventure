@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool hasShield;
     
     [SerializeField] float originalTransform = 0.25f;
+    [SerializeField] private Renderer playerSprite;
     
     private void Awake()
     {
@@ -134,8 +135,8 @@ public class PlayerController : MonoBehaviour
     private void AddLifePowerUp_OnAddLifePowerUp(float lifeAmtToAdd)
     {
         playerHealth.AddHealth(lifeAmtToAdd);
-        
-        SetPlayerSize(originalTransform);
+
+        ResetPowerUps();
     }
     
     private void ShieldPowerUp_OnShieldPowerUpActivate()
@@ -148,7 +149,18 @@ public class PlayerController : MonoBehaviour
     {
         hasShield = false;
         shieldSprite.SetActive(false);
-        
+
+        ResetPowerUps();
+    }
+
+    private void ResetPowerUps()
+    {
         SetPlayerSize(originalTransform);
+        playerSprite.enabled = true;
+    }
+
+    public Renderer GetSprite()
+    {
+        return playerSprite;
     }
 }

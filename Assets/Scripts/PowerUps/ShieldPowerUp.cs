@@ -6,6 +6,7 @@ using UnityEngine;
 public class ShieldPowerUp : BasePowerUp
 {
     [SerializeField] private float shieldTime;
+    [SerializeField] private float blinkEffectTime;
 
     public delegate void OnShieldPowerUpActivate();
     public static event OnShieldPowerUpActivate onShieldPowerUpActivate;
@@ -13,10 +14,9 @@ public class ShieldPowerUp : BasePowerUp
     public delegate void OnShieldPowerUpDeactivate();
     public static event OnShieldPowerUpDeactivate onShieldPowerUpDeactivate;
     
-    private void Start()
+    void Start()
     {
-        SetPowerUpTime(shieldTime);
-        
+        SetPowerUpTime(shieldTime, blinkEffectTime);
     }
 
     protected override void ActivePowerUp()

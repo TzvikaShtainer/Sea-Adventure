@@ -107,3 +107,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   shieldTime: 10
+  blinkEffectTime: 3

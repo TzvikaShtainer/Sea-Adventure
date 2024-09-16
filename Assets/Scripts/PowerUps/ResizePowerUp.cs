@@ -8,11 +8,12 @@ namespace PowerUps
     {
         [SerializeField] private float resizeTime;
         [SerializeField] private float resizeSize;
+        [SerializeField] private float blinkEffectTime;
         private float originalSize = 0.25f;
 
-        private void Start()
+        void Start()
         {
-            SetPowerUpTime(resizeTime);
+            SetPowerUpTime(resizeTime, blinkEffectTime);
             originalSize = playerController.GetPlayerSize();
         }
 

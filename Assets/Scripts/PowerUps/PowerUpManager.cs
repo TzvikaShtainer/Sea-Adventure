@@ -15,10 +15,9 @@ namespace PowerUps
             if (_currentPowerUp != null)
             {
                 _currentPowerUp.DeActive();
-                
                 _currentPowerUpTokenSource.Cancel(); 
-                _currentPowerUpTokenSource.Dispose(); 
-                _currentPowerUp = null; 
+                _currentPowerUpTokenSource.Dispose();
+                _currentPowerUp = null;
             }
             
             _currentPowerUpTokenSource = new CancellationTokenSource();
@@ -31,6 +30,7 @@ namespace PowerUps
             catch (OperationCanceledException)
             {
                 Debug.Log($"{powerUp} was canceled.");
+                powerUp.DeActive();
             }
             finally
             {
@@ -39,14 +39,5 @@ namespace PowerUps
             }
         }
         
-        public void CancelCurrentPowerUp()
-        {
-            if (_currentPowerUp != null)
-            {
-                _currentPowerUpTokenSource.Cancel();
-                _currentPowerUpTokenSource.Dispose();
-                _currentPowerUp = null;
-            }
-        }
     }
 }
