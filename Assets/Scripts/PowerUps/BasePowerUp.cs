@@ -9,6 +9,7 @@ namespace PowerUps
     {
         [SerializeField] protected PlayerController playerController;
         private float powerUpTime = 0;
+        private float blinkPowerUpTime = 3;
 
         private void Update()
         {
@@ -36,7 +37,12 @@ namespace PowerUps
 
             try
             {
-                await Task.Delay((int)powerUpTime * 1000, cancellationToken); // Support cancellation
+                float timeBeforeBlink = powerUpTime - blinkPowerUpTime;
+                
+                await Task.Delay((int)timeBeforeBlink * 1000, cancellationToken); // Support cancellation
+                
+                await HandleBlinkEffectBeforedeactivate();
+                
             }
             catch (TaskCanceledException)
             {
@@ -47,6 +53,28 @@ namespace PowerUps
             {
                 DeactivatePowerUp();
             }
+        }
+
+        private async Task HandleBlinkEffectBeforedeactivate()
+        {
+            SpriteRenderer spriteRenderer = playerController.GetComponentInParent<SpriteRenderer>(); 
+            Color originalColor = spriteRenderer.color; 
+
+            float blinkDuration = 3f; // Total blink duration
+            float blinkInterval = 0.1f; 
+            float elapsedTime = 0f;
+            while (elapsedTime < blinkDuration)
+            {
+                float alpha = (elapsedTime % (blinkInterval * 2) < blinkInterval) ? 0f : 1f;
+                
+                spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+
+                await Task.Delay((int)(blinkInterval * 1000));
+
+                elapsedTime += blinkInterval;
+            }
+            
+            spriteRenderer.color = originalColor;
         }
 
         public void DeActive()
