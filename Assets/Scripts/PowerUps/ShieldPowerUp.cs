@@ -21,6 +21,7 @@ public class ShieldPowerUp : BasePowerUp
 
     protected override void ActivePowerUp()
     {
+        //Debug.Log("ShieldPowerUp");
         onShieldPowerUpActivate?.Invoke();
     }
 

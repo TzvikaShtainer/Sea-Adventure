@@ -8,7 +8,7 @@ namespace PowerUps
     {
         [SerializeField] private float resizeTime;
         [SerializeField] private float resizeSize;
-        private float originalSize;
+        private float originalSize = 0.25f;
 
         private void Start()
         {

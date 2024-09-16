@@ -41,6 +41,7 @@ namespace PowerUps
             catch (TaskCanceledException)
             {
                 Debug.Log("Power-up was canceled.");
+                DeactivatePowerUp();
             }
 
             if (!cancellationToken.IsCancellationRequested)

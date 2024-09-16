@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject shieldSprite;
     [SerializeField] private bool hasShield;
     
+    [SerializeField] float originalTransform = 0.25f;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -65,7 +67,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (other.CompareTag("PowerUp") && !isTookPowerUp)
+        if (other.CompareTag("PowerUp"))
         {
              HandlePowerUp(other);
         }
@@ -108,17 +110,12 @@ public class PlayerController : MonoBehaviour
     {
         BasePowerUp takeable = other.GetComponent<BasePowerUp>();
 
-        if (takeable != null && !isTookPowerUp)
+        if (takeable != null)
         {
-            isTookPowerUp = true;
             
             powerUpManager.ActivatePowerUp(takeable);
             
             takeable.gameObject.SetActive(false); //for now need to handle this in the power up
-
-            //await Task.Delay(1000); //
-
-            isTookPowerUp = false;
         }
         
     }
@@ -131,12 +128,14 @@ public class PlayerController : MonoBehaviour
 
     public float GetPlayerSize()
     {
-        return playerTransform.transform.localScale.x;
+        return originalTransform;
     }
     
     private void AddLifePowerUp_OnAddLifePowerUp(float lifeAmtToAdd)
     {
         playerHealth.AddHealth(lifeAmtToAdd);
+        
+        SetPlayerSize(originalTransform);
     }
     
     private void ShieldPowerUp_OnShieldPowerUpActivate()
@@ -149,5 +148,7 @@ public class PlayerController : MonoBehaviour
     {
         hasShield = false;
         shieldSprite.SetActive(false);
+        
+        SetPlayerSize(originalTransform);
     }
 }
