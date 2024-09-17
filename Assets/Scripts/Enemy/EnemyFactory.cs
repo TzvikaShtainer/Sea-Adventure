@@ -22,7 +22,7 @@ public class EnemyFactory
                 break;
             
             case EnemyType.SwordFish:
-                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/SwordFish"));
+                enemyToCreate = Object.Instantiate(Resources.Load<BaseEnemy>("Enemies/SwordFishWithUI"));
                 break;
             
             case EnemyType.SeaUrchin:

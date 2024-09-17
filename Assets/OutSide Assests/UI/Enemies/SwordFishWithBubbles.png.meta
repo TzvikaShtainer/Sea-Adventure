@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: c6e44913eaac1e04bbe6623096dad5a5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_0
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1462
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59bdf168d464524e9666487d7a5a896
+      internalID: -1801976623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1103
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf00ecb7304c7224c953ed4ce21415ca
+      internalID: -814576195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 755
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c54c0d852b7a134bb06da56f71b990c
+      internalID: -836882542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 305
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fdcf10386a1b54a969042ddb898423
+      internalID: 1636648491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_1
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1476
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b1471f3ac454c4085c052ab0ff42e4
+      internalID: -1553402851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_2
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1135
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b53c6bf6899e9147829e4cb86d6b7f6
+      internalID: 1663116181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 786
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0969493a0f0350b468ea649411e9bd56
+      internalID: -62482759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 458
+        width: 1330
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5027507, y: 0.4390301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1506801274cae9446b7ab626c4a5d98e
+      internalID: -1163243840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFishWithBubbles_5
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 121
+        width: 1330
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c800c31e0aa0321428978b3aba0cecd3
+      internalID: -132866086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SwordFishWithBubbles_0: -1801976623
+      SwordFishWithBubbles_1: -1553402851
+      SwordFishWithBubbles_10: -724922618
+      SwordFishWithBubbles_100: -1193259699
+      SwordFishWithBubbles_101: 1786497546
+      SwordFishWithBubbles_102: 1669909236
+      SwordFishWithBubbles_103: -1670457713
+      SwordFishWithBubbles_104: -853278480
+      SwordFishWithBubbles_105: -71622324
+      SwordFishWithBubbles_106: 1952838496
+      SwordFishWithBubbles_107: -2069703527
+      SwordFishWithBubbles_108: -637056128
+      SwordFishWithBubbles_109: 1561549061
+      SwordFishWithBubbles_11: -322590171
+      SwordFishWithBubbles_110: -1342656420
+      SwordFishWithBubbles_111: -1811012704
+      SwordFishWithBubbles_112: 1488460808
+      SwordFishWithBubbles_113: 235440560
+      SwordFishWithBubbles_114: -1071272123
+      SwordFishWithBubbles_115: 2124349849
+      SwordFishWithBubbles_116: 1769720322
+      SwordFishWithBubbles_117: 1823523692
+      SwordFishWithBubbles_118: -663866524
+      SwordFishWithBubbles_119: 334919237
+      SwordFishWithBubbles_12: 820496791
+      SwordFishWithBubbles_120: 1346815831
+      SwordFishWithBubbles_121: -225491170
+      SwordFishWithBubbles_122: -1733163933
+      SwordFishWithBubbles_123: 1660776217
+      SwordFishWithBubbles_124: -1698906570
+      SwordFishWithBubbles_125: 322051144
+      SwordFishWithBubbles_126: 1416160937
+      SwordFishWithBubbles_127: 346657391
+      SwordFishWithBubbles_128: 676488364
+      SwordFishWithBubbles_129: 337624684
+      SwordFishWithBubbles_13: 2138404908
+      SwordFishWithBubbles_130: -733168009
+      SwordFishWithBubbles_131: -1057245853
+      SwordFishWithBubbles_132: -1591331250
+      SwordFishWithBubbles_133: -257502483
+      SwordFishWithBubbles_134: 387533972
+      SwordFishWithBubbles_135: 1407182730
+      SwordFishWithBubbles_136: 1271779661
+      SwordFishWithBubbles_137: -1754053183
+      SwordFishWithBubbles_138: 155518819
+      SwordFishWithBubbles_139: -397150946
+      SwordFishWithBubbles_14: -1192367078
+      SwordFishWithBubbles_140: -1531207882
+      SwordFishWithBubbles_141: -1052583522
+      SwordFishWithBubbles_142: -8438299
+      SwordFishWithBubbles_143: -1395196263
+      SwordFishWithBubbles_144: 666867608
+      SwordFishWithBubbles_145: -1378851273
+      SwordFishWithBubbles_146: 1468390497
+      SwordFishWithBubbles_15: 464022685
+      SwordFishWithBubbles_16: -65122135
+      SwordFishWithBubbles_17: -1620074762
+      SwordFishWithBubbles_18: 1102352558
+      SwordFishWithBubbles_19: -412292317
+      SwordFishWithBubbles_2: 1663116181
+      SwordFishWithBubbles_20: -1142094522
+      SwordFishWithBubbles_21: -1097379982
+      SwordFishWithBubbles_22: -1333118687
+      SwordFishWithBubbles_23: 165755754
+      SwordFishWithBubbles_24: 1714039410
+      SwordFishWithBubbles_25: -492493872
+      SwordFishWithBubbles_26: -1991645134
+      SwordFishWithBubbles_27: 1291962815
+      SwordFishWithBubbles_28: -1915466769
+      SwordFishWithBubbles_29: -358268344
+      SwordFishWithBubbles_3: -62482759
+      SwordFishWithBubbles_30: -584877905
+      SwordFishWithBubbles_31: -1509124391
+      SwordFishWithBubbles_32: 2008558240
+      SwordFishWithBubbles_33: -1154190719
+      SwordFishWithBubbles_34: -1219258850
+      SwordFishWithBubbles_35: -769130609
+      SwordFishWithBubbles_36: -1667700508
+      SwordFishWithBubbles_37: -509980609
+      SwordFishWithBubbles_38: -808663992
+      SwordFishWithBubbles_39: 1764994479
+      SwordFishWithBubbles_4: -1163243840
+      SwordFishWithBubbles_40: -1473527468
+      SwordFishWithBubbles_41: 1025643070
+      SwordFishWithBubbles_42: 1629139682
+      SwordFishWithBubbles_43: -1336265675
+      SwordFishWithBubbles_44: 69979875
+      SwordFishWithBubbles_45: -735040202
+      SwordFishWithBubbles_46: 269108588
+      SwordFishWithBubbles_47: -525084219
+      SwordFishWithBubbles_48: -1619667008
+      SwordFishWithBubbles_49: -572631205
+      SwordFishWithBubbles_5: -132866086
+      SwordFishWithBubbles_50: -411222347
+      SwordFishWithBubbles_51: 226211166
+      SwordFishWithBubbles_52: -1149440312
+      SwordFishWithBubbles_53: 55631966
+      SwordFishWithBubbles_54: 269846787
+      SwordFishWithBubbles_55: 562265269
+      SwordFishWithBubbles_56: -291079343
+      SwordFishWithBubbles_57: 543308807
+      SwordFishWithBubbles_58: -1354166235
+      SwordFishWithBubbles_59: -985113809
+      SwordFishWithBubbles_6: -814576195
+      SwordFishWithBubbles_60: 1888678756
+      SwordFishWithBubbles_61: -1513049877
+      SwordFishWithBubbles_62: -540965965
+      SwordFishWithBubbles_63: -618459237
+      SwordFishWithBubbles_64: 1705518282
+      SwordFishWithBubbles_65: -1367562053
+      SwordFishWithBubbles_66: -1330094461
+      SwordFishWithBubbles_67: 1501375170
+      SwordFishWithBubbles_68: -857878467
+      SwordFishWithBubbles_69: -2020712069
+      SwordFishWithBubbles_7: -836882542
+      SwordFishWithBubbles_70: -1925332629
+      SwordFishWithBubbles_71: 1043290062
+      SwordFishWithBubbles_72: 146344912
+      SwordFishWithBubbles_73: -24661092
+      SwordFishWithBubbles_74: -1951278947
+      SwordFishWithBubbles_75: 1654807986
+      SwordFishWithBubbles_76: 1682517512
+      SwordFishWithBubbles_77: -556550402
+      SwordFishWithBubbles_78: 556792624
+      SwordFishWithBubbles_79: -76164052
+      SwordFishWithBubbles_8: 1636648491
+      SwordFishWithBubbles_80: 1144463805
+      SwordFishWithBubbles_81: -1668907619
+      SwordFishWithBubbles_82: -1632998333
+      SwordFishWithBubbles_83: -331994062
+      SwordFishWithBubbles_84: -1456501236
+      SwordFishWithBubbles_85: -524507935
+      SwordFishWithBubbles_86: 1860251784
+      SwordFishWithBubbles_87: -1557131473
+      SwordFishWithBubbles_88: 1491305316
+      SwordFishWithBubbles_89: 1305046268
+      SwordFishWithBubbles_9: -855581156
+      SwordFishWithBubbles_90: 1462734630
+      SwordFishWithBubbles_91: 907767367
+      SwordFishWithBubbles_92: -50168574
+      SwordFishWithBubbles_93: 1366136788
+      SwordFishWithBubbles_94: 1409493327
+      SwordFishWithBubbles_95: -1248490126
+      SwordFishWithBubbles_96: 2111724799
+      SwordFishWithBubbles_97: 357918209
+      SwordFishWithBubbles_98: 2088467146
+      SwordFishWithBubbles_99: -2105139841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
