@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f89cfdf30081847a1026e58252a73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 1
+  spawnTime: 8
   xPosToSpawn: 15
   enemyType: 1
 --- !u!1 &1847655448

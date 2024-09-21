@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private async void OnTriggerEnter2D(Collider2D other)
     {
+        //the null exp cuz bec i dont have an object pool i think
         if (other.CompareTag("Enemy") && !isDamaged)
         {
             if (hasShield)
@@ -70,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.CompareTag("PowerUp"))
         {
-             HandlePowerUp(other);
+            HandlePowerUp(other);
         }
     }
 
@@ -87,27 +88,28 @@ public class PlayerController : MonoBehaviour
 
     private async Task HandleHitEffect()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>(); 
-        Color originalColor = spriteRenderer.color; 
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        Color originalColor = spriteRenderer.color;
 
-        float blinkDuration = 1f; //hit time 
-        float blinkInterval = 0.1f; 
+        float blinkDuration = 1f;
+        float blinkInterval = 0.1f;
 
         float elapsedTime = 0f;
+        
         while (elapsedTime < blinkDuration)
         {
-            
             spriteRenderer.color = (elapsedTime % (blinkInterval * 2) < blinkInterval) ? Color.white : Color.red;
             
-            await Task.Delay((int)(blinkInterval * 1000));
-
-            elapsedTime += blinkInterval;
+            float actualDelay = Mathf.Min(blinkInterval, blinkDuration - elapsedTime);
+            await Task.Delay((int)(actualDelay * 1000));
+            
+            elapsedTime += actualDelay;
         }
         
         spriteRenderer.color = originalColor;
     }
     
-    private async void HandlePowerUp(Collider2D other)
+    private void HandlePowerUp(Collider2D other)
     {
         BasePowerUp takeable = other.GetComponent<BasePowerUp>();
 
