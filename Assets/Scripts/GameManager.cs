@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using EventBus = DefaultNamespace.EventBus;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameDataSO _gameDataSo;
     
     public delegate void OnDistanceChanged(float distanceTraveled);
-    public static event OnDistanceChanged onDistanceChanged;
+    //public static event OnDistanceChanged onDistanceChanged;
     
     public delegate void OnMaxDistanceChanged(float maxDistanceTraveled);
     public static event OnMaxDistanceChanged onMaxDistanceChanged;
@@ -58,7 +60,8 @@ public class GameManager : MonoBehaviour
         
         distanceTraveled += Time.deltaTime * distanceMultiplier;
         
-        onDistanceChanged?.Invoke(distanceTraveled);
+        //onDistanceChanged?.Invoke(distanceTraveled);
+        EventBus.DistanceChanged(distanceTraveled);
     }
     
     private void PlayerHealthSystem_OnDeath()

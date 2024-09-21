@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -57,7 +58,8 @@ public class InGameUIManager : MonoBehaviour
     {
         PlayerHealthSystem.onDeath += PlayerHealthSystem_OnDeath;
         
-        GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
+        //GameManager.onDistanceChanged += GameManager_OnDistanceChanged;
+        EventBus.onDistanceChanged += GameManager_OnDistanceChanged;
         GameManager.onMaxDistanceChanged += GameManager_OnMaxDistanceChanged;
     }
 
@@ -65,7 +67,8 @@ public class InGameUIManager : MonoBehaviour
     {
         PlayerHealthSystem.onDeath -= PlayerHealthSystem_OnDeath;
         
-        GameManager.onDistanceChanged -= GameManager_OnDistanceChanged;
+        //GameManager.onDistanceChanged -= GameManager_OnDistanceChanged;
+        GameManager.onMaxDistanceChanged -= GameManager_OnMaxDistanceChanged;
         GameManager.onMaxDistanceChanged -= GameManager_OnMaxDistanceChanged;
     }
 
