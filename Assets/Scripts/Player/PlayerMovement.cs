@@ -87,6 +87,8 @@ public class PlayerMovement : MonoBehaviour
     {
         isJumping = true;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+        
+        SoundManager.instance.PlayOneShot(FModEvents.instance.jumpSound, transform.position);
     }
 
     public bool GetJumpState()
