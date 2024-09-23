@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.color = (elapsedTime % (blinkInterval * 2) < blinkInterval) ? Color.white : Color.red;
             
             float actualDelay = Mathf.Min(blinkInterval, blinkDuration - elapsedTime);
-            await Task.Delay((int)(actualDelay * 1000));
+            await TimeUtils.WaitForGameTime(actualDelay);
             
             elapsedTime += actualDelay;
         }

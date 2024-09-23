@@ -44,12 +44,12 @@ namespace PowerUps
             {
                 if (blinkStartTime > 0)
                 {
-                    await Task.Delay((int)(blinkStartTime * 1000), cancellationToken);
+                    await TimeUtils.WaitForGameTime(blinkStartTime, cancellationToken);
+                    //yawait Task.Dela((int)(blinkStartTime * 1000), cancellationToken);
                 }
 
                 await BlinkEffect(blinkInterval, blinkPowerUpTime, cancellationToken);
-
-                //await Task.Delay((int)(3f * 1000), cancellationToken);
+                
             }
             catch (TaskCanceledException)
             {
@@ -78,7 +78,10 @@ namespace PowerUps
                 }
 
                 ToggleTransparency(renderer);
-                await Task.Delay((int)(interval * 1000), cancellationToken);
+                
+                await TimeUtils.WaitForGameTime(interval, cancellationToken);
+                //await Task.Delay((int)(interval * 1000), cancellationToken);
+                
                 elapsedTime += interval;
             }
 

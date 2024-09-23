@@ -51,9 +51,9 @@ public class SwordFishUI : MonoBehaviour
         while (elapsedTime < blinkDuration)
         {
             transformImage.GetComponent<Image>().sprite = firstImage;
-            await Task.Delay((int)(blinkInterval * 1000));
+            await TimeUtils.WaitForGameTime(blinkInterval);
             transformImage.GetComponent<Image>().sprite = secondImage;
-            await Task.Delay((int)(blinkInterval * 1000));
+            await TimeUtils.WaitForGameTime(blinkInterval);
             
             elapsedTime += blinkInterval * 2;
         }
