@@ -22,6 +22,7 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private Transform pauseMenu;
     [SerializeField] private Button pauseContinueButton;
     [SerializeField] private Button pauseRestartButton;
+    [SerializeField] private Button pauseSoundsButton;
     [SerializeField] private Button pauseReturnToMainMenuButton;
     
     [Header("Death Menu")]
@@ -32,6 +33,10 @@ public class InGameUIManager : MonoBehaviour
     
     [Header("Touch")]
     [SerializeField] private Transform touchUI;
+    
+    [Header("Sounds")]
+    [SerializeField] private Transform soundsMenu;
+    [SerializeField] private Button soundsReturnButton;
     
     private string mainSceneName = "MainMenuScene";
     private bool isPaused = false;
@@ -44,9 +49,12 @@ public class InGameUIManager : MonoBehaviour
         pauseContinueButton.onClick.AddListener(OnContinueButtonClicked);
         pauseRestartButton.onClick.AddListener(OnRestartButtonClicked);
         pauseReturnToMainMenuButton.onClick.AddListener(OnReturnToMainMenuButtonClicked);
+        pauseSoundsButton.onClick.AddListener(OnSoundsButtonClicked);
         
         deathRestartButton.onClick.AddListener(OnRestartButtonClicked);
         deathReturnToMainMenuButton.onClick.AddListener(OnReturnToMainMenuButtonClicked);
+        
+        soundsReturnButton.onClick.AddListener(OnSoundsReturnButtonClicked);
     }
 
     private void Start()
@@ -123,6 +131,16 @@ public class InGameUIManager : MonoBehaviour
         Time.timeScale = 1f; 
         
         LoadSceneAsync(mainSceneName);
+    }
+    
+    private void OnSoundsButtonClicked()
+    {
+        EnableScreen(soundsMenu); 
+    }
+    
+    private void OnSoundsReturnButtonClicked()
+    {
+        EnableScreen(pauseMenu); 
     }
     
     private void LoadSceneAsync(string sceneName)
