@@ -21,14 +21,13 @@ public static class TimeUtils
     
     public static async Task WaitForGameTime(float seconds, CancellationToken cancellationToken)
     {
+        //Debug.Log("power up time started");
+        
         float elapsedTime = 0f;
 
         while (elapsedTime < seconds)
         {
-            if (cancellationToken.IsCancellationRequested)
-            {
-                cancellationToken.ThrowIfCancellationRequested();
-            }
+            cancellationToken.ThrowIfCancellationRequested();
             
             await Task.Yield();
             
@@ -36,6 +35,10 @@ public static class TimeUtils
             {
                 elapsedTime += Time.deltaTime;
             }
+            
+            cancellationToken.ThrowIfCancellationRequested();
         }
+        
+        //Debug.Log("power up time ended");
     }
 }

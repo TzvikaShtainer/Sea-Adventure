@@ -113,7 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd1ad8fb7918c84fadc35836e13287b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+  renderer: {fileID: 0}
   lifeAmtToAdd: 1
 --- !u!50 &7694810640735569079 stripped
 Rigidbody2D:

@@ -36,7 +36,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7876522658180068507}
@@ -87,6 +87,8 @@ MonoBehaviour:
   maxY: 4.3
   minY: -4.5
   smoothingTime: 0.1
+  isTouchInput: 0
+  test: {fileID: 0}
 --- !u!114 &375814174964485436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,9 +103,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1033133234517727512}
   isDamaged: 0
+  hitDelay: 0
+  powerUpManager: {fileID: 0}
+  isTookPowerUp: 0
   playerTransform: {fileID: 5735466445463990293}
   shieldSprite: {fileID: 799713804316793954}
   hasShield: 0
+  originalTransform: 0.25
+  playerSprite: {fileID: 0}
 --- !u!95 &-2955625018240141215
 Animator:
   serializedVersion: 5

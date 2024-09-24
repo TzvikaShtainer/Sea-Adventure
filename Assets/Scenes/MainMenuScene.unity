@@ -629,7 +629,11 @@ PrefabInstance:
     - target: {fileID: 6548741118379919569, guid: ad1801b6eb9252f4a930e29a855b29f3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cd269600f1a7bd14f9d2cc6f4c55006c, type: 3}
+      objectReference: {fileID: 21300000, guid: 390ac5be158158540af1cf8cb450deff, type: 3}
+    - target: {fileID: 6548741118379919569, guid: ad1801b6eb9252f4a930e29a855b29f3, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7452630490985222639, guid: ad1801b6eb9252f4a930e29a855b29f3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

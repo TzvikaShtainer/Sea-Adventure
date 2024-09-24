@@ -44,17 +44,16 @@ namespace PowerUps
             {
                 if (blinkStartTime > 0)
                 {
-                    await TimeUtils.WaitForGameTime(blinkStartTime, cancellationToken);
-                    //yawait Task.Dela((int)(blinkStartTime * 1000), cancellationToken);
+                    //await TimeUtils.WaitForGameTime(blinkStartTime, cancellationToken);
+                    await Task.Delay((int)(blinkStartTime * 1000), cancellationToken);
                 }
 
                 await BlinkEffect(blinkInterval, blinkPowerUpTime, cancellationToken);
                 
             }
-            catch (TaskCanceledException)
+            catch (OperationCanceledException)
             {
                 Debug.Log("BasePowerUp Power-up was canceled.");
-                
             }
 
             if (!cancellationToken.IsCancellationRequested)
@@ -69,22 +68,39 @@ namespace PowerUps
             renderer = playerController.GetSprite();
             Color originalColor = renderer.material.color;
 
+            Debug.Log("Blink effect started.");
+            
             while (elapsedTime < duration)
             {
                 if (cancellationToken.IsCancellationRequested)
                 {
+                    Debug.Log("BlinkEffect canceled during loop (before toggle).");
                     SetTransparency(renderer, originalColor.a); // Reset transparency if canceled
-                    return; // Stop the blinking immediately
+                    return; 
                 }
 
                 ToggleTransparency(renderer);
                 
-                await TimeUtils.WaitForGameTime(interval, cancellationToken);
-                //await Task.Delay((int)(interval * 1000), cancellationToken);
+                try
+                {
+                    //await TimeUtils.WaitForGameTime(interval, cancellationToken);
+                    await Task.Delay((int)(interval * 1000), cancellationToken);
+                }
+                catch (OperationCanceledException)
+                {
+                    Debug.Log("BlinkEffect canceled during wait.");
+                    SetTransparency(renderer, originalColor.a); // Reset transparency if canceled
+                    return;  // Exit immediately
+                }
+                
                 
                 elapsedTime += interval;
+                
+                cancellationToken.ThrowIfCancellationRequested();
             }
 
+            Debug.Log("Blink effect completed.");
+            
             SetTransparency(renderer, originalColor.a); // Ensure transparency reset after blinking
         }
 

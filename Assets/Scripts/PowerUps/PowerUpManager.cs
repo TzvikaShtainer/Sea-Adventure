@@ -15,17 +15,25 @@ namespace PowerUps
             if (_currentPowerUp != null)
             {
                 _currentPowerUp.DeActive();
+                
                 _currentPowerUpTokenSource.Cancel(); 
                 _currentPowerUpTokenSource.Dispose();
+                
                 _currentPowerUp = null;
             }
             
             _currentPowerUpTokenSource = new CancellationTokenSource();
             _currentPowerUp = powerUp;
+            
 
             try
             {
+                _currentPowerUpTokenSource.Token.ThrowIfCancellationRequested();
+                
+                Debug.Log($"{powerUp} STARTED.");
                 await powerUp.Active(_currentPowerUpTokenSource.Token);
+                
+                _currentPowerUpTokenSource.Token.ThrowIfCancellationRequested();
             }
             catch (OperationCanceledException)
             {
@@ -34,10 +42,10 @@ namespace PowerUps
             }
             finally
             {
+                Debug.Log($"{_currentPowerUp} current.");
                 _currentPowerUp = null;
                 _currentPowerUpTokenSource.Dispose();
             }
         }
-        
     }
 }
