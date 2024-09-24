@@ -13,22 +13,12 @@ public class Testing : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log(gameObject.name + " is set as the singleton instance.");
+            //Debug.Log(gameObject.name + " is set as the singleton instance.");
         }
         else
         {
-            Debug.Log(gameObject.name + " is being destroyed because a singleton instance already exists.");
+            //Debug.Log(gameObject.name + " is being destroyed because a singleton instance already exists.");
             Destroy(gameObject);
         }
-    }
-    
-    private void OnDestroy()
-    {
-        Debug.Log(gameObject.name + " has been destroyed.");
-    }
-
-    private void Update()
-    {
-        Debug.Log(gameObject.name + " is still alive.");
     }
 }

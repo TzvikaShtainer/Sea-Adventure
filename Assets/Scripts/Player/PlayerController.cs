@@ -73,6 +73,11 @@ public class PlayerController : MonoBehaviour
         {
             HandlePowerUp(other);
         }
+
+        if (other.CompareTag("Coin"))
+        {
+            HandleCoins(other);
+        }
     }
 
     private async Task HandleDamage()
@@ -115,12 +120,16 @@ public class PlayerController : MonoBehaviour
 
         if (takeable != null)
         {
-            
             powerUpManager.ActivatePowerUp(takeable);
             
             takeable.gameObject.SetActive(false); //for now need to handle this in the power up
         }
         
+    }
+    
+    private void HandleCoins(Collider2D other)
+    {
+        Debug.Log(other.name);
     }
 
     public void SetPlayerSize(float newSize)

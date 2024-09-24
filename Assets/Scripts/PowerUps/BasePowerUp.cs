@@ -53,7 +53,7 @@ namespace PowerUps
             }
             catch (OperationCanceledException)
             {
-                Debug.Log("BasePowerUp Power-up was canceled.");
+                //Debug.Log("BasePowerUp Power-up was canceled.");
             }
 
             if (!cancellationToken.IsCancellationRequested)
@@ -68,13 +68,13 @@ namespace PowerUps
             renderer = playerController.GetSprite();
             Color originalColor = renderer.material.color;
 
-            Debug.Log("Blink effect started.");
+            //Debug.Log("Blink effect started.");
             
             while (elapsedTime < duration)
             {
                 if (cancellationToken.IsCancellationRequested)
                 {
-                    Debug.Log("BlinkEffect canceled during loop (before toggle).");
+                    //Debug.Log("BlinkEffect canceled during loop (before toggle).");
                     SetTransparency(renderer, originalColor.a); // Reset transparency if canceled
                     return; 
                 }
@@ -88,7 +88,7 @@ namespace PowerUps
                 }
                 catch (OperationCanceledException)
                 {
-                    Debug.Log("BlinkEffect canceled during wait.");
+                    //Debug.Log("BlinkEffect canceled during wait.");
                     SetTransparency(renderer, originalColor.a); // Reset transparency if canceled
                     return;  // Exit immediately
                 }
@@ -99,7 +99,7 @@ namespace PowerUps
                 cancellationToken.ThrowIfCancellationRequested();
             }
 
-            Debug.Log("Blink effect completed.");
+            //Debug.Log("Blink effect completed.");
             
             SetTransparency(renderer, originalColor.a); // Ensure transparency reset after blinking
         }
@@ -125,12 +125,12 @@ namespace PowerUps
         }
         protected virtual void ActivePowerUp()
         {
-            Debug.Log("Base power-up activated");
+            //Debug.Log("Base power-up activated");
         }
 
         protected virtual void DeactivatePowerUp()
         {
-            Debug.Log("Base power-up deactivated");
+            //Debug.Log("Base power-up deactivated");
         }
 
         public void Spawn(Vector2 position)

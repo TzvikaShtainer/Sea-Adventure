@@ -127,7 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
-  resizeTime: 10
+  renderer: {fileID: 0}
+  resizeTime: 20
   resizeSize: 0.45
   blinkEffectTime: 3
 --- !u!114 &7869374454926399833
@@ -217,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1254494c129a4534d8d84cbadb47ca87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de5405c4d76a3744ebe13635a353e437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

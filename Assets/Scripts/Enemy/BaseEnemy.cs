@@ -23,7 +23,7 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
     private void Update()
     {
-        if (transform.position.x < -9.5 || transform.position.y < -5) //just for now
+        if (transform.position.x < -13 || transform.position.y < -5) //just for now
         {
             //gameObject.SetActive(false);
             Destroy(gameObject); 

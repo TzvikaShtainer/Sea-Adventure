@@ -39,10 +39,6 @@ public class SoundManager : MonoBehaviour
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
     
-    private void OnDestroy()
-    {
-        Debug.Log(gameObject.name + " has been destroyed.");
-    }
     
 
     private void Start()
@@ -55,7 +51,7 @@ public class SoundManager : MonoBehaviour
         musicBus.setVolume(bgMusicVolume);
         sfxBus.setVolume(sfxVolume);
         
-        Debug.Log(gameObject.name + " is still alive.");
+       // Debug.Log(gameObject.name + " is still alive.");
     }
 
     private void InitBgMusic(EventReference bgMusicEventReference)

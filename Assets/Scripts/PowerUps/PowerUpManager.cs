@@ -30,19 +30,19 @@ namespace PowerUps
             {
                 _currentPowerUpTokenSource.Token.ThrowIfCancellationRequested();
                 
-                Debug.Log($"{powerUp} STARTED.");
+                //Debug.Log($"{powerUp} STARTED.");
                 await powerUp.Active(_currentPowerUpTokenSource.Token);
                 
                 _currentPowerUpTokenSource.Token.ThrowIfCancellationRequested();
             }
             catch (OperationCanceledException)
             {
-                Debug.Log($"{powerUp} was canceled.");
+                //Debug.Log($"{powerUp} was canceled.");
                 powerUp.DeActive();
             }
             finally
             {
-                Debug.Log($"{_currentPowerUp} current.");
+                //Debug.Log($"{_currentPowerUp} current.");
                 _currentPowerUp = null;
                 _currentPowerUpTokenSource.Dispose();
             }
