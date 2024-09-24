@@ -3831,7 +3831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f89cfdf30081847a1026e58252a73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 1
+  spawnTime: 0.1
   xPosToSpawn: 15
   enemyType: 1
 --- !u!1 &1847655448
@@ -4847,7 +4847,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: hitDelay
-      value: 1000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: playerSprite

@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         Color originalColor = spriteRenderer.color;
 
-        float blinkDuration = 1f;
+        float blinkDuration = hitDelay;
         float blinkInterval = 0.1f;
 
         float elapsedTime = 0f;
