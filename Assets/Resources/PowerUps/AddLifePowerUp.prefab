@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1419214689239031273, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419214689239031273, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419214689239031273, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2
@@ -74,16 +86,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Radius
-      value: 1.3302479
+      value: 1.2839955
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05550325
       objectReference: {fileID: 0}
     - target: {fileID: 7528575724506318415, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.02184848
+      value: 0.07374078
       objectReference: {fileID: 0}
     - target: {fileID: 7759059335488178934, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5162b83bea31250429d0957df33a9b24, type: 3}
+      objectReference: {fileID: 21300000, guid: 5a0f543a8b7f8a5459bbac51d80a6beb, type: 3}
     - target: {fileID: 8557174646559999975, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Name
       value: AddLifeVisuals
