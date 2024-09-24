@@ -18,9 +18,19 @@ public class SwordFishController : MonoBehaviour
 
     private void SpawnUI()
     {
-        Vector2 newUIPos = new Vector2(8.8f, swordFishVisuals.position.y);
+        // Get the screen width
+        float screenWidth = Screen.width;
         
-        swordFishUI.SetUIPosition(newUIPos);
+        float dynamicYPositionBySwordFish = swordFishVisuals.position.y;
+        
+        Vector2 screenPosition = new Vector3(screenWidth, 0);
+        Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+        
+        float anchoredXPosition = worldPosition.x;
+
+        Vector2 newPos = new Vector3(anchoredXPosition, dynamicYPositionBySwordFish);
+        
+        swordFishUI.SetUIPosition(newPos);
     }
 
     private void OnEnable()
