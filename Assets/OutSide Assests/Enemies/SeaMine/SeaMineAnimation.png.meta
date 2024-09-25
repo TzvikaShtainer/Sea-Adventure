@@ -1,0 +1,1878 @@
+fileFormatVersion: 2
+guid: 2404d0e789d229145a06c743fd6e8b15
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeaMineAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3739
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8968c7bd2e9917e4caf3e7e97e8a2a77
+      internalID: -1350382399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 3738
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1ba795d7512fa4188692d5f45a566c
+      internalID: 261084313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3740
+        width: 69
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4b1161c7c47634697cd7999b24fdb6
+      internalID: -1651024921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 3734
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc27590216eed2840854b85a941dc7e2
+      internalID: 649054075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 3755
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f0874f991fec44fa9b810dffa7caec
+      internalID: -410871729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 3753
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0afc97756fc2d4ea9e3100ba2efe82
+      internalID: -982062978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3755
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a5d0fb87491b248b97abfe3b4ab03f
+      internalID: -544300820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 3740
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad7bd29a4d8caa41b3807fb33a2d3e6
+      internalID: 884848790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 3745
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27c40d2394e9cb49a125cb578155b5a
+      internalID: -527149210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 3747
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de29b47f3ce75e343b8690d6e99d7ae1
+      internalID: -1989891677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 3244
+        width: 270
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2dbaf8d77bf74428bfc4221b3f8898
+      internalID: 1245288516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3268
+        width: 270
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6067fc79c34c138498a3f39e26c46d70
+      internalID: -830112635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 3291
+        width: 270
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8e62c1d34ea374cb2be0ba528acb1d
+      internalID: -1822023779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 3310
+        width: 270
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2c2252db990334da52a3cd10b2cce5
+      internalID: 1177230958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 3340
+        width: 270
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197b5dae17d31a9419e6b5993c03dfd1
+      internalID: 1245995786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 3362
+        width: 271
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c71b1250e188d64ea95fbf742128aa6
+      internalID: -707717742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 3377
+        width: 270
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b8f98638e4b4a4ca744294d3fc68ee
+      internalID: -1929576772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 3394
+        width: 270
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9444c55818affeb488f459ffdbcf058b
+      internalID: 147543809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 3417
+        width: 270
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b64eadb577f10c488015d61a4923ebb
+      internalID: -48924537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 3436
+        width: 270
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0db60a9dc08fcc4aa6a3891be4b9cf7
+      internalID: 1424253856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3128
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fb21bec2b76d24eb43a9f463e9b112
+      internalID: -110141524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3130
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e2ca36790edcd4c99c74c4c2949e9d
+      internalID: 2059675757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 3139
+        width: 111
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b2a72958f9b3c4882d54fc1ef73041
+      internalID: -532103657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 3143
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b6bd9a3b2417744bf9fb54dafa2a65
+      internalID: -267603142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 3160
+        width: 87
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8df0c54d3113449ad55711f1180109
+      internalID: -531417147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 3152
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c0ea78531901c468f21ddc404b0fe9
+      internalID: -1600749266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 3143
+        width: 86
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6287f1db9d07d0b48bc4a4b58d880cc7
+      internalID: 475846415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 2538
+        y: 3150
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc50c7cac40da9a41ba693935b6d1b81
+      internalID: -1497107496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_28
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 3135
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1303de7f3183a894da66e9dc5cd15507
+      internalID: -2007295430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_29
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 3143
+        width: 58
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec5fa064203ca447b62346355793c51
+      internalID: -2109161500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_30
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2446
+        width: 271
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1aed6bdb3743a4a8021573330e450c
+      internalID: -1328609419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_31
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 2457
+        width: 271
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc247368053b507439a7dae0a2961dce
+      internalID: -920426966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_32
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 2474
+        width: 270
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c59824ae898714a9f6ad02c1f4dd66
+      internalID: -1436396456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_33
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2508
+        width: 270
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573dad43899435b4f85375e314566471
+      internalID: -1798561709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_34
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2512
+        width: 270
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6588f643a253e2349bd4effe7b53873e
+      internalID: -1175876722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_35
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2534
+        width: 271
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db08417d4f9c00547beba7c2256a18d6
+      internalID: -1825794188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_36
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 2540
+        width: 270
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e13fd6cadd79d4fa36d121d5f79c7c
+      internalID: 1286718988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_37
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 2568
+        width: 271
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ca93364b5813544b9207cb6c94bc4f
+      internalID: 405620608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_38
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 2562
+        width: 270
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389c6b7786f3dd14ca50e64e16ecb55f
+      internalID: -214819198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_39
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 2585
+        width: 270
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5bcd65262f072408872954e5972f76
+      internalID: -1568064112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_40
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 2307
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a838dd252352e7448ac09efe7541ce7f
+      internalID: 1252937903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_41
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2332
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f8c627b9d6a4e4d8c59a6496f3fb38
+      internalID: 1630246350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_42
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 2313
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc84c9c6c8407042a5ebda0c3644320
+      internalID: -298978486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_43
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 2285
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defbe6729be78e14f82e20118a22d3de
+      internalID: 2088512987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_44
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 2275
+        width: 96
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8accbec74465b7458342faec3198498
+      internalID: -1182604607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_45
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2258
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bddbc7bdd7b6f14dab1a72e3126ab56
+      internalID: -1026134033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_46
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 2273
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0de0ba75ab8aa846a75a6f4d41c6b1b
+      internalID: 952884345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_47
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 2287
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78cd3022ff1c1b46a00e7b29356f175
+      internalID: 930307990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_48
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 2294
+        width: 103
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982400b0449d6ab418aac5370560b508
+      internalID: -1752397284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_49
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 2313
+        width: 85
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86640c26bbdd6d42860f398957dc068
+      internalID: -884106620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_50
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1469
+        width: 270
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd033cd6d94cd34190cfe04c50d78c5
+      internalID: -1232418275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_51
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1490
+        width: 270
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c72c69e92b83a74694b6a90e1c86675
+      internalID: -882079593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_52
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1496
+        width: 271
+        height: 777
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d1fd788742a274da1f86b10217d548
+      internalID: -1076588363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_53
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1494
+        width: 270
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1fd7c094ded5845acb317ae3418adb
+      internalID: -1646752415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_54
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1490
+        width: 270
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f756613e85d27114c90edadf025856cb
+      internalID: 586037175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_55
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 1501
+        width: 270
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffb13b4ac6fecb42881d7724d879488
+      internalID: 764353998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_56
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 1535
+        width: 270
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4048c9288bb48c449929bfaa01707d4f
+      internalID: -619248303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_57
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 1548
+        width: 270
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e25f33ec836e040b70d19f8d13e93c
+      internalID: -1860947113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_58
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 1577
+        width: 270
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecec68d85639db24187068abd34fe454
+      internalID: 672591171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_59
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1242
+        width: 122
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e99868224f694b88717ce53303294
+      internalID: 252614607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_60
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1250
+        width: 129
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8cceb6081218547ad2c44d25469b01
+      internalID: 1526416701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_61
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1248
+        width: 159
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca86af0b5a0898944a93fd62800b42e4
+      internalID: 1555192677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_62
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1261
+        width: 145
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb7f4f76f2b96940b4aa687cc5b6b35
+      internalID: 274562886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_63
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 1269
+        width: 154
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c7dbe828ad9ec4287d3a3e3efa8713
+      internalID: -32776444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_64
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 1250
+        width: 161
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5725c79b84c0a9b4bb114f85a0aae1be
+      internalID: -1629948852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_65
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1225
+        width: 139
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2fdcc243dbc8244807827c305f2e99
+      internalID: 164785323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_66
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 1229
+        width: 153
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968c3f7ce3a412d49bbb587d28ab82b8
+      internalID: -1182888868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_67
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 1239
+        width: 137
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b96afac1f823a418a37e6812c2296c
+      internalID: -869086631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_68
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 1257
+        width: 127
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fcec94cd8aeac47899dc9f04c5e910
+      internalID: -1028463258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_69
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 184
+        width: 270
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6d04e6d9d6384439eb2bfb51797de3
+      internalID: -675693271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_70
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 202
+        width: 270
+        height: 996
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb487e6918ea3904ab7fc21575969517
+      internalID: 1679404923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_71
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 223
+        width: 271
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af95439b481132e45a8454e3af363f2c
+      internalID: 208525861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_72
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 243
+        width: 270
+        height: 956
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fefb615ec1e4ad4287a8973a0e54e41
+      internalID: 1685103491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_73
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 264
+        width: 271
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a28c200a3bc254fb387b0164527ba0
+      internalID: -301767357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_74
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 279
+        width: 271
+        height: 916
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7394ef366a16e48923bf77a28b0f5c
+      internalID: 134827828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_75
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 290
+        width: 270
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f64043d42b766240bde9c1c2caba74a
+      internalID: 1686496754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_76
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 300
+        width: 271
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b49f25747f91d4981de784a29919a9
+      internalID: 1946491538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_77
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 320
+        width: 270
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886f5e89190055a40b1abd91581f5adf
+      internalID: 786461460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaMineAnimation_78
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 337
+        width: 270
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3250d1a5f35875f489938cc39a69c1c8
+      internalID: -1636480727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SeaMineAnimation_0: -1350382399
+      SeaMineAnimation_1: 261084313
+      SeaMineAnimation_10: 1245288516
+      SeaMineAnimation_11: -830112635
+      SeaMineAnimation_12: -1822023779
+      SeaMineAnimation_13: 1177230958
+      SeaMineAnimation_14: 1245995786
+      SeaMineAnimation_15: -707717742
+      SeaMineAnimation_16: -1929576772
+      SeaMineAnimation_17: 147543809
+      SeaMineAnimation_18: -48924537
+      SeaMineAnimation_19: 1424253856
+      SeaMineAnimation_2: -1651024921
+      SeaMineAnimation_20: -110141524
+      SeaMineAnimation_21: 2059675757
+      SeaMineAnimation_22: -532103657
+      SeaMineAnimation_23: -267603142
+      SeaMineAnimation_24: -531417147
+      SeaMineAnimation_25: -1600749266
+      SeaMineAnimation_26: 475846415
+      SeaMineAnimation_27: -1497107496
+      SeaMineAnimation_28: -2007295430
+      SeaMineAnimation_29: -2109161500
+      SeaMineAnimation_3: 649054075
+      SeaMineAnimation_30: -1328609419
+      SeaMineAnimation_31: -920426966
+      SeaMineAnimation_32: -1436396456
+      SeaMineAnimation_33: -1798561709
+      SeaMineAnimation_34: -1175876722
+      SeaMineAnimation_35: -1825794188
+      SeaMineAnimation_36: 1286718988
+      SeaMineAnimation_37: 405620608
+      SeaMineAnimation_38: -214819198
+      SeaMineAnimation_39: -1568064112
+      SeaMineAnimation_4: -410871729
+      SeaMineAnimation_40: 1252937903
+      SeaMineAnimation_41: 1630246350
+      SeaMineAnimation_42: -298978486
+      SeaMineAnimation_43: 2088512987
+      SeaMineAnimation_44: -1182604607
+      SeaMineAnimation_45: -1026134033
+      SeaMineAnimation_46: 952884345
+      SeaMineAnimation_47: 930307990
+      SeaMineAnimation_48: -1752397284
+      SeaMineAnimation_49: -884106620
+      SeaMineAnimation_5: -982062978
+      SeaMineAnimation_50: -1232418275
+      SeaMineAnimation_51: -882079593
+      SeaMineAnimation_52: -1076588363
+      SeaMineAnimation_53: -1646752415
+      SeaMineAnimation_54: 586037175
+      SeaMineAnimation_55: 764353998
+      SeaMineAnimation_56: -619248303
+      SeaMineAnimation_57: -1860947113
+      SeaMineAnimation_58: 672591171
+      SeaMineAnimation_59: 252614607
+      SeaMineAnimation_6: -544300820
+      SeaMineAnimation_60: 1526416701
+      SeaMineAnimation_61: 1555192677
+      SeaMineAnimation_62: 274562886
+      SeaMineAnimation_63: -32776444
+      SeaMineAnimation_64: -1629948852
+      SeaMineAnimation_65: 164785323
+      SeaMineAnimation_66: -1182888868
+      SeaMineAnimation_67: -869086631
+      SeaMineAnimation_68: -1028463258
+      SeaMineAnimation_69: -675693271
+      SeaMineAnimation_7: 884848790
+      SeaMineAnimation_70: 1679404923
+      SeaMineAnimation_71: 208525861
+      SeaMineAnimation_72: 1685103491
+      SeaMineAnimation_73: -301767357
+      SeaMineAnimation_74: 134827828
+      SeaMineAnimation_75: 1686496754
+      SeaMineAnimation_76: 1946491538
+      SeaMineAnimation_77: 786461460
+      SeaMineAnimation_78: -1636480727
+      SeaMineAnimation_8: -527149210
+      SeaMineAnimation_9: -1989891677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

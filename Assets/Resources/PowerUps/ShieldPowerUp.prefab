@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1419214689239031273, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419214689239031273, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5534976107025963963, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2
@@ -76,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.037755072
       objectReference: {fileID: 0}
+    - target: {fileID: 7759059335488178934, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1048162426ae7824791b4c445033c826, type: 3}
     - target: {fileID: 8557174646559999975, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Name
       value: ShieldPowerUpVisuals
