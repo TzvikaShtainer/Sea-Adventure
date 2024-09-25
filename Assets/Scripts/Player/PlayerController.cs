@@ -9,21 +9,25 @@ using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
+    [Header("Player")]
+    [SerializeField] Transform playerTransform;
+    [SerializeField] float originalTransform = 0.25f;
+    [SerializeField] private Renderer playerSprite;
     
+    [Header("Health")]
     [SerializeField]private PlayerHealthSystem playerHealth;
     [SerializeField] private bool isDamaged;
     [SerializeField] private int hitDelay;
     
+    [Header("PowerUps")]
     [SerializeField] private PowerUpManager powerUpManager;
     [SerializeField] private bool isTookPowerUp;
-    
-    [SerializeField] Transform playerTransform;
-
     [SerializeField] private GameObject shieldSprite;
     [SerializeField] private bool hasShield;
     
-    [SerializeField] float originalTransform = 0.25f;
-    [SerializeField] private Renderer playerSprite;
+    [Header("Money")]
+    [SerializeField] private MoneyManager moneyManager;
+    
     
     private void Awake()
     {
@@ -129,7 +133,8 @@ public class PlayerController : MonoBehaviour
     
     private void HandleCoins(Collider2D other)
     {
-        Debug.Log(other.name);
+        MoneyManager.instance.ChangeMoneyAmount(1);
+        other.gameObject.SetActive(false); //for now need to handle this in the coins?
     }
 
     public void SetPlayerSize(float newSize)

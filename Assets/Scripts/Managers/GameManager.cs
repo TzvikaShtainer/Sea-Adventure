@@ -69,6 +69,8 @@ public class GameManager : MonoBehaviour
         SaveMaxDistanceTraveled();
 
         onMaxDistanceChanged?.Invoke(maxDistanceTraveled);
+        
+        //MoneyManager.instance.SaveMoneyAmount();
     }
 
     private void SaveMaxDistanceTraveled()
