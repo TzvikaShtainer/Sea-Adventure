@@ -29,6 +29,21 @@ public class MoneyManager : MonoBehaviour
     {
         SetMoney(moneyAmountSO.moneyAmount);
     }
+    
+    private void OnEnable()
+    {
+        PlayerHealthSystem.onDeath += PlayerHealthSystem_OnDeath;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealthSystem.onDeath -= PlayerHealthSystem_OnDeath;
+    }
+    
+    private void PlayerHealthSystem_OnDeath()
+    {
+        SaveMoneyAmount(currMoneyAmount);
+    }
 
     private void SetMoney(int newMoneyAmount)
     {
