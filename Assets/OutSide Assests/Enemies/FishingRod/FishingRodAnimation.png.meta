@@ -126,19 +126,19 @@ TextureImporter:
       name: FishingRodAnimation_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 630
+        x: 86
+        y: 993
         width: 278
         height: 862
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c465119fef0962c46aac4aff0c71eb10
-      internalID: -1738383444
+      spriteID: f5086c6e897a55c4bbd7300c419d53f6
+      internalID: -274717712
       vertices: []
       indices: 
       edges: []
@@ -147,19 +147,19 @@ TextureImporter:
       name: FishingRodAnimation_1
       rect:
         serializedVersion: 2
-        x: 457
-        y: 574
-        width: 280
-        height: 913
+        x: 454
+        y: 945
+        width: 278
+        height: 912
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a626ab0e69da2419eb261f74de9b0a
-      internalID: 1100484355
+      spriteID: 3edca671d01daf6419514e6c58fe3f49
+      internalID: 1084762354
       vertices: []
       indices: 
       edges: []
@@ -169,18 +169,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 794
-        y: 541
+        y: 891
         width: 281
         height: 966
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f37be14b59c39ed459ab582a86c5904b
-      internalID: 1553199831
+      spriteID: 786dfd5331f123241b12a54327355ad9
+      internalID: 853991351
       vertices: []
       indices: 
       edges: []
@@ -189,19 +189,19 @@ TextureImporter:
       name: FishingRodAnimation_3
       rect:
         serializedVersion: 2
-        x: 1118
-        y: 531
-        width: 281
-        height: 1017
+        x: 1111
+        y: 837
+        width: 280
+        height: 1018
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 799f85b36ac03cc43abd2fc578392b36
-      internalID: -2065944059
+      spriteID: cc447cc1fea95c14ca79958436e30544
+      internalID: 742868252
       vertices: []
       indices: 
       edges: []
@@ -210,19 +210,19 @@ TextureImporter:
       name: FishingRodAnimation_4
       rect:
         serializedVersion: 2
-        x: 1435
-        y: 483
-        width: 279
+        x: 1420
+        y: 784
+        width: 281
         height: 1073
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a439e9f5bb2ae174db7e3fba8421b0f7
-      internalID: 1177435248
+      spriteID: 60cc06c99f42fb74f9f7afa2c2d774a4
+      internalID: -628109208
       vertices: []
       indices: 
       edges: []
@@ -231,19 +231,19 @@ TextureImporter:
       name: FishingRodAnimation_5
       rect:
         serializedVersion: 2
-        x: 1737
-        y: 469
-        width: 278
-        height: 1122
+        x: 1717
+        y: 733
+        width: 280
+        height: 1124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c3cd0758684a9741b2ba8ce1781bd1b
-      internalID: 1872451092
+      spriteID: 9db68af10878ba94688aafc5fe8c8061
+      internalID: 338080244
       vertices: []
       indices: 
       edges: []
@@ -252,19 +252,19 @@ TextureImporter:
       name: FishingRodAnimation_6
       rect:
         serializedVersion: 2
-        x: 2025
-        y: 459
-        width: 280
+        x: 2013
+        y: 679
+        width: 281
         height: 1178
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba3748de74f99f4c9cb51cc3a2411df
-      internalID: 1622871715
+      spriteID: 51295da3996fd9f4b9bbd949a10d9839
+      internalID: 2113515469
       vertices: []
       indices: 
       edges: []
@@ -274,18 +274,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2324
-        y: 441
-        width: 279
-        height: 1227
+        y: 628
+        width: 280
+        height: 1229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 600909a46c4feff49ba59d3f846aa254
-      internalID: 1461120213
+      spriteID: f7927ac10326c5a4bb1399584c5dc0c5
+      internalID: -853175064
       vertices: []
       indices: 
       edges: []
@@ -294,19 +294,19 @@ TextureImporter:
       name: FishingRodAnimation_8
       rect:
         serializedVersion: 2
-        x: 2624
-        y: 416
+        x: 2619
+        y: 575
         width: 280
-        height: 1283
+        height: 1282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72352f1affa6a4f4d8c2e3ffb3a965c5
-      internalID: -315069602
+      spriteID: e3e519b6f32e4bf4e8cf5d8c380e1112
+      internalID: 765903564
       vertices: []
       indices: 
       edges: []
@@ -315,19 +315,19 @@ TextureImporter:
       name: FishingRodAnimation_9
       rect:
         serializedVersion: 2
-        x: 2940
-        y: 377
+        x: 2945
+        y: 524
         width: 279
-        height: 1332
+        height: 1333
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34989f949fc7aaf428a3b97e704cea24
-      internalID: 1979264563
+      spriteID: 9fc96df6ba138274c851982f22a5f5bf
+      internalID: -1718335408
       vertices: []
       indices: 
       edges: []
@@ -336,19 +336,19 @@ TextureImporter:
       name: FishingRodAnimation_10
       rect:
         serializedVersion: 2
-        x: 3250
-        y: 334
-        width: 281
+        x: 3255
+        y: 472
+        width: 278
         height: 1385
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd510ff74d3441c42bf35ae40cdef75f
-      internalID: 1045788057
+      spriteID: e9379bb9760af4a4d997398090fdcaf1
+      internalID: 964901945
       vertices: []
       indices: 
       edges: []
@@ -357,19 +357,19 @@ TextureImporter:
       name: FishingRodAnimation_11
       rect:
         serializedVersion: 2
-        x: 3577
-        y: 308
-        width: 278
-        height: 1439
+        x: 3579
+        y: 421
+        width: 279
+        height: 1436
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb4e711c82c30e45bc0bffcf01f5771
-      internalID: 13982268
+      spriteID: bd88efa916f89a442941a2cd2a9a3b27
+      internalID: 1907568966
       vertices: []
       indices: 
       edges: []
@@ -378,19 +378,19 @@ TextureImporter:
       name: FishingRodAnimation_12
       rect:
         serializedVersion: 2
-        x: 3886
-        y: 290
-        width: 278
-        height: 1493
+        x: 3883
+        y: 365
+        width: 279
+        height: 1492
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c7d1eb23bd7e3a4ab3905c46b0ef8b6
-      internalID: 1677703061
+      spriteID: f128ed8c080630c479be57f183192ca3
+      internalID: 1896528856
       vertices: []
       indices: 
       edges: []
@@ -399,19 +399,19 @@ TextureImporter:
       name: FishingRodAnimation_13
       rect:
         serializedVersion: 2
-        x: 4198
-        y: 252
-        width: 281
-        height: 1541
+        x: 4195
+        y: 313
+        width: 279
+        height: 1544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e6d512240c07648a6bda949c9a6018
-      internalID: 1574000200
+      spriteID: 7c7e74dd9c88367418929c7e602c80b3
+      internalID: 650101289
       vertices: []
       indices: 
       edges: []
@@ -421,18 +421,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4507
-        y: 224
+        y: 262
         width: 278
         height: 1595
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f63737255b9164944b9da3636db9077f
-      internalID: 1214501876
+      spriteID: 280ed7854c8ee1b44acf5d928852d9d8
+      internalID: -1528466318
       vertices: []
       indices: 
       edges: []
@@ -441,19 +441,19 @@ TextureImporter:
       name: FishingRodAnimation_15
       rect:
         serializedVersion: 2
-        x: 4812
-        y: 204
-        width: 280
+        x: 4813
+        y: 206
+        width: 279
         height: 1651
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da761d36604fcdc44844f659c9a71e81
-      internalID: 1147150663
+      spriteID: ea4c8ae58a39a094491ca6773ac080f6
+      internalID: -633896983
       vertices: []
       indices: 
       edges: []
@@ -467,14 +467,14 @@ TextureImporter:
         width: 18
         height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bf7cf1d418efa2489272fe0b0771492
-      internalID: -2036477245
+      spriteID: 6d158063cd8d74e438ed69e07c6a5724
+      internalID: 470782082
       vertices: []
       indices: 
       edges: []
@@ -488,14 +488,14 @@ TextureImporter:
         width: 46
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8868da0904bd5694d8a087015c16788f
-      internalID: -66462460
+      spriteID: 9b844481f2d8b344bb7e7e52341a8efa
+      internalID: 2046297190
       vertices: []
       indices: 
       edges: []
@@ -509,14 +509,14 @@ TextureImporter:
         width: 20
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e8fba87af470df4487f46eb1ab41043
-      internalID: -654024449
+      spriteID: e9ec2c966bcee9f45aa9a3be105fbc8e
+      internalID: -1748388400
       vertices: []
       indices: 
       edges: []
@@ -530,14 +530,14 @@ TextureImporter:
         width: 53
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b910635a4d9c36940977809e5d11d992
-      internalID: -701866554
+      spriteID: 155702bf5da2590409c7a12cd3f9cfec
+      internalID: 1122957029
       vertices: []
       indices: 
       edges: []
@@ -551,14 +551,14 @@ TextureImporter:
         width: 23
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44b8aae44c9ccd4dbdf4a8b90766b6c
-      internalID: 1062537987
+      spriteID: 6dafaf1e2205bda4d9fbbad1c0a5f5eb
+      internalID: -1910999151
       vertices: []
       indices: 
       edges: []
@@ -572,14 +572,14 @@ TextureImporter:
         width: 40
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8315f44f276695e43be262bbfcb706f0
-      internalID: 1749197714
+      spriteID: f8b9f4a29e3a4f34eb4cfe461572d338
+      internalID: 1097066173
       vertices: []
       indices: 
       edges: []
@@ -593,14 +593,14 @@ TextureImporter:
         width: 21
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaed0991a90db6b4e88561ec36ab3f4f
-      internalID: 1261750601
+      spriteID: 74d3e0093ad10034fbbb6a3f775ba50b
+      internalID: 1189912396
       vertices: []
       indices: 
       edges: []
@@ -614,14 +614,14 @@ TextureImporter:
         width: 56
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5392648505da4741a136fd0cc90dee5
-      internalID: 1235590120
+      spriteID: 7752333d46ee1e541b59593b106893e7
+      internalID: -659462677
       vertices: []
       indices: 
       edges: []
@@ -635,14 +635,14 @@ TextureImporter:
         width: 19
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222056ab51e29cc4e87f50819b3c2b70
-      internalID: -935893968
+      spriteID: 597d1ba9c7379714cb105d57808b7950
+      internalID: 1736522681
       vertices: []
       indices: 
       edges: []
@@ -656,14 +656,14 @@ TextureImporter:
         width: 54
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0061daed88aac154785c7ccc059e6c55
-      internalID: 1899375219
+      spriteID: 20213329ae939cd46b94a1e9d443e8b6
+      internalID: -1557579645
       vertices: []
       indices: 
       edges: []
@@ -677,14 +677,14 @@ TextureImporter:
         width: 14
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a0b6c1cf1785d4087bab7bad0db88b
-      internalID: 393515063
+      spriteID: 15bc4ccc627efe3469513e59535769e4
+      internalID: 1066850016
       vertices: []
       indices: 
       edges: []
@@ -698,14 +698,14 @@ TextureImporter:
         width: 16
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce6ef8142b4ca744b9375ecb75159d23
-      internalID: -899493794
+      spriteID: 54828b047409a3f43a933d259365e7e8
+      internalID: 453530096
       vertices: []
       indices: 
       edges: []
@@ -719,14 +719,14 @@ TextureImporter:
         width: 23
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a63d9038d53c4584b83e21b5666d67cd
-      internalID: -1379508546
+      spriteID: 5cfcd4e257cefdd43b79e1b876af48b4
+      internalID: 1711445004
       vertices: []
       indices: 
       edges: []
@@ -740,14 +740,14 @@ TextureImporter:
         width: 37
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efdb689556b6e64a8bd8e2995ef7d03
-      internalID: -240265997
+      spriteID: 30deff7a2258cff4f9a589fe3ecbe681
+      internalID: -287741787
       vertices: []
       indices: 
       edges: []
@@ -761,14 +761,14 @@ TextureImporter:
         width: 38
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54408248b64cb3f4bbbaede58e4328be
-      internalID: 755018861
+      spriteID: 58cdc2cab9c782140ae6115fd70ad901
+      internalID: -1243043209
       vertices: []
       indices: 
       edges: []
@@ -782,14 +782,14 @@ TextureImporter:
         width: 38
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 946649075373c724c9562d51bee1fe65
-      internalID: 1531405319
+      spriteID: 61588d54217f0b446be1a96822ce0d4c
+      internalID: -1851210496
       vertices: []
       indices: 
       edges: []
@@ -803,14 +803,14 @@ TextureImporter:
         width: 53
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21f3907280a1d0943b7c7fd0daa95e7f
-      internalID: 714064408
+      spriteID: 8accb52b90eb4c1499b6cd32af3df0b6
+      internalID: -1333176962
       vertices: []
       indices: 
       edges: []
@@ -824,14 +824,14 @@ TextureImporter:
         width: 46
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5bca5fc69bee1498a06db707619d7e
-      internalID: 1694540422
+      spriteID: c67f3fdd70b188c4687e6219c8b1a9ff
+      internalID: -1574377495
       vertices: []
       indices: 
       edges: []
@@ -845,14 +845,14 @@ TextureImporter:
         width: 54
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d964b439c66aad6408c0aa7a30ab1b5f
-      internalID: 521928542
+      spriteID: fd905f8600a94b842b283f6e1fa2e23a
+      internalID: 1029728688
       vertices: []
       indices: 
       edges: []
@@ -866,14 +866,14 @@ TextureImporter:
         width: 36
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd1b4e22174ea84b87adf693d8ed379
-      internalID: 1003031050
+      spriteID: 9b750a82b9a400048972b826587ea7c0
+      internalID: -1579035293
       vertices: []
       indices: 
       edges: []
@@ -887,14 +887,14 @@ TextureImporter:
         width: 53
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d159b902fa046464d888f1dcfa80dfd4
-      internalID: -1946473064
+      spriteID: f39f5a1fab9daac4bb7e67b5eabc79a5
+      internalID: -1084221352
       vertices: []
       indices: 
       edges: []
@@ -908,14 +908,14 @@ TextureImporter:
         width: 55
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee29eea1377706d49abd174580d85816
-      internalID: -2105688480
+      spriteID: ce2ea1b0e5dd1c746942edd804aaafad
+      internalID: 1594234364
       vertices: []
       indices: 
       edges: []
@@ -929,14 +929,77 @@ TextureImporter:
         width: 33
         height: 59
       alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd932a8111168546bb48e0491407b52
+      internalID: 1281051778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishingRodAnimation_39
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 999
+        width: 273
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db4bb92ce596af4f8fb52fd5146ea14
+      internalID: 1076369778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishingRodAnimation_40
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 948
+        width: 278
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc1d35ced5be540bcbd6532a860fc2
+      internalID: -845212045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishingRodAnimation_41
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 898
+        width: 305
+        height: 317
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc01fd20bc703841aaf4edac111cf4a
-      internalID: -893615386
+      spriteID: 823b9ade5a49ebe438e2c74ca8e8bd52
+      internalID: -1370830136
       vertices: []
       indices: 
       edges: []
@@ -952,45 +1015,48 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FishingRodAnimation_0: -1738383444
-      FishingRodAnimation_1: 1100484355
-      FishingRodAnimation_10: 1045788057
-      FishingRodAnimation_11: 13982268
-      FishingRodAnimation_12: 1677703061
-      FishingRodAnimation_13: 1574000200
-      FishingRodAnimation_14: 1214501876
-      FishingRodAnimation_15: 1147150663
-      FishingRodAnimation_16: -2036477245
-      FishingRodAnimation_17: -66462460
-      FishingRodAnimation_18: -654024449
-      FishingRodAnimation_19: -701866554
-      FishingRodAnimation_2: 1553199831
-      FishingRodAnimation_20: 1062537987
-      FishingRodAnimation_21: 1749197714
-      FishingRodAnimation_22: 1261750601
-      FishingRodAnimation_23: 1235590120
-      FishingRodAnimation_24: -935893968
-      FishingRodAnimation_25: 1899375219
-      FishingRodAnimation_26: 393515063
-      FishingRodAnimation_27: -899493794
-      FishingRodAnimation_28: -1379508546
-      FishingRodAnimation_29: -240265997
-      FishingRodAnimation_3: -2065944059
-      FishingRodAnimation_30: 755018861
-      FishingRodAnimation_31: 1531405319
-      FishingRodAnimation_32: 714064408
-      FishingRodAnimation_33: 1694540422
-      FishingRodAnimation_34: 521928542
-      FishingRodAnimation_35: 1003031050
-      FishingRodAnimation_36: -1946473064
-      FishingRodAnimation_37: -2105688480
-      FishingRodAnimation_38: -893615386
-      FishingRodAnimation_4: 1177435248
-      FishingRodAnimation_5: 1872451092
-      FishingRodAnimation_6: 1622871715
-      FishingRodAnimation_7: 1461120213
-      FishingRodAnimation_8: -315069602
-      FishingRodAnimation_9: 1979264563
+      FishingRodAnimation_0: -274717712
+      FishingRodAnimation_1: 1084762354
+      FishingRodAnimation_10: 964901945
+      FishingRodAnimation_11: 1907568966
+      FishingRodAnimation_12: 1896528856
+      FishingRodAnimation_13: 650101289
+      FishingRodAnimation_14: -1528466318
+      FishingRodAnimation_15: -633896983
+      FishingRodAnimation_16: 470782082
+      FishingRodAnimation_17: 2046297190
+      FishingRodAnimation_18: -1748388400
+      FishingRodAnimation_19: 1122957029
+      FishingRodAnimation_2: 853991351
+      FishingRodAnimation_20: -1910999151
+      FishingRodAnimation_21: 1097066173
+      FishingRodAnimation_22: 1189912396
+      FishingRodAnimation_23: -659462677
+      FishingRodAnimation_24: 1736522681
+      FishingRodAnimation_25: -1557579645
+      FishingRodAnimation_26: 1066850016
+      FishingRodAnimation_27: 453530096
+      FishingRodAnimation_28: 1711445004
+      FishingRodAnimation_29: -287741787
+      FishingRodAnimation_3: 742868252
+      FishingRodAnimation_30: -1243043209
+      FishingRodAnimation_31: -1851210496
+      FishingRodAnimation_32: -1333176962
+      FishingRodAnimation_33: -1574377495
+      FishingRodAnimation_34: 1029728688
+      FishingRodAnimation_35: -1579035293
+      FishingRodAnimation_36: -1084221352
+      FishingRodAnimation_37: 1594234364
+      FishingRodAnimation_38: 1281051778
+      FishingRodAnimation_39: 1076369778
+      FishingRodAnimation_4: -628109208
+      FishingRodAnimation_40: -845212045
+      FishingRodAnimation_41: -1370830136
+      FishingRodAnimation_5: 338080244
+      FishingRodAnimation_6: 2113515469
+      FishingRodAnimation_7: -853175064
+      FishingRodAnimation_8: 765903564
+      FishingRodAnimation_9: -1718335408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
