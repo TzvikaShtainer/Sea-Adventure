@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -552437034, guid: 66bccbc0e69106d4ea4846670e3ab4ad, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 2.69, y: 2.5208468}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2326160459903231094
@@ -120,15 +120,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Size.y
-      value: 3.8830187
+      value: 7.7193003
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Offset.x
-      value: -0.003951106
+      value: -0.0039511025
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_Offset.y
-      value: -0.5132507
+      value: 1.4048901
       objectReference: {fileID: 0}
     - target: {fileID: 2234444358957976452, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -212,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: -3.99
       objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -306,7 +306,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.4990695}
+  m_Offset: {x: 0, y: 6.49}
   serializedVersion: 2
   m_Radius: 1.0467427
 --- !u!114 &3027178738372014441
