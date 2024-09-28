@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 7656805468879268302}
   leftSpeed: 3
-  accelerationRate: 10
+  itemType: 0
 --- !u!114 &7608934883083211605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,8 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
-  minYPosToSpawn: 0
-  maxYPosToSpawn: 0
   enemyAnimationController: {fileID: 0}
   moveToPlayer: {fileID: 9216845724294343926}
 --- !u!1 &6378077860974569157

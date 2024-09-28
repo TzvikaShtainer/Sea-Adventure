@@ -40,4 +40,14 @@ public class MoveToPlayer : MonoBehaviour
         enemyRigidBody.velocity = new Vector2(0, 0);
         enemyRigidBody.gravityScale = 2f;
     }
+
+    public void SetLeftSpeed(float newSpeed)
+    {
+        leftSpeed = newSpeed;
+    }
+
+    public ItemType GetItemType()
+    {
+        return itemType;
+    }
 }

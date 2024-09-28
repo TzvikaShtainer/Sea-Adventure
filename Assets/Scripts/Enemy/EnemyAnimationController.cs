@@ -7,6 +7,7 @@ namespace Enemy
     {
         [SerializeField] private Animator animator;
         private const string IS_Electrified = "IsElectrified";
+        private const string IS_Attacking = "IsAttacking";
 
         private void Start()
         {
@@ -21,6 +22,16 @@ namespace Enemy
         public void PlayElectrifiedAnimation()
         {
             animator.SetBool(IS_Electrified, true);
+        }
+        
+        public void PlayIdleAnimation()
+        {
+            animator.SetBool(IS_Attacking, false);
+        }
+        
+        public void PlayAttackAnimation()
+        {
+            animator.SetBool(IS_Attacking, true);
         }
     }
 }

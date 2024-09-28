@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using BuilderPatterns;
 using PowerUps;
 using UnityEngine;
 using UnityEngine.Events;
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
             if (hasShield)
             {
                 BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+                Debug.Log(enemy);
                 enemy.Electrified();
             }
             else
@@ -126,7 +128,7 @@ public class PlayerController : MonoBehaviour
         {
             powerUpManager.ActivatePowerUp(takeable);
             
-            takeable.gameObject.SetActive(false); //for now need to handle this in the power up
+            PoolManager.Instance.ReturnItemToPool(takeable.GetComponent<Spawner>().GetItemType(), other.GetComponent<Item>());
         }
         
     }
@@ -134,7 +136,8 @@ public class PlayerController : MonoBehaviour
     private void HandleCoins(Collider2D other)
     {
         MoneyManager.instance.ChangeMoneyAmount(1);
-        other.gameObject.SetActive(false); //for now need to handle this in the coins?
+        
+        PoolManager.Instance.ReturnItemToPool(ItemType.Coin, other.GetComponent<Item>());
     }
 
     public void SetPlayerSize(float newSize)

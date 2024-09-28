@@ -41,4 +41,9 @@ public class Spawner : MonoBehaviour
         
         item.Spawn(spawnPosition);
     }
+
+    public ItemType GetItemType()
+    {
+        return itemType;
+    }
 }

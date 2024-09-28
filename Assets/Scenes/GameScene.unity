@@ -123,6 +123,120 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14779714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14779715}
+  - component: {fileID: 14779717}
+  - component: {fileID: 14779716}
+  m_Layer: 0
+  m_Name: PufferFish_EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14779715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14779714}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 955349435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14779716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14779714}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dba4cdb9250da14492fb7504e07e131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 0.5
+  xPosToSpawn: 8
+  itemType: 4
+--- !u!114 &14779717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14779714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dba4cdb9250da14492fb7504e07e131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 10
+  xPosToSpawn: 9
+  itemType: 4
+--- !u!21 &75285903
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprite-Lit-Default (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &88437867
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +1047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 12
   xPosToSpawn: 12
-  itemType: 4
+  itemType: 5
 --- !u!1 &690738126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5135821624757452242, guid: 3c41ae934e4f24a43837aae2a04c6ecf, type: 3}
@@ -999,6 +1113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738074130}
   - component: {fileID: 738074131}
+  - component: {fileID: 738074132}
   m_Layer: 0
   m_Name: CoinSpawner
   m_TagString: Untagged
@@ -1035,7 +1150,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 2
   xPosToSpawn: 10
-  itemType: 8
+  itemType: 9
+--- !u!114 &738074132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738074129}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dba4cdb9250da14492fb7504e07e131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 0.5
+  xPosToSpawn: -1
+  itemType: 9
 --- !u!1 &752759399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1319,7 @@ Transform:
   - {fileID: 1706325808}
   - {fileID: 477763868}
   - {fileID: 1941685172}
+  - {fileID: 14779715}
   m_Father: {fileID: 1758323679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966387121
@@ -1327,56 +1458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966387121}
   m_CullTransparentMesh: 1
---- !u!21 &1082079215
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite-Lit-Default (Instance) (Instance) (Instance) (Instance) (Instance)
-    (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
-    (Instance)
-  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.5}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1148513238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 10
   xPosToSpawn: 12
-  itemType: 5
+  itemType: 6
 --- !u!1 &1316078358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,6 +1863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316078359}
   - component: {fileID: 1316078360}
+  - component: {fileID: 1316078361}
   m_Layer: 0
   m_Name: ShieldSpawner
   m_TagString: Untagged
@@ -1818,7 +1900,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 25
   xPosToSpawn: 12
-  itemType: 7
+  itemType: 8
+--- !u!114 &1316078361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316078358}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dba4cdb9250da14492fb7504e07e131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 0.5
+  xPosToSpawn: -1
+  itemType: 8
 --- !u!1 &1516993055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,7 +2145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 22
   xPosToSpawn: 12
-  itemType: 6
+  itemType: 7
 --- !u!1 &1579398809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,7 +2434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758323678}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3395,7 +3492,7 @@ PrefabInstance:
     - target: {fileID: 645853982591365288, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1082079215}
+      objectReference: {fileID: 75285903}
     - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Name
       value: Player

@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 04d3dc9a3fed96948a861b8d75392084
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1218
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a53b94ce1e587b49a9db8d90e468c2e
+      internalID: -907374862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1225
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a02a85ac868d824996956ab1608fbc9
+      internalID: -804198900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1224
+        width: 80
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a6f865ad664d41b8c022cf4c82db7
+      internalID: -150073319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1232
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0efab2778e5a2c4bbbfb8e6db70635a
+      internalID: -1735454551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 1223
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2ac29a206dd7d4aa8172759cda1351
+      internalID: 684525991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 940
+        width: 362
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b588261c293184448c58599e3fefe4a
+      internalID: 2061608039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 948
+        width: 361
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fb69674007efc44a7c37d8d373e1ad
+      internalID: -93700184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 942
+        width: 364
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26bd4cc949f9e9428ea875d5d6eb792
+      internalID: 1923312648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 954
+        width: 368
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a355a0a2d17a8a747a8d518aa8f1c743
+      internalID: 1532326590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 953
+        width: 369
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11884248d41c5054a8cac940609d905f
+      internalID: -106816620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 782
+        width: 89
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1506b20e50bd348a51f1c70d065c33
+      internalID: -1239514860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 779
+        width: 79
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbddb90e6dfaf72468d30eadcb53762e
+      internalID: 1358439239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 773
+        width: 83
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82df90d5e43e4c64f93fc35d715ee240
+      internalID: 83035210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 791
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a7864a22a46fe43b78138dbdcfcf21
+      internalID: 57106205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 791
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd5b24ffe9cd5342bcae39998bf3375
+      internalID: 982349442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 508
+        width: 365
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aac9f245e0769e44875e98c231d1902
+      internalID: 297796119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 509
+        width: 369
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dde508088dbd74494863d0a01e40e2
+      internalID: 1678758696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 516
+        width: 370
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378781eb76f4d434c9251f2c6f8ec5b9
+      internalID: 937237002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 531
+        width: 364
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c29799feb36f2d468418720c35c69e9
+      internalID: -361082020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 535
+        width: 361
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581dcac3b43cabb4e9fd1c220090440b
+      internalID: 288840300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 328
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e54df496d3a6644832adc05fc308cc
+      internalID: 979945650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 323
+        width: 87
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9b8e2ca916ab04a88f8ea6b5f41e22
+      internalID: 192791728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 341
+        width: 73
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d021fd0901ad9774db774fa8a2f44cb6
+      internalID: -2021842222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 338
+        width: 75
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7358c8c6c2e384eb1f8d92c5769cef
+      internalID: 1094033033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 72
+        width: 363
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5150504064b424693d5677a1900eb1
+      internalID: 110258601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 74
+        width: 357
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754877bc5dfd1dc4fba10f79903499f7
+      internalID: 2069892940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 82
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61558f3b8196a643bb92836f1852706
+      internalID: 1688868829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PufferFishIdleAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 67
+        width: 358
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bce5d0133729d44bd6115a6b31bbcb
+      internalID: -1497073243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PufferFishIdleAnimation_0: -907374862
+      PufferFishIdleAnimation_1: -804198900
+      PufferFishIdleAnimation_10: -1239514860
+      PufferFishIdleAnimation_11: 1358439239
+      PufferFishIdleAnimation_12: 83035210
+      PufferFishIdleAnimation_13: 57106205
+      PufferFishIdleAnimation_14: 982349442
+      PufferFishIdleAnimation_15: 297796119
+      PufferFishIdleAnimation_16: 1678758696
+      PufferFishIdleAnimation_17: 937237002
+      PufferFishIdleAnimation_18: -361082020
+      PufferFishIdleAnimation_19: 288840300
+      PufferFishIdleAnimation_2: -150073319
+      PufferFishIdleAnimation_20: 979945650
+      PufferFishIdleAnimation_21: 192791728
+      PufferFishIdleAnimation_22: -2021842222
+      PufferFishIdleAnimation_23: 1094033033
+      PufferFishIdleAnimation_24: 110258601
+      PufferFishIdleAnimation_25: 2069892940
+      PufferFishIdleAnimation_26: 1688868829
+      PufferFishIdleAnimation_27: -1497073243
+      PufferFishIdleAnimation_3: -1735454551
+      PufferFishIdleAnimation_4: 684525991
+      PufferFishIdleAnimation_5: 2061608039
+      PufferFishIdleAnimation_6: -93700184
+      PufferFishIdleAnimation_7: 1923312648
+      PufferFishIdleAnimation_8: 1532326590
+      PufferFishIdleAnimation_9: -106816620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
