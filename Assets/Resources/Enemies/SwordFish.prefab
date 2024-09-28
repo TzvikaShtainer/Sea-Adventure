@@ -134,11 +134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.96
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -171,6 +171,10 @@ PrefabInstance:
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: itemType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: enemyType
@@ -214,6 +218,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 725494121550080729}
+    - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1929684177091992268}
   m_SourcePrefab: {fileID: 100100000, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
 --- !u!1 &1815663240334287290 stripped
 GameObject:
@@ -531,6 +538,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2417096856534940211}
+--- !u!114 &-1929684177091992268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815663240334287290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYPosToSpawn: -4
+  maxYPosToSpawn: 4
 --- !u!114 &5309385686232348671 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}

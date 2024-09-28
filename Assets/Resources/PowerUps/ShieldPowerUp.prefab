@@ -69,6 +69,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: itemType
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: leftSpeed
       value: 1.5
       objectReference: {fileID: 0}
@@ -88,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1048162426ae7824791b4c445033c826, type: 3}
+    - target: {fileID: 7759059335488178934, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8557174646559999975, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: m_Name
       value: ShieldPowerUpVisuals
@@ -99,6 +107,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5480574808818747982}
+    - targetCorrespondingSourceObject: {fileID: 6900400972780812390, guid: 408387ecf6d705a46857627863cf175a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8437944915319160152}
   m_SourcePrefab: {fileID: 100100000, guid: 408387ecf6d705a46857627863cf175a, type: 3}
 --- !u!1 &3186506314359078975 stripped
 GameObject:
@@ -121,3 +132,17 @@ MonoBehaviour:
   renderer: {fileID: 0}
   shieldTime: 20
   blinkEffectTime: 3
+--- !u!114 &8437944915319160152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3186506314359078975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYPosToSpawn: -4
+  maxYPosToSpawn: 4

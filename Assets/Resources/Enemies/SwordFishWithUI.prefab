@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 6012364843750660773}
   - component: {fileID: 8925761782504321948}
   - component: {fileID: 4792865191191164889}
+  - component: {fileID: 895752888967085570}
   m_Layer: 0
   m_Name: SwordFishWithUI
   m_TagString: Untagged
@@ -137,10 +138,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
-  minYPosToSpawn: -4
-  maxYPosToSpawn: 4
   enemyAnimationController: {fileID: 3424665499732426600}
   moveToPlayer: {fileID: 7798290658461639246}
+--- !u!114 &895752888967085570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3879756458928351753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYPosToSpawn: -4
+  maxYPosToSpawn: 4
 --- !u!1 &8666199342389626490
 GameObject:
   m_ObjectHideFlags: 0

@@ -247,6 +247,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: itemType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216845724294343926, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: enemyType
       value: 3
       objectReference: {fileID: 0}
@@ -267,7 +271,7 @@ PrefabInstance:
       addedObject: {fileID: 3060647534946886645}
     - targetCorrespondingSourceObject: {fileID: 3419606936987138739, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3027178738372014441}
+      addedObject: {fileID: 4592310911369918246}
   m_SourcePrefab: {fileID: 100100000, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
 --- !u!1 &1895573231418198711 stripped
 GameObject:
@@ -309,7 +313,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 6.49}
   serializedVersion: 2
   m_Radius: 1.0467427
---- !u!114 &3027178738372014441
+--- !u!114 &4592310911369918246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,15 +322,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1895573231418198711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 482468b827206e04fb39505016f2be28, type: 3}
+  m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  minYPosToSpawn: 0
-  maxYPosToSpawn: 0
-  enemyAnimationController: {fileID: 0}
-  moveToPlayer: {fileID: 0}
-  animator: {fileID: 2326160459903231094}
+  minYPosToSpawn: -4
+  maxYPosToSpawn: -6
 --- !u!4 &5577316664207788824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}

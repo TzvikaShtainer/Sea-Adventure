@@ -10,9 +10,6 @@ public class BaseEnemy : MonoBehaviour, ISpawn
     public static event OnEnemyDead onEnemyDead;
     
     [SerializeField] private PlayerController player;
-    [SerializeField] private float minYPosToSpawn;
-    [SerializeField] private float maxYPosToSpawn;
-    
     [SerializeField] private EnemyAnimationController enemyAnimationController;
     [SerializeField] private MoveToPlayer moveToPlayer;
 
@@ -23,29 +20,19 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
     private void Update()
     {
-        if (transform.position.x < -13 || transform.position.y < -5) //just for now
-        {
-            //gameObject.SetActive(false);
-            Destroy(gameObject); 
-            
-            onEnemyDead?.Invoke();
-        }
+        // if (transform.position.x < -15 || transform.position.y < -5) //just for now
+        // {
+        //     //gameObject.SetActive(false);
+        //     Destroy(gameObject); 
+        //     
+        //     onEnemyDead?.Invoke();
+        // }
     }
     
     public void Spawn(Vector2 position)
     {
         transform.position = position;
         gameObject.SetActive(true);
-    }
-
-    public float GetMinYPosToSpawn()
-    {
-        return minYPosToSpawn; 
-    }
-    
-    public float GetMaxYPosToSpawn()
-    {
-        return maxYPosToSpawn; 
     }
 
     public PlayerController GetPlayer()

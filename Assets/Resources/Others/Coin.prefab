@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1426574709927894150}
   - component: {fileID: 8768599474736187549}
   - component: {fileID: 5662052778454454017}
+  - component: {fileID: 4083770304590254814}
   m_Layer: 8
   m_Name: Coin
   m_TagString: Coin
@@ -209,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 1426574709927894150}
   leftSpeed: 1.5
-  enemyType: 0
+  itemType: 8
 --- !u!114 &5662052778454454017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,3 +223,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d38d6147d8a0940bdeb20d0e4307d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4083770304590254814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7340566586482048972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYPosToSpawn: -4
+  maxYPosToSpawn: 4

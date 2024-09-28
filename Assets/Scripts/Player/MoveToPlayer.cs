@@ -7,7 +7,7 @@ public class MoveToPlayer : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D enemyRigidBody;
     [SerializeField] private float leftSpeed;
-    [SerializeField] private EnemyType enemyType;
+    [SerializeField] private ItemType itemType;
     
     private bool isElectrified;
     
@@ -21,7 +21,7 @@ public class MoveToPlayer : MonoBehaviour
     {
         if (!isElectrified)
         {
-            if (enemyType == EnemyType.FishingRod || enemyType == EnemyType.SeaUrchin)
+            if (itemType == ItemType.FishingRod || itemType == ItemType.SeaUrchin)
             {
                 float currentSpeed = leftSpeed * GlobalSpeedManager.CurrentSpeed;
                 enemyRigidBody.velocity = Vector2.left * currentSpeed;
