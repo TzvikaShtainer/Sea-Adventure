@@ -126,9 +126,9 @@ public class PlayerController : MonoBehaviour
 
         if (takeable != null)
         {
+            PoolManager.Instance.ReturnItemToPool(other.GetComponent<MoveToPlayer>().GetItemType(), other.GetComponent<Item>());
             powerUpManager.ActivatePowerUp(takeable);
             
-            PoolManager.Instance.ReturnItemToPool(takeable.GetComponent<Spawner>().GetItemType(), other.GetComponent<Item>());
         }
         
     }
