@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using BuilderPatterns;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -7,16 +8,9 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private float spawnTime = 2f;
     [SerializeField] private float xPosToSpawn;
-    //[SerializeField] private float yPosToSpawn;
-    [SerializeField] private ItemType itemType;
-    
-    private Factory factroy;
-    private float spawnTimer;
+    [SerializeField] private BuilderPatterns.ItemType itemType;
 
-    private void Start()
-    {
-        factroy = new Factory();
-    }
+    private float spawnTimer;
 
     private void Update()
     {
@@ -33,11 +27,11 @@ public class Spawner : MonoBehaviour
             spawnTimer = 0;
         }
     }
-    
+
     private void SpawnItem()
     {
-        Item item = factroy.CreateItem(itemType, Vector2.zero);
-        
+        Item item = PoolManager.Instance.GetItemFromPool(itemType);
+
         if (item == null)
             return;
         

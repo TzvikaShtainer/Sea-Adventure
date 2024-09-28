@@ -17,17 +17,7 @@ public class BaseEnemy : MonoBehaviour, ISpawn
     {
         player = FindObjectOfType<PlayerController>();
     }
-
-    private void Update()
-    {
-        // if (transform.position.x < -15 || transform.position.y < -5) //just for now
-        // {
-        //     //gameObject.SetActive(false);
-        //     Destroy(gameObject); 
-        //     
-        //     onEnemyDead?.Invoke();
-        // }
-    }
+    
     
     public void Spawn(Vector2 position)
     {
