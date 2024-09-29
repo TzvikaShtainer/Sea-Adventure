@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isTookPowerUp;
     [SerializeField] private GameObject shieldSprite;
     [SerializeField] private bool hasShield;
+    [SerializeField] private int shieldCounter;
+    [SerializeField] private bool hasHitWithShield;
     
     [Header("Money")]
     [SerializeField] private MoneyManager moneyManager;
@@ -60,16 +62,13 @@ public class PlayerController : MonoBehaviour
 
     private async void OnTriggerEnter2D(Collider2D other)
     {
-        //the null exp cuz bec i dont have an object pool i think
         if (other.CompareTag("Enemy") && !isDamaged)
         {
-            if (hasShield)
+            if (hasShield && !hasHitWithShield)
             {
-                BaseEnemy enemy = other.GetComponent<BaseEnemy>();
-                Debug.Log(enemy);
-                enemy.Electrified();
+                HandleShieldLogic(other);
             }
-            else
+            else if(!hasShield)
             {
                 await HandleDamage();
             }
@@ -84,6 +83,37 @@ public class PlayerController : MonoBehaviour
         {
             HandleCoins(other);
         }
+    }
+
+    private async void HandleShieldLogic(Collider2D other)
+    {
+        BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+        enemy.Electrified();
+        
+        shieldCounter++;
+        hasHitWithShield = true;
+        
+        if (shieldCounter >= 3)
+        {
+            DeactivateShield();
+        }
+        else
+        {
+            await Task.Delay(200);
+        }
+        
+        hasHitWithShield = false;
+        
+    }
+
+    private async void DeactivateShield()
+    {
+        await Task.Delay(500);
+        
+        shieldCounter = 0;
+        hasShield = false;
+        
+        powerUpManager.DeActivatePowerUp();
     }
 
     private async Task HandleDamage()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace PowerUps
@@ -14,12 +15,7 @@ namespace PowerUps
         {
             if (_currentPowerUp != null)
             {
-                _currentPowerUp.DeActive();
-                
-                _currentPowerUpTokenSource.Cancel(); 
-                _currentPowerUpTokenSource.Dispose();
-                
-                _currentPowerUp = null;
+                DeActivatePowerUp();
             }
             
             _currentPowerUpTokenSource = new CancellationTokenSource();
@@ -47,5 +43,15 @@ namespace PowerUps
                 _currentPowerUpTokenSource.Dispose();
             }
         }
+        public async void DeActivatePowerUp()
+        {
+            _currentPowerUp.DeActive();
+                
+            _currentPowerUpTokenSource.Cancel(); 
+            _currentPowerUpTokenSource.Dispose();
+                
+            _currentPowerUp = null;
+        }
+        
     }
 }
