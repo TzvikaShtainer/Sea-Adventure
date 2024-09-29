@@ -235,5 +235,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6968f8ccc91134abcb339f5e3ca02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minYPosToSpawn: -4
-  maxYPosToSpawn: 4
+  minYPosToSpawn: -3
+  maxYPosToSpawn: 3

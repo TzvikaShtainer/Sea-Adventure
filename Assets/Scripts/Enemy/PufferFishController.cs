@@ -98,7 +98,7 @@ public class PufferFishController : MonoBehaviour
         
         moveToPlayer.SetLeftSpeed(attackSpeed);
         
-        float randomRotation = Random.Range(30, 350);
+        float randomRotation = Random.Range(-50, 100);
         transform.rotation = Quaternion.Slerp(originalRotation, Quaternion.Euler(0f, 0f, randomRotation), rotationSpeed);
         
     }

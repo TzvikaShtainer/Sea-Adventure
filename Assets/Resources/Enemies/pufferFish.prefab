@@ -296,7 +296,7 @@ MonoBehaviour:
   moveToPlayer: {fileID: 4214265477098254455}
   enemyCollider: {fileID: 930999135151472252}
   currentState: 0
-  rotationSpeed: 0.5
+  rotationSpeed: 0.7
   idleDuration: 2
   idleSpeed: 3
   attackDuration: 2
