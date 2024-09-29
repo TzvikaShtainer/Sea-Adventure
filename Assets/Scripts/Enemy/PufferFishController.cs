@@ -100,6 +100,5 @@ public class PufferFishController : MonoBehaviour
         
         float randomRotation = Random.Range(-50, 100);
         transform.rotation = Quaternion.Slerp(originalRotation, Quaternion.Euler(0f, 0f, randomRotation), rotationSpeed);
-        
     }
 }

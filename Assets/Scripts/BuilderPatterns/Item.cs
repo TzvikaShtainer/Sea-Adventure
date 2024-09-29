@@ -9,7 +9,7 @@ public class Item : MonoBehaviour, ISpawn
     [SerializeField] private float minYPosToSpawn;
     [SerializeField] private float maxYPosToSpawn;
 
-    private readonly float afterPlayerPosToDisapear = -10;
+    private readonly float afterPlayerPosToDisapear = -15;
     private ItemType itemType;
 
     private void Start()
