@@ -20,15 +20,11 @@ public class SwordFishUI : MonoBehaviour
     [SerializeField] private float redBlinkDuration = 1f; 
     [SerializeField] private float blinkInterval;
 
-    [SerializeField] private Transform fish;
-
     public event EventHandler<EventArgs> OnUIFinished;
 
     private void Awake()
     {
         transformImage.GetComponent<Image>().sprite = swordFishSpriteNoAttackingWhite;
-
-        HandleUIBlinking();
     }
 
     private async void HandleUIBlinking()
@@ -62,5 +58,13 @@ public class SwordFishUI : MonoBehaviour
     public void SetUIPosition(Vector2 eSpawnPos)
     {
         transformImage.transform.position = eSpawnPos;
+    }
+
+    public void TriggerUI()
+    {
+        transform.gameObject.SetActive(true);
+        transformImage.gameObject.SetActive(true);
+        
+        HandleUIBlinking();
     }
 }

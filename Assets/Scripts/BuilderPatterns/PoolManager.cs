@@ -42,7 +42,7 @@ namespace BuilderPatterns
             objectPools = new Dictionary<ItemType, ObjectPool<Item>>();
 
             objectPools[ItemType.FishingRod] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/FishingRod"), 3);
-            objectPools[ItemType.SwordFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SwordFishWithUI"), 3);
+            objectPools[ItemType.SwordFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SwordFishWithUI"), 20);
             objectPools[ItemType.SeaUrchin] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaUrchin"), 2);
             objectPools[ItemType.SeaMine] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaMine"), 2);
             objectPools[ItemType.PufferFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/pufferFish"), 2);

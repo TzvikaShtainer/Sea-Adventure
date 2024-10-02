@@ -10,18 +10,21 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
+    public float distanceTraveled {get; private set; }
+    
     [SerializeField] private float maxDistanceTraveled;
-    [SerializeField] private float distanceTraveled;
     [SerializeField] private float distanceMultiplier;
     [SerializeField] private float accelerationRate;
+    
+    
 
     [SerializeField] private GameDataSO _gameDataSo;
     
-    public delegate void OnDistanceChanged(float distanceTraveled);
-    //public static event OnDistanceChanged onDistanceChanged;
-    
     public delegate void OnMaxDistanceChanged(float maxDistanceTraveled);
     public static event OnMaxDistanceChanged onMaxDistanceChanged;
+    
+    public delegate void OnDistanceReached(float maxDistanceTraveled);
+    public static event OnDistanceReached onDistanceReached;
 
 
     private void Awake()
@@ -53,14 +56,13 @@ public class GameManager : MonoBehaviour
         HandleIncreasingDistance();
     }
 
-    private void HandleIncreasingDistance() // change to events
+    private void HandleIncreasingDistance()
     {
         distanceMultiplier += accelerationRate * Time.deltaTime;
         
         
         distanceTraveled += Time.deltaTime * distanceMultiplier;
         
-        //onDistanceChanged?.Invoke(distanceTraveled);
         EventBus.DistanceChanged(distanceTraveled);
     }
     
@@ -69,8 +71,6 @@ public class GameManager : MonoBehaviour
         SaveMaxDistanceTraveled();
 
         onMaxDistanceChanged?.Invoke(maxDistanceTraveled);
-        
-        //MoneyManager.instance.SaveMoneyAmount();
     }
 
     private void SaveMaxDistanceTraveled()

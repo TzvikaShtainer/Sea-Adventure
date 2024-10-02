@@ -124,7 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordFishVisuals: {fileID: 7750092479717275044}
+  swordFishUITransform: {fileID: 577961305394534384}
   swordFishUI: {fileID: 5033900392786377946}
+  hasUsed: 0
 --- !u!114 &4792865191191164889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &577961305394534384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -277,7 +279,6 @@ MonoBehaviour:
   whiteBlinkDuration: 3
   redBlinkDuration: 1
   blinkInterval: 0.2
-  fish: {fileID: 7750092479717275044}
 --- !u!1001 &2708812027185747377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1815663240334287290, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2973568941199757453, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
       propertyPath: m_Offset.x
@@ -340,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5627949376334667797, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
       propertyPath: m_LocalPosition.y
@@ -426,8 +427,7 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -1929684177091992268, guid: 8d3bb4017e8ca8f4cb9a493561cc0407, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -6,14 +6,16 @@ using UnityEngine;
 public class SwordFishController : MonoBehaviour
 {
     [SerializeField] private Transform swordFishVisuals;
+    [SerializeField] private Transform swordFishUITransform;
+    
     [SerializeField] private SwordFishUI swordFishUI;
 
-    private void Start()
+    [SerializeField] private bool hasUsed;
+
+    private void Awake()
     {
         swordFishVisuals.gameObject.SetActive(false);
-        swordFishUI.gameObject.SetActive(true);
-        
-        SpawnUI();
+        swordFishUI.gameObject.SetActive(false);
     }
 
     private void SpawnUI()
@@ -30,17 +32,36 @@ public class SwordFishController : MonoBehaviour
 
         Vector2 newPos = new Vector3(anchoredXPosition, dynamicYPositionBySwordFish);
         
+        swordFishUITransform.gameObject.SetActive(true);
+        
         swordFishUI.SetUIPosition(newPos);
+        
+        swordFishUI.TriggerUI();
     }
 
     private void OnEnable()
     {
         swordFishUI.OnUIFinished += SwordFishUI_OnUIFinished;
+
+        if (hasUsed)
+        {
+            ActivateSwordFishAttack();
+        }
+        
+        hasUsed = true;
+    }
+
+    private void ActivateSwordFishAttack()
+    {
+        SpawnUI();
     }
 
     private void OnDisable()
     {
         swordFishUI.OnUIFinished -= SwordFishUI_OnUIFinished;
+        
+        swordFishVisuals.gameObject.SetActive(false);
+        swordFishUI.gameObject.SetActive(false);
     }
     
     private void SwordFishUI_OnUIFinished(object sender, EventArgs e)
