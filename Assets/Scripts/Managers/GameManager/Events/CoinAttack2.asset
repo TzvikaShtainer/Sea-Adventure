@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c941537fd743d5c4dabaf6379b3f6733, type: 3}
-  m_Name: PufferFishAttack
+  m_Name: CoinAttack2
   m_EditorClassIdentifier: 
-  eventName: PufferFishAttack
-  spawnerID: PufferFish
-  triggerDistance: 3000
+  eventName: CoinAttack
+  spawnerID: Coins
+  triggerDistance: 45000
   totalAttackTimeLength: 20
-  itemSpawnTime: 5
-  originItemSpawnTime: 10
-  timeOfEachItemSpawn: 1
+  itemSpawnTime: 10
+  originItemSpawnTime: 2
+  timeOfEachItemSpawn: 0.5

@@ -12,13 +12,6 @@ namespace PowerUps
         private float blinkPowerUpTime = 0;
         [SerializeField] Renderer renderer;
         
-        private void Update()
-        {
-            if (transform.position.x < -9.5 || transform.position.y < -5)
-            {
-                gameObject.SetActive(false);
-            }
-        }
 
         protected void SetPowerUpTime(float newPowerUpTime, float newBlinkPowerUpTime)
         {
