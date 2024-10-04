@@ -16,10 +16,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float distanceMultiplier;
     [SerializeField] private float accelerationRate;
     
-    
-
-    [SerializeField] private GameDataSO _gameDataSo;
-    
     public delegate void OnMaxDistanceChanged(float maxDistanceTraveled);
     public static event OnMaxDistanceChanged onMaxDistanceChanged;
     
@@ -75,14 +71,14 @@ public class GameManager : MonoBehaviour
 
     private void SaveMaxDistanceTraveled()
     {
-        if (distanceTraveled > _gameDataSo.MaxDistanceTraveled)
+        if (distanceTraveled > GameDataHandler.instance.GetMaxDistanceTraveled())
         {
-            _gameDataSo.MaxDistanceTraveled = distanceTraveled;
+            GameDataHandler.instance.SetMaxDistanceTraveled(distanceTraveled);
         }
     }
 
     public float LoadMaxDistance()
     {
-        return _gameDataSo.MaxDistanceTraveled;
+        return GameDataHandler.instance.GetMaxDistanceTraveled();
     }
 }

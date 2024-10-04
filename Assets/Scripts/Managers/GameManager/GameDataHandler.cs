@@ -26,6 +26,11 @@ public class GameDataHandler : MonoBehaviour
     {
         return gameDataSO.MaxDistanceTraveled;
     }
+
+    public void SetMaxDistanceTraveled(float newValue)
+    {
+        gameDataSO.MaxDistanceTraveled = newValue;
+    }
     
     public int GetMoneyAmount()
     {

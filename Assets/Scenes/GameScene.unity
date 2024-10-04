@@ -871,12 +871,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1573730401}
+  - {fileID: 1062628500}
   - {fileID: 380369460}
   - {fileID: 593240974}
   - {fileID: 271745172}
   - {fileID: 1249842320}
   - {fileID: 1758323679}
-  - {fileID: 1062628500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &830442756
@@ -1679,7 +1679,6 @@ MonoBehaviour:
   maxDistanceTraveled: 0
   distanceMultiplier: 1
   accelerationRate: 3
-  _gameDataSo: {fileID: 11400000, guid: 600035ec68284ac45b2f8263a7557992, type: 2}
 --- !u!4 &1573730401
 Transform:
   m_ObjectHideFlags: 0
@@ -2834,7 +2833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1033133234517727512, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: health
