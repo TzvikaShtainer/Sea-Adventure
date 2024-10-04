@@ -1,12 +1,14 @@
 using System;
+using DefaultNamespace.GameManager;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class GameDataHandler : MonoBehaviour
 {
     public static GameDataHandler instance;
     
     [SerializeField] GameDataSO gameDataSO;
-    
+    //private GameData gameData;
     private IDataService dataService = new JsonDataService();
     private bool encryptionEnabled;
     private long saveTime;
@@ -23,11 +25,18 @@ public class GameDataHandler : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        SerializeJson();
     }
 
     private void Start()
     {
-        SerializeJson();
+        // Check if the WRITE_EXTERNAL_STORAGE permission is already granted
+        if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+        {
+            // Request the permission at runtime
+            Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+        }
     }
 
     public void SerializeJson()
