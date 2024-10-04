@@ -4,4 +4,5 @@ using UnityEngine;
 public class GameDataSO : ScriptableObject
 {
     public float MaxDistanceTraveled; 
+    public int MoneyAmount; 
 }

@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06aa1082d0b709844950208821fcee8e, type: 3}
-  m_Name: GameData
+  m_Name: GameDataSO
   m_EditorClassIdentifier: 
-  MaxDistanceTraveled: 264.8228
+  MaxDistanceTraveled: 0
+  moneyAmount: 0

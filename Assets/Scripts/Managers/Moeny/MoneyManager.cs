@@ -7,7 +7,6 @@ public class MoneyManager : MonoBehaviour
 {
     public static MoneyManager instance;
     
-    [SerializeField] private MoneyAmountSO moneyAmountSO;
     [SerializeField] private int currMoneyAmount;
     
     public delegate void OnMoneyAmountChanged(int currMoneyAmount, int amountToAdd);
@@ -27,7 +26,7 @@ public class MoneyManager : MonoBehaviour
 
     public void Start()
     {
-        SetMoney(moneyAmountSO.moneyAmount);
+        SetMoney(GameDataHandler.instance.GetMoneyAmount());
     }
     
     private void OnEnable()
@@ -61,6 +60,6 @@ public class MoneyManager : MonoBehaviour
 
     public void SaveMoneyAmount(int newMoneyAmount)
     {
-        moneyAmountSO.moneyAmount = newMoneyAmount;
+        GameDataHandler.instance.SetMoneyAmount(newMoneyAmount);
     }
 }
