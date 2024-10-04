@@ -7,8 +7,8 @@ public class GameDataHandler : MonoBehaviour
 {
     public static GameDataHandler instance;
     
-    [SerializeField] GameDataSO gameDataSO;
-    //private GameData gameData;
+    //[SerializeField] GameDataSO gameDataSO;
+    private GameData gameData;
     private IDataService dataService = new JsonDataService();
     private bool encryptionEnabled;
     private long saveTime;
@@ -25,8 +25,8 @@ public class GameDataHandler : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        SerializeJson();
+
+        LoadGameData();
     }
 
     private void Start()
@@ -38,13 +38,39 @@ public class GameDataHandler : MonoBehaviour
             Permission.RequestUserPermission(Permission.ExternalStorageWrite);
         }
     }
+    
+    public void LoadGameData()
+    {
+        long startTime = DateTime.Now.Ticks;
+
+        try
+        {
+            // Attempt to load saved data
+            gameData = dataService.LoadData<GameData>("/JsonGameData.json", encryptionEnabled);
+
+            if (gameData == null)
+            {
+                Debug.Log("No saved game data found. Initializing with default values.");
+                gameData = new GameData(); // Initialize with default values if no data is found
+            }
+
+            loadTime = DateTime.Now.Ticks - startTime;
+            Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error loading game data: " + e.Message);
+            gameData = new GameData(); // Initialize with default values on failure
+        }
+    }
+
 
     public void SerializeJson()
     {
         long startTime = DateTime.Now.Ticks;
         
         //C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
-        if (dataService.SaveData("/JsonGameData.json", gameDataSO, encryptionEnabled))
+        if (dataService.SaveData("/JsonGameData.json", gameData, encryptionEnabled))
         {
             saveTime = DateTime.Now.Ticks - startTime;
             Debug.Log("time it took to save the data: "+ saveTime/1000f + " in ms");
@@ -52,7 +78,7 @@ public class GameDataHandler : MonoBehaviour
             startTime = DateTime.Now.Ticks;
             try
             {
-                GameDataSO data = dataService.LoadData<GameDataSO>("/JsonGameData.json", encryptionEnabled);
+                gameData = dataService.LoadData<GameData>("/JsonGameData.json", encryptionEnabled);
                 loadTime = DateTime.Now.Ticks - startTime;
                 Debug.Log("time it took to load the data: "+ saveTime/1000f + " in ms");
             }
@@ -69,23 +95,23 @@ public class GameDataHandler : MonoBehaviour
 
     public float GetMaxDistanceTraveled()
     {
-        return gameDataSO.MaxDistanceTraveled;
+        return gameData.MaxDistanceTraveled;
     }
     
     public int GetMoneyAmount()
     {
-        return gameDataSO.MoneyAmount;
+        return gameData.MoneyAmount;
     }
 
     public void SetMaxDistanceTraveled(float newValue)
     {
-        gameDataSO.MaxDistanceTraveled = newValue;
+        gameData.MaxDistanceTraveled = newValue;
         SerializeJson();
     }
     
     public void SetMoneyAmount(int newValue)
     {
-        gameDataSO.MoneyAmount = newValue;
+        gameData.MoneyAmount = newValue;
         SerializeJson();
     }
 }

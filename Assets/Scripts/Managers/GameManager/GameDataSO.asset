@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06aa1082d0b709844950208821fcee8e, type: 3}
   m_Name: GameDataSO
   m_EditorClassIdentifier: 
-  MaxDistanceTraveled: 198.64832
-  MoneyAmount: 1
+  MaxDistanceTraveled: 0
+  MoneyAmount: 0
