@@ -65,7 +65,7 @@ public class GameDataHandler : MonoBehaviour
     }
 
 
-    public void SerializeJson()
+    public void SaveGameData()
     {
         long startTime = DateTime.Now.Ticks;
         
@@ -98,20 +98,31 @@ public class GameDataHandler : MonoBehaviour
         return gameData.MaxDistanceTraveled;
     }
     
-    public int GetMoneyAmount()
-    {
-        return gameData.MoneyAmount;
-    }
-
     public void SetMaxDistanceTraveled(float newValue)
     {
         gameData.MaxDistanceTraveled = newValue;
-        SerializeJson();
+        SaveGameData();
+    }
+    
+    public int GetMoneyAmount()
+    {
+        return gameData.MoneyAmount;
     }
     
     public void SetMoneyAmount(int newValue)
     {
         gameData.MoneyAmount = newValue;
-        SerializeJson();
+        SaveGameData();
+    }
+
+    public bool GetTutorialCompleted()
+    {
+        return gameData.tutorialCompleted;
+    }
+
+    public void SetTutorialCompleted(bool newValue)
+    {
+        gameData.tutorialCompleted = newValue;
+        SaveGameData();
     }
 }

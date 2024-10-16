@@ -31,6 +31,9 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private Button deathReturnToMainMenuButton;
     [SerializeField] private TextMeshProUGUI endGameDistanceText;
     
+    [Header("Tutorial Menu")]
+    [SerializeField] private Transform tutorialMenu;
+    
     [Header("Touch")]
     [SerializeField] private Transform touchUI;
     
@@ -82,6 +85,18 @@ public class InGameUIManager : MonoBehaviour
 
     private void SetUpGameScreens()
     {
+        DisableAllScreens();
+
+        if (!CheckTutorialCompleted())
+        {
+            ShowTutorial();
+        }
+        
+        StartGame();
+    }
+    
+    private void DisableAllScreens()
+    {
         foreach (Transform child in menusContainer)
         {
             if (child == playerUIMenu)
@@ -89,9 +104,24 @@ public class InGameUIManager : MonoBehaviour
             
             DisableScreen(child);
         }
+    }
+    
+    private bool CheckTutorialCompleted()
+    {
+        return GameDataHandler.instance.GetTutorialCompleted();
+    }
 
-        UpdateMaxDistanceText(GameManager.instance.LoadMaxDistance());
+    private void ShowTutorial()
+    {
+        tutorialMenu.gameObject.SetActive(true);
         
+        Time.timeScale = 0f;
+    }
+    
+    private void StartGame()
+    {
+        UpdateMaxDistanceText(GameManager.instance.LoadMaxDistance());
+
         touchUI.gameObject.SetActive(true);
     }
 
