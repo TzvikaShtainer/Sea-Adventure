@@ -41,4 +41,13 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
         moveToPlayer.EnemyElectrified();
     }
+
+    public void EnemyDeath()
+    {
+        Debug.Log("herer");
+        if (enemyAnimationController == null)
+            return;
+        Debug.Log("here");
+        enemyAnimationController.PlayDeathAnimation();
+    }
 }

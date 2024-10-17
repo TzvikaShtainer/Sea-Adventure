@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             }
             else if(!hasShield)
             {
-                await HandleDamage();
+                await HandleDamage(other);
             }
         }
 
@@ -116,9 +116,12 @@ public class PlayerController : MonoBehaviour
         powerUpManager.DeActivatePowerUp();
     }
 
-    private async Task HandleDamage()
+    private async Task HandleDamage(Collider2D other)
     {
         playerHealth.TakeDamage(1); //all enemies do the same damage for now
+        
+        BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+        enemy.EnemyDeath();
         
         isDamaged = true;
         

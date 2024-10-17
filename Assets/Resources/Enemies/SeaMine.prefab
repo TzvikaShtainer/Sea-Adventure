@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7444702050628455833}
   - component: {fileID: 68380995238874517}
   - component: {fileID: 2326160459903231094}
+  - component: {fileID: 4652330759299071095}
   m_Layer: 6
   m_Name: Visuals
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8335311196779104430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,6 +107,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4652330759299071095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335311196779104430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096a182a3ba049619970dab82749a123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2326160459903231094}
 --- !u!1001 &3835536000466006020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,6 +212,10 @@ PrefabInstance:
       propertyPath: minYPosToSpawn
       value: -5.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7608934883083211605, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
+      propertyPath: enemyAnimationController
+      value: 
+      objectReference: {fileID: 4652330759299071095}
     - target: {fileID: 8672829382660160284, guid: 37ba3befa75dd3d428a0b047d2fc89ff, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
