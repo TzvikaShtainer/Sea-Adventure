@@ -55,22 +55,22 @@ public class UIManager : MonoBehaviour
     private void OnStartGameClicked()
     {
         screensContainer.DOAnchorPos(new Vector3(1500, 0, 0), 0.5f)
-            .OnComplete(() => LoadSceneAsync(mainSceneName));
+            .OnComplete(() => Loader.Load(mainSceneName));
     }
 
-    private void LoadSceneAsync(string sceneName)
-    {
-        StartCoroutine(LoadSceneCoroutine(sceneName));
-    }
-
-    private IEnumerator LoadSceneCoroutine(string sceneName)
-    {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-    }
+    // private void LoadSceneAsync(string sceneName)
+    // {
+    //     StartCoroutine(LoadSceneCoroutine(sceneName));
+    // }
+    //
+    // private IEnumerator LoadSceneCoroutine(string sceneName)
+    // {
+    //     AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+    //     while (!asyncLoad.isDone)
+    //     {
+    //         yield return null;
+    //     }
+    // }
     
     private void OnSettingsClicked()
     {
