@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Header("Container")]
-    [SerializeField] private Transform screensContainer;
+    [SerializeField] private RectTransform screensContainer;
     
     [Header("MainMenu")]
     [SerializeField] private Transform mainMenuUI;
@@ -53,7 +54,8 @@ public class UIManager : MonoBehaviour
 
     private void OnStartGameClicked()
     {
-        LoadSceneAsync(mainSceneName);
+        screensContainer.DOAnchorPos(new Vector3(1500, 0, 0), 0.5f)
+            .OnComplete(() => LoadSceneAsync(mainSceneName));
     }
 
     private void LoadSceneAsync(string sceneName)
