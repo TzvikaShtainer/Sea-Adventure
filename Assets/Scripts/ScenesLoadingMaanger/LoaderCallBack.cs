@@ -5,8 +5,16 @@ using UnityEngine;
 
 public class LoaderCallBack : MonoBehaviour
 {
+    [SerializeField] bool isCallBack = false;
+    
     private void Update()
     {
-        Loader.LoaderCallback();
+        if (!isCallBack)
+        {
+            isCallBack = true;
+            
+            Loader.LoaderCallback();
+        }
+        
     }
 }
