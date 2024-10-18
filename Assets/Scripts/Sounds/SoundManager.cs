@@ -5,6 +5,7 @@ using System.Dynamic;
 using FMOD.Studio;
 using UnityEngine;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -20,44 +21,63 @@ public class SoundManager : MonoBehaviour
 
     private Bus musicBus;
     private Bus sfxBus;
+    
+    [SerializeField] private static bool isMusicPlaying;
 
     private void Awake()
     {
-        if (instance == null)
+        if (instance != null && instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            //Debug.Log(gameObject.name + " is set as the singleton instance.");
+            Destroy(gameObject); 
+            return;
         }
-        else
-        {
-            //Debug.Log(gameObject.name + " is being destroyed because a singleton instance already exists.");
-            Destroy(gameObject);
-        }
-        
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        InitializeBuses();
+    }
+
+    private void InitializeBuses()
+    {
         musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
     
-    
-
     private void Start()
     {
-        InitBgMusic(FModEvents.instance.bgMusic);
+        PlayBgMusic(FModEvents.instance.bgMusic);
     }
 
     private void Update()
     {
         musicBus.setVolume(bgMusicVolume);
         sfxBus.setVolume(sfxVolume);
-        
-       // Debug.Log(gameObject.name + " is still alive.");
     }
 
-    private void InitBgMusic(EventReference bgMusicEventReference)
+    private void PlayBgMusic(EventReference bgMusicEventReference)
     {
+        if (isMusicPlaying)
+        {
+            //Debug.Log("Background music is already playing.");
+            return;
+        }
+
+        isMusicPlaying = true; 
+        
         bgMusicEventInstance = CreateInstance(bgMusicEventReference);
         bgMusicEventInstance.start();
+    }
+    
+    public void StopBgMusic()
+    {
+        if (bgMusicEventInstance.isValid())
+        {
+            bgMusicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            bgMusicEventInstance.release();
+        }
+
+        isMusicPlaying = false;
     }
 
     public EventInstance CreateInstance(EventReference eventReference)
@@ -68,5 +88,10 @@ public class SoundManager : MonoBehaviour
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+    
+    private void OnDestroy()
+    {
+       //StopBgMusic();
     }
 }
