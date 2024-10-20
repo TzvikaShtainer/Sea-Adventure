@@ -32,11 +32,11 @@ public class GameDataHandler : MonoBehaviour
     private void Start()
     {
         // Check if the WRITE_EXTERNAL_STORAGE permission is already granted
-        if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
-        {
+        //if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+        //{
             // Request the permission at runtime
-            Permission.RequestUserPermission(Permission.ExternalStorageWrite);
-        }
+        //    Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+        //}
     }
     
     public void LoadGameData()
