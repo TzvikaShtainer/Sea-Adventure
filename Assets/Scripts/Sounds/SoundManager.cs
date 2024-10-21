@@ -46,7 +46,7 @@ public class SoundManager : MonoBehaviour
     
     private void Start()
     {
-        PlayBgMusic(FModEvents.instance.bgMusic);
+        PlayBgMusic(FModEvents.instance.BGMusic);
     }
 
     private void Update()

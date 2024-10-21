@@ -23,7 +23,7 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         if (amt == 0 || health == 0) return;
         
-        SoundManager.instance.PlayOneShot(FModEvents.instance.hittedByEnemy, transform.position);
+        SoundManager.instance.PlayOneShot(FModEvents.instance.HittedByEnemy, transform.position);
         
         health -= amt;
 

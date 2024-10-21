@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || isTouchInput) 
         {
-            SoundManager.instance.PlayOneShot(FModEvents.instance.jumpSound, transform.position);
+            SoundManager.instance.PlayOneShot(FModEvents.instance.JumpSound, transform.position);
         }
         
         if (Input.GetKey(KeyCode.Space) || isTouchInput) 

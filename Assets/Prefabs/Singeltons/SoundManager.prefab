@@ -59,21 +59,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5023d5e4e96d34c839788fbd64387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <bgMusic>k__BackingField:
+  <BGMusic>k__BackingField:
     Guid:
       Data1: 1343852497
       Data2: 1311966311
       Data3: -293401946
       Data4: 830988631
     Path: event:/BgMusic/TempBgMusic
-  <jumpSound>k__BackingField:
+  <JumpSound>k__BackingField:
     Guid:
       Data1: 680655370
       Data2: 1280595992
       Data3: 33178518
       Data4: -828818321
     Path: event:/SFX/JumpPressed
-  <hittedByEnemy>k__BackingField:
+  <HittedByEnemy>k__BackingField:
     Guid:
       Data1: -19491863
       Data2: 1294563896
@@ -94,3 +94,10 @@ MonoBehaviour:
       Data3: 1922024871
       Data4: -803948814
     Path: event:/SFX/CoinPickup
+  <EnemyElectrified>k__BackingField:
+    Guid:
+      Data1: -1674198393
+      Data2: 1261473586
+      Data3: 234257557
+      Data4: 1535788500
+    Path: event:/SFX/EnemyElectrified
