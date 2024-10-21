@@ -26,6 +26,12 @@ public class FModEvents : MonoBehaviour
     [field: Header("Enemy Electrified")]
     [field: SerializeField] public EventReference EnemyElectrified {get; private set;}
     
+    [field: Header("Btn Clicked")]
+    [field: SerializeField] public EventReference BtnClicked {get; private set;}
+    
+    [field: Header("SwordFish Attack")]
+    [field: SerializeField] public EventReference SwordFishAttack {get; private set;}
+    
 
     private void Awake()
     {

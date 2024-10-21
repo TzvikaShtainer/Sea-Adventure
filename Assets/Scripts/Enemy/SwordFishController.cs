@@ -17,7 +17,33 @@ public class SwordFishController : MonoBehaviour
         swordFishVisuals.gameObject.SetActive(false);
         swordFishUI.gameObject.SetActive(false);
     }
+    
 
+    private void OnEnable()
+    {
+        swordFishUI.OnUIFinished += SwordFishUI_OnUIFinished;
+
+        if (hasUsed)
+        {
+            ActivateSwordFishAttack();
+        }
+        
+        hasUsed = true;
+    }
+    
+    private void OnDisable()
+    {
+        swordFishUI.OnUIFinished -= SwordFishUI_OnUIFinished;
+        
+        swordFishVisuals.gameObject.SetActive(false);
+        swordFishUI.gameObject.SetActive(false);
+    }
+
+    private void ActivateSwordFishAttack()
+    {
+        SpawnUI();
+    }
+    
     private void SpawnUI()
     {
         // Get the screen width
@@ -34,35 +60,14 @@ public class SwordFishController : MonoBehaviour
         
         swordFishUITransform.gameObject.SetActive(true);
         
+        SoundManager.instance.PlayOneShot(FModEvents.instance.SwordFishAttack, transform.position);
+        
         swordFishUI.SetUIPosition(newPos);
         
         swordFishUI.TriggerUI();
     }
 
-    private void OnEnable()
-    {
-        swordFishUI.OnUIFinished += SwordFishUI_OnUIFinished;
-
-        if (hasUsed)
-        {
-            ActivateSwordFishAttack();
-        }
-        
-        hasUsed = true;
-    }
-
-    private void ActivateSwordFishAttack()
-    {
-        SpawnUI();
-    }
-
-    private void OnDisable()
-    {
-        swordFishUI.OnUIFinished -= SwordFishUI_OnUIFinished;
-        
-        swordFishVisuals.gameObject.SetActive(false);
-        swordFishUI.gameObject.SetActive(false);
-    }
+    
     
     private void SwordFishUI_OnUIFinished(object sender, EventArgs e)
     {

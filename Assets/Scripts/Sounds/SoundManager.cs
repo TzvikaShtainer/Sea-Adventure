@@ -94,4 +94,9 @@ public class SoundManager : MonoBehaviour
     {
        //StopBgMusic();
     }
+    
+    public void PlayClickSound()
+    {
+        PlayOneShot(FModEvents.instance.BtnClicked, transform.position);
+    }
 }

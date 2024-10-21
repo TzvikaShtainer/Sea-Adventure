@@ -101,3 +101,17 @@ MonoBehaviour:
       Data3: 234257557
       Data4: 1535788500
     Path: event:/SFX/EnemyElectrified
+  <BtnClicked>k__BackingField:
+    Guid:
+      Data1: 130851529
+      Data2: 1243840811
+      Data3: 1505350321
+      Data4: 178458635
+    Path: event:/SFX/BtnClicked
+  <SwordFishAttack>k__BackingField:
+    Guid:
+      Data1: 1462038109
+      Data2: 1267601442
+      Data3: 2074408107
+      Data4: 2058872159
+    Path: event:/SFX/SwordFishAttack

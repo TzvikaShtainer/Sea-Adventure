@@ -127,11 +127,15 @@ public class InGameUIManager : MonoBehaviour
 
     private void OnPauseClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         PauseGame();
     }
     
     private void OnContinueButtonClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         DisableScreen(pauseMenu);
         playerUIMenu.gameObject.SetActive(true);
         touchUI.gameObject.SetActive(true);
@@ -148,6 +152,8 @@ public class InGameUIManager : MonoBehaviour
     
     public void OnRestartButtonClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         //isDeath = false;
         Time.timeScale = 1f; 
         
@@ -157,6 +163,8 @@ public class InGameUIManager : MonoBehaviour
     
     private void OnReturnToMainMenuButtonClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         //isDeath = false;
         Time.timeScale = 1f; 
         
@@ -165,11 +173,15 @@ public class InGameUIManager : MonoBehaviour
     
     private void OnSoundsButtonClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         EnableScreen(soundsMenu); 
     }
     
     private void OnSoundsReturnButtonClicked()
     {
+        SoundManager.instance.PlayClickSound();
+        
         EnableScreen(pauseMenu); 
     }
     
