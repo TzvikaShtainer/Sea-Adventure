@@ -162,6 +162,8 @@ public class PlayerController : MonoBehaviour
             PoolManager.Instance.ReturnItemToPool(other.GetComponent<MoveToPlayer>().GetItemType(), other.GetComponent<Item>());
             powerUpManager.ActivatePowerUp(takeable);
             
+            SoundManager.instance.PlayOneShot(FModEvents.instance.PowerUpPickup, transform.position);
+            
         }
         
     }
@@ -171,6 +173,8 @@ public class PlayerController : MonoBehaviour
         MoneyManager.instance.ChangeMoneyAmount(1);
         
         PoolManager.Instance.ReturnItemToPool(ItemType.Coin, other.GetComponent<Item>());
+        
+        SoundManager.instance.PlayOneShot(FModEvents.instance.CoinPickup, transform.position);
     }
 
     public void SetPlayerSize(float newSize)

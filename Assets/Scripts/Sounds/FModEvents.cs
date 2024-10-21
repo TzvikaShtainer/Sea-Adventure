@@ -14,6 +14,15 @@ public class FModEvents : MonoBehaviour
     [field: Header("Jump Sound")]
     [field: SerializeField] public EventReference jumpSound {get; private set;}
     
+    [field: Header("Hitted By Enemy")]
+    [field: SerializeField] public EventReference hittedByEnemy {get; private set;}
+    
+    [field: Header("PowerUp Pickup")]
+    [field: SerializeField] public EventReference PowerUpPickup {get; private set;}
+    
+    [field: Header("Coin Pickup")]
+    [field: SerializeField] public EventReference CoinPickup {get; private set;}
+    
 
     private void Awake()
     {

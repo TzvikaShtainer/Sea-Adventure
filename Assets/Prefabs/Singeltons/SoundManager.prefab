@@ -73,3 +73,24 @@ MonoBehaviour:
       Data3: 33178518
       Data4: -828818321
     Path: event:/SFX/JumpPressed
+  <hittedByEnemy>k__BackingField:
+    Guid:
+      Data1: -19491863
+      Data2: 1294563896
+      Data3: -991272034
+      Data4: 2143400202
+    Path: event:/SFX/HittedByEnemy
+  <PowerUpPickup>k__BackingField:
+    Guid:
+      Data1: -824426038
+      Data2: 1281219218
+      Data3: -1758769017
+      Data4: -492767703
+    Path: event:/SFX/PowerUpPickup
+  <CoinPickup>k__BackingField:
+    Guid:
+      Data1: 1325079155
+      Data2: 1211669720
+      Data3: 1922024871
+      Data4: -803948814
+    Path: event:/SFX/CoinPickup
