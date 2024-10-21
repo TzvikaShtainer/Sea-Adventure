@@ -67,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
+        if (Input.GetKeyDown(KeyCode.Space) || isTouchInput) 
+        {
+            SoundManager.instance.PlayOneShot(FModEvents.instance.jumpSound, transform.position);
+        }
+        
         if (Input.GetKey(KeyCode.Space) || isTouchInput) 
         {
             Jump();
@@ -87,8 +92,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isJumping = true;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
-        
-        SoundManager.instance.PlayOneShot(FModEvents.instance.jumpSound, transform.position);
     }
 
     public bool GetJumpState()
