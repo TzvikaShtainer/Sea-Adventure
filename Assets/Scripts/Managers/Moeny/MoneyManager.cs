@@ -2,6 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = System.Object;
+
+
+public interface IPurchaseListener
+{
+    public bool HandlePurchase(Object newPurchase);
+}
 
 public class MoneyManager : MonoBehaviour
 {

@@ -13,9 +13,14 @@ public class UIManager : MonoBehaviour
     
     [Header("MainMenu")]
     [SerializeField] private Transform mainMenuUI;
+    [SerializeField] private Button storeButton;
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
+    
+    [Header("Store")]
+    [SerializeField] private Transform storeUI;
+    [SerializeField] private Button storeReturnButton;
     
     [Header("Settings")]
     [SerializeField] private Transform settingsMenuUI;
@@ -34,11 +39,15 @@ public class UIManager : MonoBehaviour
     {
         //MainMenu btns
         startGameButton.onClick.AddListener(OnStartGameClicked);
+        storeButton.onClick.AddListener(OnStoreClicked);
         settingsButton.onClick.AddListener(OnSettingsClicked);
         exitButton.onClick.AddListener(OnExitClicked);
         
         //Settings btns
         returnButton.onClick.AddListener(OnReturnClicked);
+        
+        //Store Btns
+        storeReturnButton.onClick.AddListener(OnReturnClicked);
     }
 
     private void SetScreen(Transform screenToSet)
@@ -73,7 +82,11 @@ public class UIManager : MonoBehaviour
     //         yield return null;
     //     }
     // }
-    
+
+    private void OnStoreClicked()
+    {
+        SetScreen(storeUI);
+    }
     private void OnSettingsClicked()
     {
         SetScreen(settingsMenuUI);
