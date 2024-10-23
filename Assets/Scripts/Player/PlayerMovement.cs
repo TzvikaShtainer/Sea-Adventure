@@ -17,9 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float currentVelocityY;
     
     private bool isJumping = false;
+    private bool isTouching = false;
     [SerializeField] private bool isTouchInput;
-
-    [SerializeField] private TextMeshProUGUI test;
 
     private void OnEnable()
     {
@@ -34,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        HandleTouchInput();  // Added to handle touch logic
     }
 
     void FixedUpdate()
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         HandleBoundaries();
     }
-    
+
     private void TouchInputHandler_OnStickValueUpdated(bool isGettingTouchInputValue)
     {
         isTouchInput = isGettingTouchInputValue;
@@ -51,13 +51,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleBoundaries()
     {
-        // Smoothly clamp the velocity when reaching the maxY boundary
         if (transform.position.y > maxY)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.SmoothDamp(rb.velocity.y, 0, ref currentVelocityY, smoothingTime));
             transform.position = new Vector2(transform.position.x, Mathf.Min(transform.position.y, maxY));
         }
-        // Smoothly clamp the velocity when reaching the minY boundary
         else if (transform.position.y < minY)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.SmoothDamp(rb.velocity.y, 0, ref currentVelocityY, smoothingTime));
@@ -67,17 +65,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || isTouchInput) 
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            SoundManager.instance.PlayOneShot(FModEvents.instance.JumpSound, transform.position);
+            PlayJumpSound();
         }
-        
-        if (Input.GetKey(KeyCode.Space) || isTouchInput) 
+
+        if (Input.GetKey(KeyCode.Space) || isTouchInput)
         {
             Jump();
         }
 
-        // Clamp vertical speed if it exceeds maxVerticalSpeed
         if (rb.velocity.y > maxVerticalSpeed)
         {
             rb.velocity = new Vector2(rb.velocity.x, maxVerticalSpeed);
@@ -88,10 +85,34 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void HandleTouchInput()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began && !isTouching && Time.timeScale != 0)
+            {
+                isTouching = true;
+                PlayJumpSound();
+                Jump();
+            }
+            else if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+            {
+                isTouching = false;
+            }
+        }
+    }
+
     void Jump()
     {
         isJumping = true;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+    }
+
+    void PlayJumpSound()
+    {
+        SoundManager.instance.PlayOneShot(FModEvents.instance.JumpSound, transform.position);
     }
 
     public bool GetJumpState()
