@@ -55,7 +55,7 @@ public class GameDataHandler : MonoBehaviour
             }
 
             loadTime = DateTime.Now.Ticks - startTime;
-            Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
+            //Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
         }
         catch (Exception e)
         {

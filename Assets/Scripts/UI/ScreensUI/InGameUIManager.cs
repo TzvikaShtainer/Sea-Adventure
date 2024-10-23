@@ -42,7 +42,7 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private Button soundsReturnButton;
     
     private string mainSceneName = "MainMenuScene";
-    private bool isPaused = false;
+    private bool isPaused;
     //private bool isDeath = false;
 
     private void Awake()

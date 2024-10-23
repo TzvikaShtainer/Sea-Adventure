@@ -12,9 +12,9 @@ public class ShopSystem : ScriptableObject
         return shopItems;
     }
 
-    public bool TryPurchase(ShopItem itemSelected, MoneyManager purchaser)
-    {
-        return purchaser.Purchase(itemSelected.price, itemSelected.item);
-    }
+    // public bool TryPurchase(ShopItem itemSelected, MoneyManager purchaser)
+    // {
+    //     return purchaser.Purchase(itemSelected.price, itemSelected.item);
+    // }
 }
-}
+
