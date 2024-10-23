@@ -62,14 +62,14 @@ public class TutorialManager : MonoBehaviour
         currentStepIndex++;
         LoadStep(currentStepIndex);
         
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
     }
     
     private void SkipTutorial()
     {
         CompleteTutorial();
         
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
     }
 
     private void CompleteTutorial()

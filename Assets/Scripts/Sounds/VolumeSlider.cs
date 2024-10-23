@@ -17,34 +17,67 @@ public class VolumeSlider : MonoBehaviour
    
    [SerializeField] private Slider volumeSlider;
 
-   private void Awake()
-   {
-      //volumeSlider = this.GetComponentInChildren<Slider>();   
-   }
+   private void Start()
+    {
+        InitializeSlider();
+        volumeSlider.onValueChanged.AddListener(OnSliderValueChanged);
+    }
 
-   private void Update()
-   {
-      switch (volumeType)
-      {
-         case VolumeType.Music:
-            volumeSlider.value =  SoundManager.instance.bgMusicVolume;
-            break;
-         case VolumeType.SFX:
-            volumeSlider.value = SoundManager.instance.sfxVolume;
-            break;
-      }
-   }
+    private void OnDestroy()
+    {
+        volumeSlider.onValueChanged.RemoveListener(OnSliderValueChanged); 
+    }
 
-   public void OnSliderValueChanged()
-   {
-      switch (volumeType)
-      {
-         case VolumeType.Music:
-            SoundManager.instance.bgMusicVolume = volumeSlider.value;
-            break;
-         case VolumeType.SFX:
-            SoundManager.instance.sfxVolume = volumeSlider.value;
-            break;
-      }
-   }
+    private void InitializeSlider()
+    {
+        switch (volumeType)
+        {
+            case VolumeType.Music:
+                float savedMusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f); 
+                volumeSlider.value = savedMusicVolume;
+                SoundManager.Instance.bgMusicVolume = savedMusicVolume;
+                break;
+
+            case VolumeType.SFX:
+                float savedSFXVolume = PlayerPrefs.GetFloat("SFXVolume", 1f); 
+                volumeSlider.value = savedSFXVolume;
+                SoundManager.Instance.sfxVolume = savedSFXVolume; 
+                break;
+        }
+    }
+
+    private void OnSliderValueChanged(float value)
+    {
+
+        switch (volumeType)
+        {
+            case VolumeType.Music:
+                SoundManager.Instance.bgMusicVolume = value;
+                PlayerPrefs.SetFloat("MusicVolume", value);
+                break;
+
+            case VolumeType.SFX:
+                SoundManager.Instance.sfxVolume = value;
+                PlayerPrefs.SetFloat("SFXVolume", value);
+                break;
+        }
+
+        PlayerPrefs.Save();
+    }
+
+    private void Update()
+    {
+        switch (volumeType)
+        {
+            case VolumeType.Music:
+                if (volumeSlider.value != SoundManager.Instance.bgMusicVolume)
+                    volumeSlider.value = SoundManager.Instance.bgMusicVolume;
+                break;
+
+            case VolumeType.SFX:
+                if (volumeSlider.value != SoundManager.Instance.sfxVolume)
+                    volumeSlider.value = SoundManager.Instance.sfxVolume;
+                break;
+        }
+    }
 }

@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour
 
     private void OnStartGameClicked()
     {
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
         
         screensContainer.DOAnchorPos(new Vector3(1500, 0, 0), 0.5f)
             .OnComplete(() => Loader.Load(mainSceneName));
@@ -91,11 +91,11 @@ public class UIManager : MonoBehaviour
     {
         SetScreen(settingsMenuUI);
         
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
     }
     private void OnExitClicked()
     {
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
         
         Application.Quit();
     }
@@ -104,6 +104,6 @@ public class UIManager : MonoBehaviour
     {
         SetScreen(mainMenuUI);
         
-        SoundManager.instance.PlayClickSound();
+        SoundManager.Instance.PlayClickSound();
     }
 }

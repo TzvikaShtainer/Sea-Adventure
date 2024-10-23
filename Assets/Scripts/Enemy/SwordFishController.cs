@@ -60,7 +60,7 @@ public class SwordFishController : MonoBehaviour
         
         swordFishUITransform.gameObject.SetActive(true);
         
-        SoundManager.instance.PlayOneShot(FModEvents.Instance.SwordFishAttack, transform.position);
+        SoundManager.Instance.PlayOneShot(FModEvents.Instance.SwordFishAttack, transform.position);
         
         swordFishUI.SetUIPosition(newPos);
         

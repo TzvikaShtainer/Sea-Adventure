@@ -62,7 +62,7 @@ public class MoneyManager : MonoBehaviour
     {
         currMoneyAmount += amountToAdd;
         
-        SoundManager.instance.PlayOneShot(FModEvents.Instance.CoinPickup, transform.position);
+        SoundManager.Instance.PlayOneShot(FModEvents.Instance.CoinPickup, transform.position);
         
         onMoneyAmountChanged?.Invoke(currMoneyAmount, amountToAdd);
     }

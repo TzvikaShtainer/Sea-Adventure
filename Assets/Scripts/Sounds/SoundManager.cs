@@ -9,15 +9,12 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager instance{get; private set;}
+    public static SoundManager Instance{get; private set;}
 
     private EventInstance bgMusicEventInstance;
     
-    [Range(0, 1)]
-    public float bgMusicVolume = 1;
-    
-    [Range(0, 1)]
-    public float sfxVolume = 1;
+    [Range(0, 1)] public float bgMusicVolume = 1;
+    [Range(0, 1)] public float sfxVolume = 1;
 
     private Bus musicBus;
     private Bus sfxBus;
@@ -26,22 +23,29 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
 
         InitializeBuses();
+        LoadVolumeSettings();
     }
 
     private void InitializeBuses()
     {
         musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
+    }
+    
+    private void LoadVolumeSettings()
+    {
+        bgMusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
+        sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
     }
     
     private void Start()
@@ -69,17 +73,6 @@ public class SoundManager : MonoBehaviour
         bgMusicEventInstance.start();
     }
     
-    public void StopBgMusic()
-    {
-        if (bgMusicEventInstance.isValid())
-        {
-            bgMusicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            bgMusicEventInstance.release();
-        }
-
-        isMusicPlaying = false;
-    }
-
     public EventInstance CreateInstance(EventReference eventReference)
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
@@ -88,11 +81,6 @@ public class SoundManager : MonoBehaviour
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
-    }
-    
-    private void OnDestroy()
-    {
-       //StopBgMusic();
     }
     
     public void PlayClickSound()
