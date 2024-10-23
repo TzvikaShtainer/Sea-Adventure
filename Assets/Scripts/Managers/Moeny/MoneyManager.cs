@@ -71,4 +71,9 @@ public class MoneyManager : MonoBehaviour
     {
         GameDataHandler.instance.SetMoneyAmount(newMoneyAmount);
     }
+
+    public int GetMoneyAmount()
+    {
+        return currMoneyAmount;
+    }
 }

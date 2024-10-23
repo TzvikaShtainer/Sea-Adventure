@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 {
     [Header("Container")]
     [SerializeField] private RectTransform screensContainer;
+    [SerializeField] private Image bgImage; //not shop image
     
     [Header("MainMenu")]
     [SerializeField] private Transform mainMenuUI;
@@ -20,7 +21,6 @@ public class UIManager : MonoBehaviour
     
     [Header("Store")]
     [SerializeField] private Transform storeUI;
-    [SerializeField] private Button storeReturnButton;
     
     [Header("Settings")]
     [SerializeField] private Transform settingsMenuUI;
@@ -45,9 +45,6 @@ public class UIManager : MonoBehaviour
         
         //Settings btns
         returnButton.onClick.AddListener(OnReturnClicked);
-        
-        //Store Btns
-        storeReturnButton.onClick.AddListener(OnReturnClicked);
     }
 
     private void SetScreen(Transform screenToSet)
@@ -86,6 +83,10 @@ public class UIManager : MonoBehaviour
     private void OnStoreClicked()
     {
         SetScreen(storeUI);
+        
+        SoundManager.Instance.PlayClickSound();
+
+        bgImage.enabled = false;
     }
     private void OnSettingsClicked()
     {
@@ -100,10 +101,12 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
     
-    private void OnReturnClicked()
+    public void OnReturnClicked()
     {
         SetScreen(mainMenuUI);
         
         SoundManager.Instance.PlayClickSound();
+        
+        bgImage.enabled = true;
     }
 }
