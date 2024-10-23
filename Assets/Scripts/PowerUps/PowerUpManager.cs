@@ -13,7 +13,7 @@ namespace PowerUps
 
         public async void ActivatePowerUp(BasePowerUp powerUp)
         {
-            SoundManager.instance.PlayOneShot(FModEvents.instance.PowerUpPickup, transform.position);
+            SoundManager.instance.PlayOneShot(FModEvents.Instance.PowerUpPickup, transform.position);
             
             if (_currentPowerUp != null)
             {

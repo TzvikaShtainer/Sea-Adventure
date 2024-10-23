@@ -46,7 +46,7 @@ public class SoundManager : MonoBehaviour
     
     private void Start()
     {
-        PlayBgMusic(FModEvents.instance.BGMusic);
+        PlayBgMusic(FModEvents.Instance.BgMusic);
     }
 
     private void Update()
@@ -97,6 +97,6 @@ public class SoundManager : MonoBehaviour
     
     public void PlayClickSound()
     {
-        PlayOneShot(FModEvents.instance.BtnClicked, transform.position);
+        PlayOneShot(FModEvents.Instance.BtnClicked, transform.position);
     }
 }

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5023d5e4e96d34c839788fbd64387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <BGMusic>k__BackingField:
+  <BgMusic>k__BackingField:
     Guid:
       Data1: 1343852497
       Data2: 1311966311

@@ -6,10 +6,10 @@ using FMODUnity;
 
 public class FModEvents : MonoBehaviour
 {
-    public static FModEvents instance{get; private set;}
+    public static FModEvents Instance{get; private set;}
     
     [field: Header("BG Music")]
-    [field: SerializeField] public EventReference BGMusic {get; private set;}
+    [field: SerializeField] public EventReference BgMusic {get; private set;}
     
     [field: Header("Jump Sound")]
     [field: SerializeField] public EventReference JumpSound {get; private set;}
@@ -35,9 +35,9 @@ public class FModEvents : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else

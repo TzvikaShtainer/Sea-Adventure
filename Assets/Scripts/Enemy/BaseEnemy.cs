@@ -39,7 +39,7 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
         enemyAnimationController.PlayElectrifiedAnimation();
         
-        SoundManager.instance.PlayOneShot(FModEvents.instance.EnemyElectrified, transform.position);
+        SoundManager.instance.PlayOneShot(FModEvents.Instance.EnemyElectrified, transform.position);
 
         moveToPlayer.EnemyElectrified();
     }

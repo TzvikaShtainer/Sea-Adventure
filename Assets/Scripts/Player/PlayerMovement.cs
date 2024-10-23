@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayJumpSound()
     {
-        SoundManager.instance.PlayOneShot(FModEvents.instance.JumpSound, transform.position);
+        SoundManager.instance.PlayOneShot(FModEvents.Instance.JumpSound, transform.position);
     }
 
     public bool GetJumpState()
