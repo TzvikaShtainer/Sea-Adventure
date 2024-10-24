@@ -76,4 +76,19 @@ public class MoneyManager : MonoBehaviour
     {
         return currMoneyAmount;
     }
+
+    public bool Purchase(int itemSelectedPrice, UnityEngine.Object itemSelectedItem)
+    {
+        if (currMoneyAmount < itemSelectedPrice) return false;
+
+        currMoneyAmount -= itemSelectedPrice;
+
+        SaveMoneyAmount(currMoneyAmount);
+
+        onMoneyAmountChanged?.Invoke(currMoneyAmount, itemSelectedPrice);
+        
+        //BroadcastPurchase(itemSelectedItem);
+        
+        return true;
+    }
 }

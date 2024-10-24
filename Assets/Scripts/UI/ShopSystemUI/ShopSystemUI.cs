@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,20 +17,26 @@ public class ShopSystemUI : MonoBehaviour
     
     [SerializeField] private List<ShopItemUI> shopItems = new List<ShopItemUI>();
     
-    private ShopItemUI selectedItem;
-    
+    [SerializeField] private ShopItemUI selectedItem;
+
+    private void OnEnable()
+    {
+        MoneyManager.onMoneyAmountChanged += UpdateMoney;
+    }
+
     private void OnDisable()
     {
-        //creditComponent.onCreditsChanged -= UpdateCredit;
+        MoneyManager.onMoneyAmountChanged -= UpdateMoney;
     }
-    
+
     private void Start()
     {
         InitShopItems();
-        //backBtn.onClick.AddListener(uiManager.OnReturnClicked);
-        //buyBtn.onClick.AddListener(TryPurchaseItem);
-        //creditComponent.onCreditsChanged += UpdateCredit;
-        UpdateMoney(MoneyManager.instance.GetMoneyAmount());
+        
+        //backBtn.onClick.AddListener(uiManager.OnReturnClicked); //added with unity events
+        buyBtn.onClick.AddListener(TryPurchaseItem);
+        
+        UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
     }
 
     private void InitShopItems()
@@ -57,8 +64,8 @@ public class ShopSystemUI : MonoBehaviour
         
     private void TryPurchaseItem()
     {
-        // if (!selectedItem || !shopSystem.TryPurchase(selectedItem.GetItem(), creditComponent))
-        //     return;
+        if (!selectedItem || !shopSystem.TryPurchase(selectedItem.GetItem()))
+            return;
 
         RemoveItem(selectedItem);
     }
@@ -69,10 +76,10 @@ public class ShopSystemUI : MonoBehaviour
         Destroy(itemToRemove.gameObject);
     }
 
-    private void UpdateMoney(int newMoneyAmount)
+    private void UpdateMoney(int currMoneyAmount, int newMoneyAmount)
     {
-        MoneyText.SetText(newMoneyAmount.ToString());
-        RefreshItems();
+        MoneyText.SetText(currMoneyAmount.ToString());
+        //RefreshItems();
     }
 
     private void RefreshItems()
