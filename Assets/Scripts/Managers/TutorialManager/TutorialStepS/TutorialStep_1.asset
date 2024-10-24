@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TutorialStep_1
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 21300000, guid: 3715a998db292c941864fc6f9cf4b62a, type: 3}
-  tutorialText: OBSTECALES!
+  tutorialText: 

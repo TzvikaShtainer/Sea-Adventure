@@ -69,7 +69,7 @@ public class GameDataHandler : MonoBehaviour
     {
         long startTime = DateTime.Now.Ticks;
         
-        //C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
+        //  C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
         if (dataService.SaveData("/JsonGameData.json", gameData, encryptionEnabled))
         {
             saveTime = DateTime.Now.Ticks - startTime;

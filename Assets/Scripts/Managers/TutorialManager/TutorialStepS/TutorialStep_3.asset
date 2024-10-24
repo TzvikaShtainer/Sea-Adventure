@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TutorialStep_3
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 21300000, guid: 380affc1de0b52343a88d4a5ce9671c1, type: 3}
-  tutorialText: THE PUFFER FISH!
+  tutorialText: 

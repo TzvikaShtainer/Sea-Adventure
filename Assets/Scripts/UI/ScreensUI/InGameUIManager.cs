@@ -135,12 +135,22 @@ public class InGameUIManager : MonoBehaviour
     private void OnContinueButtonClicked()
     {
         SoundManager.Instance.PlayClickSound();
+
+        if (!CheckTutorialCompleted())
+        {
+            DisableScreen(pauseMenu);
+            EnableScreen(tutorialMenu);
+        }
+        else
+        {
+            DisableScreen(pauseMenu);
+            Time.timeScale = 1f;         
+            isPaused = false;
+        }
         
-        DisableScreen(pauseMenu);
         playerUIMenu.gameObject.SetActive(true);
         touchUI.gameObject.SetActive(true);
-        Time.timeScale = 1f;         
-        isPaused = false;
+        
     }
     
     private void PauseGame()
