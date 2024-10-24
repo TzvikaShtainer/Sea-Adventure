@@ -16,6 +16,6 @@ MonoBehaviour:
   spawnerID: SwordFish
   triggerDistance: 75000
   totalAttackTimeLength: 10
-  itemSpawnTime: 5
+  itemSpawnTime: 0.5
   originItemSpawnTime: 10
-  timeOfEachItemSpawn: 1
+  timeOfEachItemSpawn: 0.1

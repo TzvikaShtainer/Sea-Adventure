@@ -768,8 +768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 3
-  maxSpeed: 14
-  speedIncreaseRate: 0.001
+  maxSpeed: 20
+  speedIncreaseRate: 0.1
 --- !u!1 &465766746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,7 +3965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1033133234517727512, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: health
@@ -4104,11 +4104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2104253280770715561, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2104253280770715561, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: xPosToSpawn
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3625005216296136670, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive

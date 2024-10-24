@@ -9,7 +9,7 @@ public class DistanceEventSO : ScriptableObject
     public string spawnerID; 
     public float triggerDistance;
     public int totalAttackTimeLength;
-    public int itemSpawnTime;
+    public float itemSpawnTime;
     public float originItemSpawnTime;
     public float timeOfEachItemSpawn;
     
