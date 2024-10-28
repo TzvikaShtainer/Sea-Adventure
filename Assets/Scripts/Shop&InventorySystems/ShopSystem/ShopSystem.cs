@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Shop/ShopSystem")]
-public class ShopSystem : ScriptableObject
+public class ShopSystem :  ScriptableObject
 {
-    [SerializeField] private ShopItem[] shopItems;
+    [SerializeField] private List<ShopItem> shopItems = new List<ShopItem>();
 
-    public ShopItem[] GetShopItems()
+    public List<ShopItem> GetShopItems()
     {
         return shopItems;
     }
@@ -17,4 +17,3 @@ public class ShopSystem : ScriptableObject
         return MoneyManager.instance.Purchase(itemSelected.price, itemSelected.item);
     }
 }
-

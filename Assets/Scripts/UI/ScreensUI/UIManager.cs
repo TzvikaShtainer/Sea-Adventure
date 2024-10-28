@@ -14,13 +14,13 @@ public class UIManager : MonoBehaviour
     
     [Header("MainMenu")]
     [SerializeField] private Transform mainMenuUI;
-    [SerializeField] private Button storeButton;
+    [SerializeField] private Button shopButton;
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
     
-    [Header("Store")]
-    [SerializeField] private Transform storeUI;
+    [Header("Shop")]
+    [SerializeField] private Transform shopUI;
     
     [Header("Settings")]
     [SerializeField] private Transform settingsMenuUI;
@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
     {
         //MainMenu btns
         startGameButton.onClick.AddListener(OnStartGameClicked);
-        storeButton.onClick.AddListener(OnStoreClicked);
+        shopButton.onClick.AddListener(OnShopClicked);
         settingsButton.onClick.AddListener(OnSettingsClicked);
         exitButton.onClick.AddListener(OnExitClicked);
         
@@ -80,9 +80,9 @@ public class UIManager : MonoBehaviour
     //     }
     // }
 
-    private void OnStoreClicked()
+    private void OnShopClicked()
     {
-        SetScreen(storeUI);
+        SetScreen(shopUI);
         
         SoundManager.Instance.PlayClickSound();
 

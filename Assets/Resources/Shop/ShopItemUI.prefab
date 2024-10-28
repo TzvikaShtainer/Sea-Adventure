@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2161867530499551519}
   - component: {fileID: 129472266766764798}
-  - component: {fileID: 2954585165041839931}
+  - component: {fileID: 4168132725082774224}
   m_Layer: 5
   m_Name: ShopItemUI
   m_TagString: Untagged
@@ -181,7 +181,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212010049799910331}
   m_CullTransparentMesh: 1
---- !u!114 &2954585165041839931
+--- !u!114 &4168132725082774224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,16 +190,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1212010049799910331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7790ed93df6266c48b2dc73f4bc76bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c60fe4921a020647ba3c4a5f1e51388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 5952567624810686278}
   titleText: {fileID: 7181010822079133040}
   priceText: {fileID: 8652373601053574854}
-  description: {fileID: 4812686893362485266}
   button: {fileID: 23045102556987782}
-  inEfficientCreditColor: {r: 1, g: 0, b: 0, a: 0}
-  surEfficientCreditColor: {r: 1, g: 1, b: 1, a: 0}
+  description: {fileID: 4812686893362485266}
 --- !u!1 &2059184256448678569
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +712,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1569272187756874003}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
