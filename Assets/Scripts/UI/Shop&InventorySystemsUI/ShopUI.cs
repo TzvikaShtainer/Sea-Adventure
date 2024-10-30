@@ -25,6 +25,8 @@ public class ShopUI : ItemSystemBase<ShopItemUI>
     
     private void Start()
     {
+        shopSystem.LoadShopItemsFromResources();
+        
         DeleteItemsThatPlayerAlreadyHave();
         
         InitItems(shopSystem.GetShopItems());

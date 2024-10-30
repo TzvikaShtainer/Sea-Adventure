@@ -16,4 +16,13 @@ public class ShopSystem :  ScriptableObject
     {
         return MoneyManager.instance.Purchase(itemSelected.price, itemSelected.item);
     }
+    
+    public void LoadShopItemsFromResources()
+    {
+        shopItems.Clear();
+        
+        ShopItem[] items = Resources.LoadAll<ShopItem>("ShopItems");
+        
+        shopItems.AddRange(items);
+    }
 }
