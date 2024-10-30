@@ -7,6 +7,9 @@ using UnityEngine;
 public class InventorySystem :  ScriptableObject
 {
     [SerializeField] private List<ShopItem> inventoryItems = new List<ShopItem>();
+    
+    public delegate void OnItemAdded(ShopItem item);
+    public event OnItemAdded onItemAddedToInventory;
 
     public List<ShopItem> GetInventoryItems()
     {
@@ -19,13 +22,10 @@ public class InventorySystem :  ScriptableObject
         {
             inventoryItems.Add(newItem);
             
+            onItemAddedToInventory?.Invoke(newItem);
+            
             GameDataHandler.instance.SaveGameData();
         }
-    }
-
-    public bool RemoveItem(ShopItem itemToRemove)
-    {
-        return inventoryItems.Remove(itemToRemove);
     }
 
     public bool TryUse(ShopItem itemSelected)

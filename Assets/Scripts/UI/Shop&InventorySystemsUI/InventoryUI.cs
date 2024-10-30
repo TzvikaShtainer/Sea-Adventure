@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,12 +17,12 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void OnEnable()
     {
         MoneyManager.onMoneyAmountChanged += UpdateMoney;
-        
-    }
 
+    }
     private void OnDestroy()
     {
         MoneyManager.onMoneyAmountChanged -= UpdateMoney;
+        inventorySystem.onItemAddedToInventory -= InventorySystem_onItemAdded;
     }
     
 
@@ -29,6 +31,8 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
          InitItems(inventorySystem.GetInventoryItems());
          
          UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
+         
+         inventorySystem.onItemAddedToInventory += InventorySystem_onItemAdded;
     }
 
     protected override void OnItemSelected(ItemUIBase item)
@@ -40,9 +44,10 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void UpdateMoney(int currMoneyAmount, int newMoneyAmount)
     {
         moneyText.SetText(currMoneyAmount.ToString());
-        
-        //DestroyItemsUI();
-        
-        //InitItems(inventorySystem.GetInventoryItems());
+    }
+    
+    private void InventorySystem_onItemAdded(ShopItem item)
+    {
+        AddItemUI(item);
     }
 }
