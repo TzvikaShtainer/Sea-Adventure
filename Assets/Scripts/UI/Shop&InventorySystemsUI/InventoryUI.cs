@@ -11,6 +11,18 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     [SerializeField] private TextMeshProUGUI moneyText;
     
     private ShopItemUI selectedItem;
+    
+    private void OnEnable()
+    {
+        MoneyManager.onMoneyAmountChanged += UpdateMoney;
+        
+    }
+
+    private void OnDestroy()
+    {
+        MoneyManager.onMoneyAmountChanged -= UpdateMoney;
+    }
+    
 
     private void Start()
     {
@@ -28,5 +40,9 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void UpdateMoney(int currMoneyAmount, int newMoneyAmount)
     {
         moneyText.SetText(currMoneyAmount.ToString());
+        
+        //DestroyItemsUI();
+        
+        //InitItems(inventorySystem.GetInventoryItems());
     }
 }

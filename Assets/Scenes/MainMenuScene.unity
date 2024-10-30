@@ -3023,7 +3023,7 @@ MonoBehaviour:
   itemList: {fileID: 1881499860}
   itemUIPrefab: {fileID: 4168132725082774224, guid: 5f662496f847f5f48a9e9fe057ebe9a4, type: 3}
   shopSystem: {fileID: 11400000, guid: ac30f559a1cd4684097bdf55631d55a4, type: 2}
-  inventorySystem: {fileID: 11400000, guid: e5609f4fd4389b541b208d9f9dc0a7bf, type: 2}
+  inventorySystem: {fileID: 11400000, guid: d3a38441641087549903f6507c705d7e, type: 2}
   buyBtn: {fileID: 1735040651}
   moneyText: {fileID: 522264864}
 --- !u!1 &1518229792
@@ -3666,6 +3666,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7522188311106492049, guid: aea90092732cdd24a809fa9d75a0977d, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: d3a38441641087549903f6507c705d7e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4157,7 +4161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemList: {fileID: 768827587}
   itemUIPrefab: {fileID: 4168132725082774224, guid: 5f662496f847f5f48a9e9fe057ebe9a4, type: 3}
-  inventorySystem: {fileID: 11400000, guid: e5609f4fd4389b541b208d9f9dc0a7bf, type: 2}
+  inventorySystem: {fileID: 11400000, guid: d3a38441641087549903f6507c705d7e, type: 2}
   useBtn: {fileID: 1985220703}
   moneyText: {fileID: 1459223990}
 --- !u!1001 &8587594295763863029

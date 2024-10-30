@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DefaultNamespace.GameManager
 {
@@ -8,6 +9,8 @@ namespace DefaultNamespace.GameManager
         public float MaxDistanceTraveled;
         public int MoneyAmount;
         public bool tutorialCompleted;
+        
+        public List<string> inventoryItemIDs;
 
         public GameData()
         {
@@ -15,6 +18,7 @@ namespace DefaultNamespace.GameManager
             MaxDistanceTraveled = 0f;
             MoneyAmount = 0;
             tutorialCompleted = false;
+            inventoryItemIDs = new List<string>();
         }
     }
 }

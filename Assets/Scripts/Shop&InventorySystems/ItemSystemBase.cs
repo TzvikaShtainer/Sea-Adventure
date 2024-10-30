@@ -24,5 +24,13 @@ public abstract class ItemSystemBase<T> : MonoBehaviour where T : ItemUIBase
         itemsUI.Add(newItemUI);
     }
 
+    protected void DestroyItemsUI()
+    {
+        foreach (T itemUI in itemList)
+        {
+            Destroy(itemUI);
+        }
+    }
+
     protected abstract void OnItemSelected(ItemUIBase item);
 }

@@ -7,6 +7,7 @@ public class GameDataHandler : MonoBehaviour
 {
     public static GameDataHandler instance;
     
+    [SerializeField] private InventorySystem playerInventory;
     //[SerializeField] GameDataSO gameDataSO;
     private GameData gameData;
     private IDataService dataService = new JsonDataService();
@@ -31,6 +32,13 @@ public class GameDataHandler : MonoBehaviour
 
     private void Start()
     {
+        LoadGameData();
+        
+        var inventory = playerInventory.GetInventoryItems();
+        Debug.Log($"Loaded {inventory.Count} items in inventory.");
+        
+        
+        
         // Check if the WRITE_EXTERNAL_STORAGE permission is already granted
         //if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
         //{
@@ -56,6 +64,8 @@ public class GameDataHandler : MonoBehaviour
 
             loadTime = DateTime.Now.Ticks - startTime;
             //Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
+            
+            playerInventory.LoadInventoryFromIDs(gameData.inventoryItemIDs);
         }
         catch (Exception e)
         {
@@ -68,6 +78,8 @@ public class GameDataHandler : MonoBehaviour
     public void SaveGameData()
     {
         long startTime = DateTime.Now.Ticks;
+        
+        gameData.inventoryItemIDs = playerInventory.GetInventoryIDs();
         
         //  C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
         if (dataService.SaveData("/JsonGameData.json", gameData, encryptionEnabled))

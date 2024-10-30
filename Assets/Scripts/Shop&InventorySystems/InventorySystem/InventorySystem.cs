@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Shop/InventorySystem")]
@@ -17,6 +18,8 @@ public class InventorySystem :  ScriptableObject
         if (!inventoryItems.Contains(newItem))
         {
             inventoryItems.Add(newItem);
+            
+            GameDataHandler.instance.SaveGameData();
         }
     }
 
@@ -34,5 +37,22 @@ public class InventorySystem :  ScriptableObject
             return true;
         }
         return false;
+    }
+    
+    public void LoadInventoryFromIDs(List<string> itemIDs)
+    {
+        inventoryItems.Clear();
+        
+        foreach (string id in itemIDs)
+        {
+            ShopItem item = Resources.Load<ShopItem>($"ShopItems/{id}");
+            if (item != null)
+                inventoryItems.Add(item);
+        }
+    }
+    
+    public List<string> GetInventoryIDs()
+    {
+        return inventoryItems.Select(item => item.name).ToList();
     }
 }
