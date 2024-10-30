@@ -25,6 +25,8 @@ public class ShopUI : ItemSystemBase<ShopItemUI>
     
     private void Start()
     {
+        DeleteItemsThatPlayerAlreadyHave();
+        
         InitItems(shopSystem.GetShopItems());
         
         buyBtn.onClick.AddListener(TryPurchaseItem);
@@ -32,6 +34,20 @@ public class ShopUI : ItemSystemBase<ShopItemUI>
         UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
     }
     
+    private void DeleteItemsThatPlayerAlreadyHave()
+    {
+        List<ShopItem> shopItems = shopSystem.GetShopItems();
+        List<ShopItem> inventoryItems = inventorySystem.GetInventoryItems();
+
+        for (int i = shopItems.Count - 1; i >= 0; i--)
+        {
+            if (inventoryItems.Contains(shopItems[i]))
+            {
+                shopItems.RemoveAt(i);
+            }
+        }
+    }
+
     private void UpdateMoney(int currMoneyAmount, int newMoneyAmount)
     {
         moneyText.SetText(currMoneyAmount.ToString());
