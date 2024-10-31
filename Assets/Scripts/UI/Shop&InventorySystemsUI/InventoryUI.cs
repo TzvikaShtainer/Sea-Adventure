@@ -33,7 +33,11 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
          UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
          
          inventorySystem.onItemAddedToInventory += InventorySystem_onItemAdded;
+         
+         useBtn.onClick.AddListener(UseSelectedItem);
     }
+
+    
 
     protected override void OnItemSelected(ItemUIBase item)
     {
@@ -49,5 +53,10 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void InventorySystem_onItemAdded(ShopItem item)
     {
         AddItemUI(item);
+    }
+    
+    private void UseSelectedItem()
+    {
+       selectedItem.GetItem().UseItem();
     }
 }

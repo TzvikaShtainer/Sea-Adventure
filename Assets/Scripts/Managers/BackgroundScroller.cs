@@ -49,4 +49,12 @@ public class BackgroundScroller : MonoBehaviour
         }
         return rightmost;
     }
+
+    public void SetBackgroundScrollerArray(Sprite newBackgroundImage)
+    {
+        for (int i = 0; i < backgroundsArray.Length; i++)
+        {
+            backgroundsArray[i].GetComponent<SpriteRenderer>().sprite = newBackgroundImage;
+        }
+    }
 }

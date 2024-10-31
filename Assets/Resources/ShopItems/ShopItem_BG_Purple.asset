@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f44052d7bb72a14b91d1fc2824ff4d3, type: 3}
-  m_Name: PinkBG_ShopItem
+  m_Name: ShopItem_BG_Purple
   m_EditorClassIdentifier: 
-  title: Pink Background
-  itemIcon: {fileID: 21300000, guid: 6021e01c8a007594b99f5517dfdd70d3, type: 3}
-  price: 1
-  description: Change To Pink Background
+  title: Purple Background
+  itemIcon: {fileID: 21300000, guid: ab90be214857d604299ffb6723aff008, type: 3}
+  price: 2
+  description: Change To Purple Background
   item: {fileID: 11400000}
+  effects:
+  - {fileID: 11400000, guid: 99e0bc0a183cab544b2bd95209efc2d2, type: 2}

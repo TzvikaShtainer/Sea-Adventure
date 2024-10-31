@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6f0d3bbafd41a4b8c95e5cae06fd02, type: 3}
+  m_Name: ShopItemEffect_BG_Purple
+  m_EditorClassIdentifier: 
+  backgroundColorName: BG_Purple
+  backgroundSprites:
+  - {fileID: 21300000, guid: 188277083688b7f41be5a16f057fd07b, type: 3}
+  - {fileID: 21300000, guid: f4e3e5d681690a8409707519f3fc7d92, type: 3}
+  - {fileID: 21300000, guid: a920989ab556f264e81574c46a89b782, type: 3}
+  - {fileID: 21300000, guid: 3cafb66775d9d0d4db8b40f9e82597a5, type: 3}
+  - {fileID: 21300000, guid: d5d4bab53a2ec5d44ae71f8d743037ba, type: 3}
+  - {fileID: 21300000, guid: 439d1c7628678c74596faf80a6a26e74, type: 3}
+  - {fileID: 21300000, guid: 74ac2760f04503343aff3538f9e35761, type: 3}
