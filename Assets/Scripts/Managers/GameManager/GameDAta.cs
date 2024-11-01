@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace DefaultNamespace.GameManager
 {
@@ -20,7 +21,10 @@ namespace DefaultNamespace.GameManager
             MaxDistanceTraveled = 0f;
             MoneyAmount = 0;
             tutorialCompleted = false;
+            
             inventoryItemIDs = new List<string>();
+            inventoryItemIDs.Add("ShopItem_BG_Blue_Default");
+
             bgCurrentColor = "ShopItem_BG_Blue_Default";
         }
     }
