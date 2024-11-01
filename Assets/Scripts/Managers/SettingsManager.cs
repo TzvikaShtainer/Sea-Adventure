@@ -27,18 +27,10 @@ public class SettingsManager : MonoBehaviour
         //init character
     }
 
-    private void Update()
-    {
-        Debug.Log("working");
-    }
-
     private static void InitBgColorFromGameData()
     {
         string currentBgColor = GameDataHandler.instance.GetBgCurrentColor();
-        Debug.Log(currentBgColor);
         ShopItem item = Resources.Load<ShopItem>($"ShopItems/{currentBgColor}");
-        Debug.Log(item);
-        
         item.UseItem();
     }
     
