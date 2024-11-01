@@ -9,8 +9,7 @@ public class ChangeBackgroundColorEffect : ScriptableObject, IShopItemEffect
     
     public void ApplyEffect(ShopItem shopItem)
     {
-        //EffectsHandler.Instance.ChangeBackgroundColor();
-        BackGroundManager.Instance.ChangeBackGround(backgroundSprites);
-        //need to save effect
+        EffectsHandler.Instance.ChangeBackgroundColor(backgroundSprites);
+        //BackGroundManager.Instance.ChangeBackGround(backgroundSprites);
     }
 }

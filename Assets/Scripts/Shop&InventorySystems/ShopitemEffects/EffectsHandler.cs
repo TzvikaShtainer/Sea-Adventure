@@ -19,8 +19,13 @@ public class EffectsHandler : MonoBehaviour
         }
     }
 
-    public void ChangeBackgroundColor()
+    public void ChangeBackgroundColor(Sprite[] backgroundSprites)
     {
-        
+        BackGroundManager.Instance.ChangeBackGround(backgroundSprites);
+    }
+
+    public void ChangeMainCharacter()
+    {
+        Debug.Log("Changing Main Character");
     }
 }

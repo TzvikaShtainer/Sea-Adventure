@@ -15,6 +15,8 @@ namespace DefaultNamespace.GameManager
 
         public string bgCurrentColor;
 
+        public string mainCharacter;
+
         public GameData()
         {
             // Initialize default values
@@ -23,9 +25,20 @@ namespace DefaultNamespace.GameManager
             tutorialCompleted = false;
             
             inventoryItemIDs = new List<string>();
-            inventoryItemIDs.Add("ShopItem_BG_Blue_Default");
+
+            // if (!inventoryItemIDs.Contains("ShopItem_BG_Blue_Default"))
+            // {
+            //     inventoryItemIDs.Add("ShopItem_BG_Blue_Default");
+            // }
+            //
+            // if (!inventoryItemIDs.Contains("ShopItem_default_Character"))
+            // {
+            //     inventoryItemIDs.Add("ShopItem_default_Character");
+            // }
 
             bgCurrentColor = "ShopItem_BG_Blue_Default";
+            
+            mainCharacter = "ShopItem_default_Character";
         }
     }
 }
