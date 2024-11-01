@@ -12,6 +12,8 @@ namespace DefaultNamespace.GameManager
         
         public List<string> inventoryItemIDs;
 
+        public string bgCurrentColor;
+
         public GameData()
         {
             // Initialize default values
@@ -19,6 +21,7 @@ namespace DefaultNamespace.GameManager
             MoneyAmount = 0;
             tutorialCompleted = false;
             inventoryItemIDs = new List<string>();
+            bgCurrentColor = "ShopItem_BG_Blue_Default";
         }
     }
 }

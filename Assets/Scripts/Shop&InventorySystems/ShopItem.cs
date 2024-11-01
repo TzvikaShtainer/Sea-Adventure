@@ -1,6 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum ShopItemType
+{
+    Background,
+    CharacterType
+}
+
 [CreateAssetMenu(fileName = "New Shop Item", menuName = "Shop/Item")]
 public class ShopItem : ScriptableObject
 {
@@ -9,6 +16,7 @@ public class ShopItem : ScriptableObject
     public int price;
     public string description;
     public ShopItem item;
+    public ShopItemType shopItemType;
     
     public List<ScriptableObject> effects = new List<ScriptableObject>();
 

@@ -27,17 +27,6 @@ public class InventorySystem :  ScriptableObject
             GameDataHandler.instance.SaveGameData();
         }
     }
-
-    public bool TryUse(ShopItem itemSelected)
-    {
-        if (inventoryItems.Contains(itemSelected) && 
-            MoneyManager.instance.Purchase(itemSelected.price, itemSelected.item))
-        {
-            //inventoryItems.Remove(itemSelected);
-            return true;
-        }
-        return false;
-    }
     
     public void LoadInventoryFromIDs(List<string> itemIDs)
     {
@@ -50,6 +39,7 @@ public class InventorySystem :  ScriptableObject
                 inventoryItems.Add(item);
         }
     }
+    
     
     public List<string> GetInventoryIDs()
     {

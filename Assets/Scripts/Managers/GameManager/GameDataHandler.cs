@@ -35,7 +35,7 @@ public class GameDataHandler : MonoBehaviour
         LoadGameData();
         
         var inventory = playerInventory.GetInventoryItems();
-        Debug.Log($"Loaded {inventory.Count} items in inventory.");
+        //Debug.Log($"Loaded {inventory.Count} items in inventory.");
         
         
         
@@ -66,6 +66,8 @@ public class GameDataHandler : MonoBehaviour
             //Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
             
             playerInventory.LoadInventoryFromIDs(gameData.inventoryItemIDs);
+            
+            
         }
         catch (Exception e)
         {
@@ -135,6 +137,17 @@ public class GameDataHandler : MonoBehaviour
     public void SetTutorialCompleted(bool newValue)
     {
         gameData.tutorialCompleted = newValue;
+        SaveGameData();
+    }
+
+    public string GetBgCurrentColor()
+    {
+        return gameData.bgCurrentColor;
+    }
+
+    public void SetBgCurrentColor(string newValue)
+    {
+        gameData.bgCurrentColor = newValue;
         SaveGameData();
     }
 }

@@ -58,5 +58,12 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void UseSelectedItem()
     {
        selectedItem.GetItem().UseItem();
+
+       if (selectedItem.GetItem().shopItemType == ShopItemType.Background)
+       {
+           string originalString = selectedItem.GetItem().ToString();
+           string cleanedString = originalString.Replace(" (ShopItem)", "");
+           GameDataHandler.instance.SetBgCurrentColor(cleanedString);
+       }
     }
 }
