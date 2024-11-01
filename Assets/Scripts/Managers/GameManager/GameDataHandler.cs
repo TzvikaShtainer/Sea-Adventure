@@ -150,4 +150,15 @@ public class GameDataHandler : MonoBehaviour
         gameData.bgCurrentColor = newValue;
         SaveGameData();
     }
+    
+    public string GetCurrentCharacter()
+    {
+        return gameData.mainCharacter;
+    }
+
+    public void SetCurrentCharacter(string newValue)
+    {
+        gameData.mainCharacter = newValue;
+        SaveGameData();
+    }
 }

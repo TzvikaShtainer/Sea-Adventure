@@ -24,7 +24,7 @@ public class SettingsManager : MonoBehaviour
     private void Start()
     {
         InitBgColorFromGameData();
-        //init character
+        InitCharacter();
     }
 
     private static void InitBgColorFromGameData()
@@ -34,5 +34,11 @@ public class SettingsManager : MonoBehaviour
         item.UseItem();
     }
     
+    private void InitCharacter()
+    {
+        string currentCharacter = GameDataHandler.instance.GetCurrentCharacter();
+        ShopItem item = Resources.Load<ShopItem>($"ShopItems/{currentCharacter}");
+        item.UseItem();
+    }
     
 }

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f44052d7bb72a14b91d1fc2824ff4d3, type: 3}
+  m_Name: ShopItem_Horse_Character
+  m_EditorClassIdentifier: 
+  title: The SeaHorse
+  itemIcon: {fileID: 973110547, guid: 1b5e8c96f4e35d34c9445a6c9e85d033, type: 3}
+  price: 10
+  description: The SeaHorse Character
+  item: {fileID: 11400000}
+  shopItemType: 1
+  effects:
+  - {fileID: 11400000, guid: 8f8489d2c894c504fa01e89eb7c98b86, type: 2}

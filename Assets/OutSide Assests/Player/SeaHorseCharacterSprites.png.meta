@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 1b5e8c96f4e35d34c9445a6c9e85d033
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 268
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b6374cc46348142abbb364cd8e3cce
+      internalID: 962097058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_7
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 254
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a37846281726214aa84f3e2fe7879a5
+      internalID: 142288447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_8
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 254
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a97df32310e11408f9415a0c139d58
+      internalID: -842722505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 252
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c2cf7a1735c1648b90c018222a3358
+      internalID: 805740993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_10
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 292
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8049761d36caff749bfb4e45b2f9eacd
+      internalID: 1022282517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 882
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034c85e5ea9cdf740a7673c859aa3360
+      internalID: 973110547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 904
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c942fa5cd7b3cb41982b9adc92d5741
+      internalID: -362013218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 920
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c22aef819db88448382309ec244b6e
+      internalID: -271868923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 910
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b54c0e0b39634ca6b5913fcbc6276
+      internalID: -435742666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 912
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aab5dbaead1a240afe4d2aa3b73e7b
+      internalID: -1574618454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeaHorseCharacterSprites_5
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 914
+        width: 321
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d80dca0932403e44a7b089efcf40291
+      internalID: -323944013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SeaHorseCharacterSprites_0: 973110547
+      SeaHorseCharacterSprites_1: -362013218
+      SeaHorseCharacterSprites_10: 1022282517
+      SeaHorseCharacterSprites_11: -513094702
+      SeaHorseCharacterSprites_12: -1262570198
+      SeaHorseCharacterSprites_13: 159551796
+      SeaHorseCharacterSprites_14: -1727274140
+      SeaHorseCharacterSprites_15: 1775562612
+      SeaHorseCharacterSprites_16: -715175167
+      SeaHorseCharacterSprites_17: -1385730892
+      SeaHorseCharacterSprites_18: -1437046941
+      SeaHorseCharacterSprites_19: -803176328
+      SeaHorseCharacterSprites_2: -271868923
+      SeaHorseCharacterSprites_20: -1935702845
+      SeaHorseCharacterSprites_21: -134269809
+      SeaHorseCharacterSprites_22: -2015482290
+      SeaHorseCharacterSprites_23: -1736853623
+      SeaHorseCharacterSprites_24: 1023745451
+      SeaHorseCharacterSprites_25: 1445568411
+      SeaHorseCharacterSprites_26: -39623354
+      SeaHorseCharacterSprites_27: -1924903904
+      SeaHorseCharacterSprites_28: -1673878165
+      SeaHorseCharacterSprites_29: -1181793489
+      SeaHorseCharacterSprites_3: -435742666
+      SeaHorseCharacterSprites_30: 763779123
+      SeaHorseCharacterSprites_31: -1100922308
+      SeaHorseCharacterSprites_32: -1166905981
+      SeaHorseCharacterSprites_33: 85540604
+      SeaHorseCharacterSprites_34: -1831909906
+      SeaHorseCharacterSprites_35: -942735344
+      SeaHorseCharacterSprites_36: -963970782
+      SeaHorseCharacterSprites_37: 1330760932
+      SeaHorseCharacterSprites_38: 924392814
+      SeaHorseCharacterSprites_39: -879656289
+      SeaHorseCharacterSprites_4: -1574618454
+      SeaHorseCharacterSprites_40: 263306002
+      SeaHorseCharacterSprites_41: -1198105573
+      SeaHorseCharacterSprites_42: -1394898411
+      SeaHorseCharacterSprites_43: 1644634368
+      SeaHorseCharacterSprites_44: 98755023
+      SeaHorseCharacterSprites_45: -968659647
+      SeaHorseCharacterSprites_46: -483435409
+      SeaHorseCharacterSprites_47: 1688027368
+      SeaHorseCharacterSprites_48: -1909754493
+      SeaHorseCharacterSprites_49: -1416225823
+      SeaHorseCharacterSprites_5: -323944013
+      SeaHorseCharacterSprites_50: 1924433362
+      SeaHorseCharacterSprites_51: 188145990
+      SeaHorseCharacterSprites_52: 127613911
+      SeaHorseCharacterSprites_53: 719595910
+      SeaHorseCharacterSprites_54: 854779656
+      SeaHorseCharacterSprites_55: 1050636046
+      SeaHorseCharacterSprites_56: -1371428004
+      SeaHorseCharacterSprites_57: -1872278298
+      SeaHorseCharacterSprites_58: 1474741441
+      SeaHorseCharacterSprites_59: 6205299
+      SeaHorseCharacterSprites_6: 962097058
+      SeaHorseCharacterSprites_60: 536197598
+      SeaHorseCharacterSprites_61: -1274954882
+      SeaHorseCharacterSprites_62: -744678415
+      SeaHorseCharacterSprites_63: 1833872442
+      SeaHorseCharacterSprites_64: 700773411
+      SeaHorseCharacterSprites_65: -1715302310
+      SeaHorseCharacterSprites_66: 981299309
+      SeaHorseCharacterSprites_67: 881413246
+      SeaHorseCharacterSprites_68: 805088590
+      SeaHorseCharacterSprites_69: -1874591581
+      SeaHorseCharacterSprites_7: 142288447
+      SeaHorseCharacterSprites_70: -931648415
+      SeaHorseCharacterSprites_71: -201543648
+      SeaHorseCharacterSprites_72: -113031626
+      SeaHorseCharacterSprites_73: -42588603
+      SeaHorseCharacterSprites_74: 812382792
+      SeaHorseCharacterSprites_75: -1021369113
+      SeaHorseCharacterSprites_76: 840992576
+      SeaHorseCharacterSprites_77: -437256465
+      SeaHorseCharacterSprites_78: 1249164675
+      SeaHorseCharacterSprites_79: -1134991699
+      SeaHorseCharacterSprites_8: -842722505
+      SeaHorseCharacterSprites_80: -1423446044
+      SeaHorseCharacterSprites_81: -501529532
+      SeaHorseCharacterSprites_82: -139237801
+      SeaHorseCharacterSprites_9: 805740993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
