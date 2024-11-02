@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Player;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class EffectsHandler : MonoBehaviour
