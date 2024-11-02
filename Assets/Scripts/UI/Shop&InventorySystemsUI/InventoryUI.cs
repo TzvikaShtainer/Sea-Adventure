@@ -30,6 +30,8 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     {
          InitItems(inventorySystem.GetInventoryItems());
          
+         DisablePriceOnItems();
+         
          UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
          
          inventorySystem.onItemAddedToInventory += InventorySystem_onItemAdded;
@@ -53,6 +55,16 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void InventorySystem_onItemAdded(ShopItem item)
     {
         AddItemUI(item);
+
+        DisablePriceOnItems();
+    }
+
+    private void DisablePriceOnItems()
+    {
+        foreach (ShopItemUI item in itemsUI)
+        {
+            item.SetPriceTransformDisable();
+        }
     }
     
     private void UseSelectedItem()

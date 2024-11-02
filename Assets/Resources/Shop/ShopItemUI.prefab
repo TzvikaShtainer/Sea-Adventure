@@ -199,6 +199,7 @@ MonoBehaviour:
   priceText: {fileID: 8652373601053574854}
   button: {fileID: 23045102556987782}
   description: {fileID: 4812686893362485266}
+  priceTransform: {fileID: 6318011954990982108}
 --- !u!1 &2059184256448678569
 GameObject:
   m_ObjectHideFlags: 0

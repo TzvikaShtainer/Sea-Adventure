@@ -9,6 +9,7 @@ public class ItemUIBase : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI priceText;
     [SerializeField] protected Button button;
     [SerializeField] protected TextMeshProUGUI description;
+    [SerializeField] protected Transform priceTransform;
 
     protected ShopItem item;
     
@@ -34,5 +35,9 @@ public class ItemUIBase : MonoBehaviour
         description.text = item.description;
     }
 
+    public void SetPriceTransformDisable()
+    {
+        priceTransform.gameObject.SetActive(false);
+    }
     public ShopItem GetItem() => item;
 }
