@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: The SeaHorse
   itemIcon: {fileID: 973110547, guid: 1b5e8c96f4e35d34c9445a6c9e85d033, type: 3}
-  price: 10
+  price: 500
   description: The SeaHorse Character
   item: {fileID: 11400000}
   shopItemType: 1

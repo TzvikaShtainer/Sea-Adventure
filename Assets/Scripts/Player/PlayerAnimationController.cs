@@ -13,5 +13,10 @@ namespace Player
         {
             animator.SetBool(IS_Jumping, playerMovement.GetJumpState());
         }
+
+        public void SetAnimator(RuntimeAnimatorController  newAnimatorController)
+        {
+            animator.runtimeAnimatorController = newAnimatorController;
+        }
     }
 }

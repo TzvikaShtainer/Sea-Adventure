@@ -65,5 +65,12 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
            string cleanedString = originalString.Replace(" (ShopItem)", "");
            GameDataHandler.instance.SetBgCurrentColor(cleanedString);
        }
+       
+       if (selectedItem.GetItem().shopItemType == ShopItemType.CharacterType)
+       {
+           string originalString = selectedItem.GetItem().ToString();
+           string cleanedString = originalString.Replace(" (ShopItem)", "");
+           GameDataHandler.instance.SetCurrentCharacter(cleanedString);
+       }
     }
 }

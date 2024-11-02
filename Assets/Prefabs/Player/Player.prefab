@@ -88,7 +88,6 @@ MonoBehaviour:
   minY: -4.5
   smoothingTime: 0.1
   isTouchInput: 0
-  test: {fileID: 0}
 --- !u!114 &375814174964485436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,16 +100,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1648e4ee15aa51043ab9fdd92faf745e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 5735466445463990293}
+  originalTransform: 0.25
+  playerSprite: {fileID: 0}
   playerHealth: {fileID: 1033133234517727512}
   isDamaged: 0
   hitDelay: 0
   powerUpManager: {fileID: 0}
   isTookPowerUp: 0
-  playerTransform: {fileID: 5735466445463990293}
   shieldSprite: {fileID: 799713804316793954}
   hasShield: 0
-  originalTransform: 0.25
-  playerSprite: {fileID: 0}
+  shieldCounter: 0
+  hasHitWithShield: 0
+  moneyManager: {fileID: 0}
 --- !u!95 &-2955625018240141215
 Animator:
   serializedVersion: 5
@@ -121,7 +123,7 @@ Animator:
   m_GameObject: {fileID: 782666364234696720}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7115292c8e0ae544abda9794812429e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: f15278f8ab933ce4cac5b1f75f4f167d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

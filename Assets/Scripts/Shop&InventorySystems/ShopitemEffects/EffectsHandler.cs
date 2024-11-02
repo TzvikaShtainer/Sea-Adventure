@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class EffectsHandler : MonoBehaviour
 {
     public static EffectsHandler Instance { get; private set; }
+    
+    [SerializeField] private GameObject player;
 
     private void Awake()
     {
@@ -24,8 +28,9 @@ public class EffectsHandler : MonoBehaviour
         BackGroundManager.Instance.ChangeBackGround(backgroundSprites);
     }
 
-    public void ChangeMainCharacter()
+    public void ChangeMainCharacter(RuntimeAnimatorController newAnimatorController)
     {
-        Debug.Log("Changing Main Character");
+        PlayerAnimationController playerAnimationController = player.GetComponent<PlayerAnimationController>();
+        playerAnimationController.SetAnimator(newAnimatorController);
     }
 }
