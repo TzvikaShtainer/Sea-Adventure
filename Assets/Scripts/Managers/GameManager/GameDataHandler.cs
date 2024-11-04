@@ -65,6 +65,17 @@ public class GameDataHandler : MonoBehaviour
             loadTime = DateTime.Now.Ticks - startTime;
             //Debug.Log("Game data loaded. Time: " + loadTime / 1000f + " ms");
             
+            //need to fix this somewhere else
+            if (!gameData.inventoryItemIDs.Contains("ShopItem_BG_Blue_Default"))
+            {
+                gameData.inventoryItemIDs.Add("ShopItem_BG_Blue_Default");
+            }
+            
+            if (!gameData.inventoryItemIDs.Contains("ShopItem_default_Character"))
+            {
+                gameData.inventoryItemIDs.Add("ShopItem_default_Character");
+            }
+            
             playerInventory.LoadInventoryFromIDs(gameData.inventoryItemIDs);
             
             

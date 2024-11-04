@@ -25,16 +25,6 @@ namespace DefaultNamespace.GameManager
             
             inventoryItemIDs = new List<string>();
 
-             if (!inventoryItemIDs.Contains("ShopItem_BG_Blue_Default"))
-             {
-                 inventoryItemIDs.Add("ShopItem_BG_Blue_Default");
-             }
-            
-             if (!inventoryItemIDs.Contains("ShopItem_default_Character"))
-             {
-                 inventoryItemIDs.Add("ShopItem_default_Character");
-             }
-
             bgCurrentColor = "ShopItem_BG_Blue_Default";
             
             mainCharacter = "ShopItem_default_Character";
