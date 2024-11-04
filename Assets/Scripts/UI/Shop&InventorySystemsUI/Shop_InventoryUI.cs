@@ -15,6 +15,13 @@ public class Shop_InventoryUI : MonoBehaviour
 
     private bool isShop = true;
 
+    private void OnEnable()
+    {
+        InitShopUI();
+    }
+
+    
+
     private void Start()
     {
         switchButton.onClick.AddListener(SwitchUI);
@@ -31,17 +38,29 @@ public class Shop_InventoryUI : MonoBehaviour
     {
         if (isShop)
         {
-            shopUI.gameObject.SetActive(true);
-            inventoryUI.gameObject.SetActive(false);
-            shopInventoryTitle.text = "Shop"; 
-            switchButton.GetComponentInChildren<TextMeshProUGUI>().text = "Inventory";
+            InitShopUI();
         }
         else
         {
-            shopUI.gameObject.SetActive(false);
-            inventoryUI.gameObject.SetActive(true);
-            shopInventoryTitle.text = "Inventory"; 
-            switchButton.GetComponentInChildren<TextMeshProUGUI>().text = "Shop"; 
+            InitInventoryUI();
         }
+    }
+
+    private void InitShopUI()
+    {
+        shopUI.gameObject.SetActive(true);
+        inventoryUI.gameObject.SetActive(false);
+        shopInventoryTitle.text = "Shop"; 
+        switchButton.GetComponentInChildren<TextMeshProUGUI>().text = "Inventory";
+
+        isShop = true;
+    }
+    
+    private void InitInventoryUI()
+    {
+        shopUI.gameObject.SetActive(false);
+        inventoryUI.gameObject.SetActive(true);
+        shopInventoryTitle.text = "Inventory"; 
+        switchButton.GetComponentInChildren<TextMeshProUGUI>().text = "Shop";
     }
 }
