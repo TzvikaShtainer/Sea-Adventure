@@ -115,3 +115,10 @@ MonoBehaviour:
       Data3: 2074408107
       Data4: 2058872159
     Path: event:/SFX/SwordFishAttack
+  <GameOver>k__BackingField:
+    Guid:
+      Data1: 596263774
+      Data2: 1096375248
+      Data3: 425566597
+      Data4: 1412857315
+    Path: event:/SFX/GameOver

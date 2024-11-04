@@ -46,10 +46,9 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
     public void EnemyDeath()
     {
-        Debug.Log("herer");
         if (enemyAnimationController == null)
             return;
-        Debug.Log("here");
+
         enemyAnimationController.PlayDeathAnimation();
     }
 }

@@ -37,6 +37,9 @@ public class PlayerHealthSystem : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
+            
+            SoundManager.Instance.PlayOneShot(FModEvents.Instance.GameOver, transform.position);
+            
             onDeath?.Invoke();
         }
     }
