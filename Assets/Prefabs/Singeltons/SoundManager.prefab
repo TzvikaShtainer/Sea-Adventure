@@ -122,3 +122,10 @@ MonoBehaviour:
       Data3: 425566597
       Data4: 1412857315
     Path: event:/SFX/GameOver
+  <PowerUpEnded>k__BackingField:
+    Guid:
+      Data1: 427672845
+      Data2: 1232398147
+      Data3: 1535138447
+      Data4: 1673132925
+    Path: event:/SFX/PowerUpEnded

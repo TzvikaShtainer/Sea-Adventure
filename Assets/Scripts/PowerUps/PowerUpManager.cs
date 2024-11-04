@@ -48,7 +48,9 @@ namespace PowerUps
         public async void DeActivatePowerUp()
         {
             _currentPowerUp.DeActive();
-                
+            
+            SoundManager.Instance.PlayOneShot(FModEvents.Instance.PowerUpEnded, transform.position);
+            
             _currentPowerUpTokenSource.Cancel(); 
             _currentPowerUpTokenSource.Dispose();
                 

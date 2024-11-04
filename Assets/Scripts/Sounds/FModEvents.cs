@@ -35,6 +35,9 @@ public class FModEvents : MonoBehaviour
     [field: Header("Game Over")]
     [field: SerializeField] public EventReference GameOver {get; private set;}
     
+    [field: Header("Power Up Ended")]
+    [field: SerializeField] public EventReference PowerUpEnded {get; private set;}
+    
 
     private void Awake()
     {
