@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
+        
         SetupButtons();
 
         SetScreen(mainMenuUI);
@@ -65,20 +67,6 @@ public class UIManager : MonoBehaviour
         screensContainer.DOAnchorPos(new Vector3(1500, 0, 0), 0.5f)
             .OnComplete(() => Loader.Load(mainSceneName));
     }
-
-    // private void LoadSceneAsync(string sceneName)
-    // {
-    //     StartCoroutine(LoadSceneCoroutine(sceneName));
-    // }
-    //
-    // private IEnumerator LoadSceneCoroutine(string sceneName)
-    // {
-    //     AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
-    //     while (!asyncLoad.isDone)
-    //     {
-    //         yield return null;
-    //     }
-    // }
 
     private void OnShopClicked()
     {

@@ -62,6 +62,7 @@ public class InGameUIManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         SetUpGameScreens();
     }
 
@@ -164,10 +165,8 @@ public class InGameUIManager : MonoBehaviour
     {
         SoundManager.Instance.PlayClickSound();
         
-        //isDeath = false;
         Time.timeScale = 1f; 
         
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
     
@@ -175,10 +174,9 @@ public class InGameUIManager : MonoBehaviour
     {
         SoundManager.Instance.PlayClickSound();
         
-        //isDeath = false;
-        Time.timeScale = 1f; 
-        
         LoadSceneAsync(mainSceneName);
+        
+        //Time.timeScale = 1f;
     }
     
     private void OnSoundsButtonClicked()
@@ -227,13 +225,7 @@ public class InGameUIManager : MonoBehaviour
 
     private void PlayerHealthSystem_OnDeath()
     {
-        //isDeath = true;
         Time.timeScale = 0f;
-
-        // foreach (Transform child in menusContainer)
-        // {
-        //     Debug.Log(child.name);
-        // }
         
         EnableScreen(deathMenu);
         
@@ -254,7 +246,6 @@ public class InGameUIManager : MonoBehaviour
 
     private void UpdateMaxDistanceText(float newMaxDistanceTraveled)
     {
-        //Debug.Log(newMaxDistanceTraveled);
         maxDistanceText.text = "BEST: " + Mathf.FloorToInt(newMaxDistanceTraveled).ToString() + "M";
     }
 }

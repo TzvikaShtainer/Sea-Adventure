@@ -7,6 +7,8 @@ namespace DefaultNamespace.GameManager
     [Serializable]
     public class GameData
     {
+        //  C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
+        
         public float MaxDistanceTraveled;
         public int MoneyAmount;
         public bool tutorialCompleted;
@@ -17,6 +19,10 @@ namespace DefaultNamespace.GameManager
 
         public string mainCharacter;
 
+        private string bgCurrentColorString = "ShopItem_BG_Blue_Default";
+        
+        private string mainCharacterString = "ShopItem_default_Character";
+
         public GameData()
         {
             MaxDistanceTraveled = 0f;
@@ -25,9 +31,22 @@ namespace DefaultNamespace.GameManager
             
             inventoryItemIDs = new List<string>();
 
-            bgCurrentColor = "ShopItem_BG_Blue_Default";
+            bgCurrentColor = bgCurrentColorString;
             
-            mainCharacter = "ShopItem_default_Character";
+            mainCharacter = mainCharacterString;
+        }
+
+        public void CheckDataValid()
+        {
+            if (!inventoryItemIDs.Contains(bgCurrentColorString))
+            {
+                inventoryItemIDs.Add(bgCurrentColorString);
+            }
+            
+            if (!inventoryItemIDs.Contains(mainCharacterString))
+            {
+                inventoryItemIDs.Add(mainCharacterString);
+            }
         }
     }
 }
