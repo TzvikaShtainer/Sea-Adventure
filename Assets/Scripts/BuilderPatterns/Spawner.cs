@@ -6,16 +6,31 @@ using UnityEngine.Serialization;
 
 public class Spawner : MonoBehaviour
 {
+    [Header("Spawning Settings")]
     [SerializeField] private float spawnTime = 2f;
     [SerializeField] private float xPosToSpawn;
+    [SerializeField] public bool canSpawn = false;
     [SerializeField] private ItemType itemType;
     
-    [SerializeField] public bool canSpawn = true;
+    [Header("PreSpawn Settings")]
+    [SerializeField] private float spawnOnlyAfterTime;
+    [SerializeField] public bool nowSpawnedYet = false;
 
     private float spawnTimer;
 
     private void Update()
     {
+        spawnTimer += Time.deltaTime;
+        
+        if (!canSpawn && !nowSpawnedYet) 
+        {
+            if (spawnTimer > spawnOnlyAfterTime)
+            {
+                canSpawn = true;
+                nowSpawnedYet = true;
+            }
+        }
+
         if (canSpawn)
         {
             HandleSpawn();
@@ -24,8 +39,6 @@ public class Spawner : MonoBehaviour
 
     private void HandleSpawn()
     {
-        spawnTimer += Time.deltaTime;
-
         if (spawnTimer >= spawnTime)
         {
             SpawnItem();
