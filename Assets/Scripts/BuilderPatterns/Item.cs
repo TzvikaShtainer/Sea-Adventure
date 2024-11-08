@@ -28,7 +28,7 @@ public class Item : MonoBehaviour, ISpawn
     public void Spawn(Vector2 position)
     {
         transform.position = position;
-        gameObject.SetActive(true);
+        gameObject.SetActive(true); 
     }
     
     public float GetMinYPosToSpawn()
