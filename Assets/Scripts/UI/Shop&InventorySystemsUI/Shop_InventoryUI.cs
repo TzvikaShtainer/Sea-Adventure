@@ -30,7 +30,7 @@ public class Shop_InventoryUI : MonoBehaviour
     private void Start()
     {
         switchButton.onClick.AddListener(SwitchUI);
-        UpdateUI();
+        //UpdateUI();
     }
 
     private void SwitchUI()
@@ -67,6 +67,8 @@ public class Shop_InventoryUI : MonoBehaviour
         inventoryUI.gameObject.SetActive(true);
         shopInventoryTitle.text = "Inventory"; 
         switchButton.GetComponentInChildren<TextMeshProUGUI>().text = "Shop";
+        
+        isShop = false;
     }
     
     private void UIManager_OnInventoryClickedEvent()

@@ -96,6 +96,8 @@ public class UIManager : MonoBehaviour
         SoundManager.Instance.PlayClickSound();
 
         bgImage.enabled = false;
+        
+        OnShopClickedEvent?.Invoke();
     }
     
     private void OnInventoryClicked()
