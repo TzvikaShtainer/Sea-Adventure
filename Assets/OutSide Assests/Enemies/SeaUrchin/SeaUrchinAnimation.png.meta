@@ -123,111 +123,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SeaUrchinAnimation_0
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 992
-        width: 47
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d36fa28a3acdde4dbe0efb44bb98cca
-      internalID: -1365402965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_1
-      rect:
-        serializedVersion: 2
-        x: 766
-        y: 991
-        width: 48
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44adf1796e0de154e947076cc7846420
-      internalID: 2076529432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_2
-      rect:
-        serializedVersion: 2
-        x: 1135
-        y: 997
-        width: 51
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d128cad254ba03544a29f6ecbef6d975
-      internalID: 2119666659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_3
-      rect:
-        serializedVersion: 2
-        x: 1513
-        y: 995
-        width: 55
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d51b99d97d7f48840969d703879b8f30
-      internalID: 831338934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_4
-      rect:
-        serializedVersion: 2
-        x: 1900
-        y: 985
-        width: 50
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a38b29abcca91440b8a8699cb2f7218
-      internalID: 696810095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SeaUrchinAnimation_5
       rect:
         serializedVersion: 2
@@ -242,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 934621124783872438fe6c4a27ddedfa
-      internalID: -355334092
+      spriteID: effaf2ebbe11a664198aa1ab412a2d77
+      internalID: 1146043468
       vertices: []
       indices: 
       edges: []
@@ -263,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46d4120676198b74ca8e891b2a17adca
-      internalID: -695843427
+      spriteID: 11d49ee4891dde54bb7f8553c916e23d
+      internalID: -1076726674
       vertices: []
       indices: 
       edges: []
@@ -284,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3676b79b30274dd4da74ca056bd9e039
-      internalID: 2025382515
+      spriteID: c9b6167619eab584da4d04b71f54b27c
+      internalID: -1154711787
       vertices: []
       indices: 
       edges: []
@@ -305,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9682312ca4fa0a7488f266ff6ae02f82
-      internalID: 128774009
+      spriteID: 098b75fe26b07024a89fabda05b9d814
+      internalID: -729760944
       vertices: []
       indices: 
       edges: []
@@ -326,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7baf904ffa20512499a6c966614d1ea7
-      internalID: -515249473
+      spriteID: 2dbea18b657d3164abe2dec74ee89be7
+      internalID: 1276211994
       vertices: []
       indices: 
       edges: []
@@ -347,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a562377e0d9df449d377dd9f49b36c
-      internalID: -1911329088
+      spriteID: ffee9029d730e4a408e90ff69fd26bbb
+      internalID: -711828153
       vertices: []
       indices: 
       edges: []
@@ -368,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c26864a2c1395ab4f8c4c3f045d6c25b
-      internalID: 2015133623
+      spriteID: c714b6691190045489630f42bcbf3dcf
+      internalID: -418563994
       vertices: []
       indices: 
       edges: []
@@ -389,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f3e8a9894a781348a73903d140b24a2
-      internalID: -1773450170
+      spriteID: 95aa14ad111697145bb9cafb216a9a75
+      internalID: -1558696081
       vertices: []
       indices: 
       edges: []
@@ -410,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d85cf87a87841b4b8c32ace659dfb8a
-      internalID: 1302101374
+      spriteID: ec63d7f96d786c044b53e4e4f465d183
+      internalID: -1314214197
       vertices: []
       indices: 
       edges: []
@@ -431,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67f354a69315662469790e0146c8ccd7
-      internalID: 1608122189
+      spriteID: fcd8dd7f20f9d094385998f727f0d1af
+      internalID: 1084252100
       vertices: []
       indices: 
       edges: []
@@ -452,134 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 295b0359c8fcc094997fa4c0d1ca57e9
-      internalID: 917519446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_16
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 22
-        width: 75
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54f47396d5beaa342ba4dd6a38ef3275
-      internalID: -1348071163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_17
-      rect:
-        serializedVersion: 2
-        x: 543
-        y: 42
-        width: 90
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 552cf240f3210fc4aa7270d1c86486f1
-      internalID: -249816064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_18
-      rect:
-        serializedVersion: 2
-        x: 941
-        y: 59
-        width: 56
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f82e62a0614ef804d81665157953d444
-      internalID: 410575035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_19
-      rect:
-        serializedVersion: 2
-        x: 1321
-        y: 51
-        width: 75
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6308ab25feec1e1449021772ab2b98cc
-      internalID: -748299953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_20
-      rect:
-        serializedVersion: 2
-        x: 1649
-        y: 59
-        width: 77
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37f5a84eb97787a4187cc373a4bc7c05
-      internalID: 962029811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SeaUrchinAnimation_21
-      rect:
-        serializedVersion: 2
-        x: 2061
-        y: 44
-        width: 69
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea9a53b678c86764b94edc64080b242e
-      internalID: -493722418
+      spriteID: bb4f4b0445ab3e94ebef07848fd0e15c
+      internalID: -323799259
       vertices: []
       indices: 
       edges: []
@@ -595,28 +364,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SeaUrchinAnimation_0: -1365402965
-      SeaUrchinAnimation_1: 2076529432
-      SeaUrchinAnimation_10: -1911329088
-      SeaUrchinAnimation_11: 2015133623
-      SeaUrchinAnimation_12: -1773450170
-      SeaUrchinAnimation_13: 1302101374
-      SeaUrchinAnimation_14: 1608122189
-      SeaUrchinAnimation_15: 917519446
-      SeaUrchinAnimation_16: -1348071163
-      SeaUrchinAnimation_17: -249816064
-      SeaUrchinAnimation_18: 410575035
-      SeaUrchinAnimation_19: -748299953
-      SeaUrchinAnimation_2: 2119666659
-      SeaUrchinAnimation_20: 962029811
-      SeaUrchinAnimation_21: -493722418
-      SeaUrchinAnimation_3: 831338934
-      SeaUrchinAnimation_4: 696810095
-      SeaUrchinAnimation_5: -355334092
-      SeaUrchinAnimation_6: -695843427
-      SeaUrchinAnimation_7: 2025382515
-      SeaUrchinAnimation_8: 128774009
-      SeaUrchinAnimation_9: -515249473
+      SeaUrchinAnimation_0: -966723507
+      SeaUrchinAnimation_1: 1161468749
+      SeaUrchinAnimation_10: -711828153
+      SeaUrchinAnimation_11: -418563994
+      SeaUrchinAnimation_12: -1558696081
+      SeaUrchinAnimation_13: -1314214197
+      SeaUrchinAnimation_14: 1084252100
+      SeaUrchinAnimation_15: -323799259
+      SeaUrchinAnimation_16: -1838551255
+      SeaUrchinAnimation_17: 2012157819
+      SeaUrchinAnimation_18: -952957152
+      SeaUrchinAnimation_19: -221301214
+      SeaUrchinAnimation_2: 348167805
+      SeaUrchinAnimation_20: 1987509572
+      SeaUrchinAnimation_21: 1891745394
+      SeaUrchinAnimation_3: -245647318
+      SeaUrchinAnimation_4: -843626601
+      SeaUrchinAnimation_5: 1146043468
+      SeaUrchinAnimation_6: -1076726674
+      SeaUrchinAnimation_7: -1154711787
+      SeaUrchinAnimation_8: -729760944
+      SeaUrchinAnimation_9: 1276211994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
