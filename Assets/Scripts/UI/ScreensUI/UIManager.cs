@@ -8,25 +8,45 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance;
+    
     [Header("Container")]
     [SerializeField] private RectTransform screensContainer;
     [SerializeField] private Image bgImage; //not shop image
     
     [Header("MainMenu")]
     [SerializeField] private Transform mainMenuUI;
-    [SerializeField] private Button shopButton;
     [SerializeField] private Button startGameButton;
+    [SerializeField] private Button shopButton;
+    [SerializeField] private Button inventoryButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
     
     [Header("Shop")]
-    [SerializeField] private Transform shopUI;
+    [SerializeField] private Transform Shop_InventoryUI;
     
     [Header("Settings")]
     [SerializeField] private Transform settingsMenuUI;
     [SerializeField] private Button returnButton;
 
     private string mainSceneName = "GameScene"; //need to change to level loader
+    
+    public static event Action OnShopClickedEvent;
+
+    public static event Action OnInventoryClickedEvent;
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -42,6 +62,7 @@ public class UIManager : MonoBehaviour
         //MainMenu btns
         startGameButton.onClick.AddListener(OnStartGameClicked);
         shopButton.onClick.AddListener(OnShopClicked);
+        inventoryButton.onClick.AddListener(OnInventoryClicked);
         settingsButton.onClick.AddListener(OnSettingsClicked);
         exitButton.onClick.AddListener(OnExitClicked);
         
@@ -70,11 +91,22 @@ public class UIManager : MonoBehaviour
 
     private void OnShopClicked()
     {
-        SetScreen(shopUI);
+        SetScreen(Shop_InventoryUI);
         
         SoundManager.Instance.PlayClickSound();
 
         bgImage.enabled = false;
+    }
+    
+    private void OnInventoryClicked()
+    {
+        SetScreen(Shop_InventoryUI);
+        
+        SoundManager.Instance.PlayClickSound();
+
+        bgImage.enabled = false;
+        
+        OnInventoryClickedEvent?.Invoke();
     }
     private void OnSettingsClicked()
     {
