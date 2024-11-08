@@ -3075,6 +3075,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1196360967}
     - target: {fileID: 3908258436757025752, guid: ad1801b6eb9252f4a930e29a855b29f3, type: 3}
+      propertyPath: Shop_InventoryUI
+      value: 
+      objectReference: {fileID: 420984093}
+    - target: {fileID: 3908258436757025752, guid: ad1801b6eb9252f4a930e29a855b29f3, type: 3}
       propertyPath: storeReturnButton
       value: 
       objectReference: {fileID: 1236566756}
