@@ -225,6 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d38d6147d8a0940bdeb20d0e4307d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinSpeed: 2
+  minScale: 0.2
+  maxScale: 0.4
 --- !u!114 &4083770304590254814
 MonoBehaviour:
   m_ObjectHideFlags: 0
