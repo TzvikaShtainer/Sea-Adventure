@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: ShopItemEffect_JellyFishCharacter
   m_EditorClassIdentifier: 
   newAnimatorController: {fileID: 9100000, guid: 7115292c8e0ae544abda9794812429e8, type: 2}
+  CollidersOffsets:
+  - {x: 2.36, y: 0.44}
+  - {x: 2.98, y: 1.54}
+  - {x: 1.81, y: 0.5319235}
+  - {x: 1.09, y: 0.23}
