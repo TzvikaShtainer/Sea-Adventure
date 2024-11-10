@@ -62,25 +62,23 @@ namespace BuilderPatterns
                 Item item = pool.GetFromPool();
                 if (item != null)
                 {
-                    // Ensure the BaseEnemy script is enabled
                     BaseEnemy baseEnemy = item.GetComponent<BaseEnemy>();
                     if (baseEnemy != null)
                     {
-                        baseEnemy.enabled = true;  // Enable the BaseEnemy script
+                        baseEnemy.enabled = true;
                     }
 
-                    // Activate the item game object
-                    item.gameObject.SetActive(true);
-
+                    //Debug.Log($"Activated item from pool: {item.name}");
                     return item;
                 }
             }
-
+            //Debug.LogWarning($"Item of type {itemType} not found in pool!");
             return null;
         }
         
         public void ReturnItemToPool(ItemType itemType, Item item)
         {
+            
             if (objectPools.TryGetValue(itemType, out var pool))
             {
                 pool.ReturnToPool(item);

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShopItem_default_Character
   m_EditorClassIdentifier: 
   title: The JellyFish
-  itemIcon: {fileID: -845350715, guid: 20edcfc025d935a4ebf0e22e7a2278b9, type: 3}
+  itemIcon: {fileID: -1613830082, guid: 20edcfc025d935a4ebf0e22e7a2278b9, type: 3}
   price: 0
   description: The JellyFish Character
   item: {fileID: 11400000}
