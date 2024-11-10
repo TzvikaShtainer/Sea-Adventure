@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 2205735712943528591}
   leftSpeed: 1.5
-  itemType: 5
+  itemType: 6
 --- !u!114 &1600917645964806774
 MonoBehaviour:
   m_ObjectHideFlags: 0

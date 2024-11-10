@@ -74,11 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: itemType
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: leftSpeed
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 6718144739217189314, guid: 408387ecf6d705a46857627863cf175a, type: 3}
       propertyPath: enemyRigidBody

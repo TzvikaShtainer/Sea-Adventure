@@ -3754,7 +3754,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145287240933716038, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145287240933716038, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: m_Color.g
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4145287240933716038, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3920,8 +3928,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4640655862792673517, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
+      propertyPath: canSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640655862792673517, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4640655862792673517, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
@@ -3969,7 +3981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
-      value: 0.5
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
@@ -4106,6 +4118,14 @@ PrefabInstance:
     - target: {fileID: 8359572032642357374, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571261348470651953, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
+      propertyPath: canSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571261348470651953, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
+      propertyPath: spawnTime
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8571261348470651953, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
