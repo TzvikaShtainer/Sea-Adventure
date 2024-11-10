@@ -41,18 +41,19 @@ namespace BuilderPatterns
         {
             objectPools = new Dictionary<ItemType, ObjectPool<Item>>();
 
-            objectPools[ItemType.FishingRod] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/FishingRod"), 3);
-            objectPools[ItemType.SwordFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SwordFishWithUI"), 20);
-            objectPools[ItemType.SeaUrchin] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaUrchin"), 2);
-            objectPools[ItemType.SeaMine] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaMine"), 2);
-            objectPools[ItemType.PufferFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/pufferFish"), 2);
+            // Initialize pools with the PoolManager's transform as the parent
+            objectPools[ItemType.FishingRod] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/FishingRod"), 3, transform);
+            objectPools[ItemType.SwordFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SwordFishWithUI"), 20, transform);
+            objectPools[ItemType.SeaUrchin] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaUrchin"), 2, transform);
+            objectPools[ItemType.SeaMine] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/SeaMine"), 2, transform);
+            objectPools[ItemType.PufferFish] = new ObjectPool<Item>(Resources.Load<Item>("Enemies/pufferFish"), 2, transform);
 
-            objectPools[ItemType.AddLife] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/AddLifePowerUp"), 2);
-            objectPools[ItemType.MaxSize] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/MaxiSizePowerUp"), 2);
-            objectPools[ItemType.MinSize] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/MiniSizePowerUp"), 2);
+            objectPools[ItemType.AddLife] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/AddLifePowerUp"), 2, transform);
+            objectPools[ItemType.MaxSize] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/MaxiSizePowerUp"), 2, transform);
+            objectPools[ItemType.MinSize] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/MiniSizePowerUp"), 2, transform);
 
-            objectPools[ItemType.Shield] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/ShieldPowerUp"), 2);
-            objectPools[ItemType.Coin] = new ObjectPool<Item>(Resources.Load<Item>("Others/Coin"), 3);
+            objectPools[ItemType.Shield] = new ObjectPool<Item>(Resources.Load<Item>("PowerUps/ShieldPowerUp"), 2, transform);
+            objectPools[ItemType.Coin] = new ObjectPool<Item>(Resources.Load<Item>("Others/Coin"), 3, transform);
         }
 
         public Item GetItemFromPool(ItemType itemType)

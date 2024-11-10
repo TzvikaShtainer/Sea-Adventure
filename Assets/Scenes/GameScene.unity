@@ -1316,9 +1316,9 @@ Transform:
   - {fileID: 380369460}
   - {fileID: 593240974}
   - {fileID: 271745172}
-  - {fileID: 1249842320}
   - {fileID: 860514845}
   - {fileID: 1921477846129633526}
+  - {fileID: 1249842320}
   - {fileID: 1758323679}
   - {fileID: 1724702847}
   m_Father: {fileID: 0}
@@ -1465,6 +1465,55 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6bab32e857daffd46a2a74e51852fefd, type: 2}
   - {fileID: 11400000, guid: 33924869c3673024f91727a83bd08bb9, type: 2}
   - {fileID: 11400000, guid: 9902ee4261e17c747a529c4f29d4c01b, type: 2}
+--- !u!21 &965119873
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprite-Lit-Default (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance)
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &966387121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,54 +1655,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5572562596509301578, guid: aea90092732cdd24a809fa9d75a0977d, type: 3}
   m_PrefabInstance: {fileID: 7029652171995406191}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1219286370
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite-Lit-Default (Instance) (Instance) (Instance)
-  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.5}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1225259508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,10 +3752,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 782666364234696720, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4145287240933716038, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1219286370}
+      objectReference: {fileID: 965119873}
     - target: {fileID: 5262458104969304954, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -3884,7 +3889,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1481857722744920373, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1761686206003691690, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
@@ -3912,7 +3917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625005216296136670, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4640655862792673517, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
@@ -3932,11 +3937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4918242073342563258, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347324193618524482, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5953810190852527214, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: xPosToSpawn
@@ -3948,7 +3953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5990853638949822722, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6423214670689542908, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
@@ -3960,11 +3965,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6663936770166945165, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
@@ -4020,11 +4025,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a36d813c409a3734cacf34e3bfcf0f2a, type: 2}
     - target: {fileID: 7184543255184070203, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293049107477610821, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7480606043573042483, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_Name
@@ -4120,7 +4125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616656906526337124, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

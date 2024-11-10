@@ -7,16 +7,18 @@ namespace BuilderPatterns
     {
         private readonly T prefab;
         private readonly List<T> pool;
+        private readonly Transform parentTransform;
 
-        public ObjectPool(T prefab, int initialSize = 10)
+        public ObjectPool(T prefab, int initialSize = 10, Transform parentTransform = null)
         {
             this.prefab = prefab;
+            this.parentTransform = parentTransform;  // Assign the parent transform
             pool = new List<T>();
 
             // Pre-instantiate objects and add them to the pool
             for (int i = 0; i < initialSize; i++)
             {
-                T newObj = Object.Instantiate(prefab);
+                T newObj = Object.Instantiate(prefab, parentTransform);  // Set parent on instantiation
                 newObj.gameObject.SetActive(false);
                 pool.Add(newObj);
             }
@@ -29,15 +31,13 @@ namespace BuilderPatterns
                 if (!obj.gameObject.activeInHierarchy)
                 {
                     obj.gameObject.SetActive(true);
-                    //Debug.Log($"Reusing object from pool: {obj.name}");
                     return obj;
                 }
             }
             
-            T newObj = Object.Instantiate(prefab);
+            T newObj = Object.Instantiate(prefab, parentTransform);  // Set parent on new instantiation
             newObj.gameObject.SetActive(true);
             pool.Add(newObj);
-            //Debug.Log($"Instantiated new object: {newObj.name}");
             return newObj;
         }
 
