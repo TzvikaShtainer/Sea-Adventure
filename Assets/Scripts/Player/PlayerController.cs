@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
         enemy.Electrified();
         
         shieldCounter++;
+        Debug.Log(shieldCounter);
         hasHitWithShield = true;
         
         if (shieldCounter >= 3)
@@ -199,6 +200,7 @@ public class PlayerController : MonoBehaviour
     private void ShieldPowerUp_OnShieldPowerUpDeactivate()
     {
         hasShield = false;
+        shieldCounter = 0;
         shieldSprite.SetActive(false);
 
         ResetPowerUps();

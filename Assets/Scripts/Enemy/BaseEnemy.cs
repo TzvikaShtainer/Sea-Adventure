@@ -7,17 +7,16 @@ using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour, ISpawn
 {
-    public delegate void OnEnemyDead();
-    public static event OnEnemyDead onEnemyDead;
-    
     [SerializeField] private PlayerController player;
     [SerializeField] private EnemyAnimationController enemyAnimationController;
     [SerializeField] private MoveToPlayer moveToPlayer;
+    [SerializeField] private Collider2D[] enemyCollidersArray;
     
 
     private void Awake()
     {
         player = FindObjectOfType<PlayerController>();
+        enemyCollidersArray = GetComponents<Collider2D>();
     }
 
     public void Spawn(Vector2 position)
@@ -36,6 +35,11 @@ public class BaseEnemy : MonoBehaviour, ISpawn
         
         if (enemyAnimationController == null)
             return;
+
+        for (int i = 0; i < enemyCollidersArray.Length; i++)
+        {
+            enemyCollidersArray[i].enabled = false;
+        }
 
         enemyAnimationController.PlayElectrifiedAnimation();
         
