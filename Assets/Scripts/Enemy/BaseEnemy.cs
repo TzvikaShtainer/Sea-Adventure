@@ -19,6 +19,11 @@ public class BaseEnemy : MonoBehaviour, ISpawn
         enemyCollidersArray = GetComponents<Collider2D>();
     }
 
+    private void OnEnable()
+    {
+        ChangeCollidersArrayState(true);
+    }
+
     public void Spawn(Vector2 position)
     {
         transform.position = position;
@@ -36,10 +41,7 @@ public class BaseEnemy : MonoBehaviour, ISpawn
         if (enemyAnimationController == null)
             return;
 
-        for (int i = 0; i < enemyCollidersArray.Length; i++)
-        {
-            enemyCollidersArray[i].enabled = false;
-        }
+        ChangeCollidersArrayState(false);
 
         enemyAnimationController.PlayElectrifiedAnimation();
         
@@ -55,6 +57,14 @@ public class BaseEnemy : MonoBehaviour, ISpawn
         }
     }
 
+    private void ChangeCollidersArrayState(bool newState)
+    {
+        for (int i = 0; i < enemyCollidersArray.Length; i++)
+        {
+            enemyCollidersArray[i].enabled = newState;
+        }
+    }
+    
     public void EnemyDeath()
     {
         if (enemyAnimationController == null)
