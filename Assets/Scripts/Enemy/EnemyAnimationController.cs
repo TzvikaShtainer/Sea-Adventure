@@ -23,7 +23,15 @@ namespace Enemy
 
         public void PlayElectrifiedAnimation()
         {
-            animator.SetBool(IS_Electrified, true);
+            if (!HasParameter(IS_Electrified))
+            {
+                animator.SetBool(IS_Death, true);
+            }
+            else
+            {
+                animator.SetBool(IS_Electrified, true);
+            }
+            
         }
         
         public void PlayIdleAnimation()
@@ -39,7 +47,18 @@ namespace Enemy
         public void PlayDeathAnimation()
         {
             animator.SetBool(IS_Death, true);
-            Debug.Log("here2");
+        }
+        
+        public bool HasParameter(string parameterName)
+        {
+            foreach (AnimatorControllerParameter parameter in animator.parameters)
+            {
+                if (parameter.name == parameterName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

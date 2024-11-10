@@ -45,7 +45,14 @@ public class BaseEnemy : MonoBehaviour, ISpawn
         
         SoundManager.Instance.PlayOneShot(FModEvents.Instance.EnemyElectrified, transform.position);
 
-        moveToPlayer.EnemyElectrified();
+        if (moveToPlayer.GetItemType() == ItemType.FishingRod || moveToPlayer.GetItemType() == ItemType.SeaMine )
+        {
+            
+        }
+        else
+        {
+            moveToPlayer.EnemyElectrified();
+        }
     }
 
     public void EnemyDeath()
