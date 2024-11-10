@@ -353,6 +353,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Player_Idle_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 285
+        width: 350
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0629a1e8598d04db7da66bc8cec501
+      internalID: -1613830082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -376,6 +397,7 @@ TextureImporter:
       Player_Idle_Sprites2_7: -1716713541
       Player_Idle_Sprites2_8: 611124004
       Player_Idle_Sprites2_9: -1432352395
+      Player_Idle_Sprites_0: -1613830082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

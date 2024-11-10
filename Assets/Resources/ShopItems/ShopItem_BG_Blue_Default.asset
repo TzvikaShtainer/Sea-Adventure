@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShopItem_BG_Blue_Default
   m_EditorClassIdentifier: 
   title: Blue Background
-  itemIcon: {fileID: 21300000, guid: e3ca34e5d68d9434ba3d60855d67b5d0, type: 3}
+  itemIcon: {fileID: 21300000, guid: d1591f7ae1311454dbb11477a090dc5b, type: 3}
   price: 0
   description: Change To Blue Background
   item: {fileID: 11400000}
