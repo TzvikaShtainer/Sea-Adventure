@@ -61,71 +61,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BgMusic>k__BackingField:
     Guid:
-      Data1: 1343852497
-      Data2: 1311966311
-      Data3: -293401946
-      Data4: 830988631
-    Path: event:/BgMusic/TempBgMusic
+      Data1: 255677353
+      Data2: 1187582015
+      Data3: -1347308647
+      Data4: 685032413
+    Path: event:/SFX/CoinPickup
   <JumpSound>k__BackingField:
     Guid:
-      Data1: 680655370
-      Data2: 1280595992
-      Data3: 33178518
-      Data4: -828818321
-    Path: event:/SFX/JumpPressed
+      Data1: 702813541
+      Data2: 1338741831
+      Data3: -774043770
+      Data4: -1126167987
+    Path: event:/SFX/JumpSound
   <HittedByEnemy>k__BackingField:
     Guid:
-      Data1: -19491863
-      Data2: 1294563896
-      Data3: -991272034
-      Data4: 2143400202
+      Data1: -956881865
+      Data2: 1267079771
+      Data3: -412491115
+      Data4: -115587886
     Path: event:/SFX/HittedByEnemy
   <PowerUpPickup>k__BackingField:
     Guid:
-      Data1: -824426038
-      Data2: 1281219218
-      Data3: -1758769017
-      Data4: -492767703
+      Data1: 1687730051
+      Data2: 1228740439
+      Data3: 2007010999
+      Data4: 925795048
     Path: event:/SFX/PowerUpPickup
   <CoinPickup>k__BackingField:
     Guid:
-      Data1: 1325079155
-      Data2: 1211669720
-      Data3: 1922024871
-      Data4: -803948814
+      Data1: 255677353
+      Data2: 1187582015
+      Data3: -1347308647
+      Data4: 685032413
     Path: event:/SFX/CoinPickup
   <EnemyElectrified>k__BackingField:
     Guid:
-      Data1: -1674198393
-      Data2: 1261473586
-      Data3: 234257557
-      Data4: 1535788500
+      Data1: 1093390438
+      Data2: 1324088587
+      Data3: 632485544
+      Data4: -471004703
     Path: event:/SFX/EnemyElectrified
   <BtnClicked>k__BackingField:
     Guid:
-      Data1: 130851529
-      Data2: 1243840811
-      Data3: 1505350321
-      Data4: 178458635
-    Path: event:/SFX/BtnClicked
+      Data1: 1881972141
+      Data2: 1084066780
+      Data3: 896444071
+      Data4: -21835800
+    Path: event:/UI/BthClicked
   <SwordFishAttack>k__BackingField:
     Guid:
-      Data1: 1462038109
-      Data2: 1267601442
-      Data3: 2074408107
-      Data4: 2058872159
+      Data1: -785950036
+      Data2: 1115844883
+      Data3: 783823778
+      Data4: -1027637299
     Path: event:/SFX/SwordFishAttack
   <GameOver>k__BackingField:
     Guid:
-      Data1: 596263774
-      Data2: 1096375248
-      Data3: 425566597
-      Data4: 1412857315
+      Data1: 1834816308
+      Data2: 1238508557
+      Data3: 2015143324
+      Data4: -202777766
     Path: event:/SFX/GameOver
   <PowerUpEnded>k__BackingField:
     Guid:
-      Data1: 427672845
-      Data2: 1232398147
-      Data3: 1535138447
-      Data4: 1673132925
+      Data1: 332282038
+      Data2: 1249359688
+      Data3: 226196927
+      Data4: -1232301884
     Path: event:/SFX/PowerUpEnded

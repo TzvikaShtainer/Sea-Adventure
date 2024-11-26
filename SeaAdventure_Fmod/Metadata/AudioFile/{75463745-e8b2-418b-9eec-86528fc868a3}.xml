@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{75463745-e8b2-418b-9eec-86528fc868a3}">
+		<property name="assetPath">
+			<value>JUMP/SwimmingPool_S08SP.868.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6106666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9689e01d-c10c-4857-bbc9-9681d102458e}</destination>
+		</relationship>
+	</object>
+</objects>

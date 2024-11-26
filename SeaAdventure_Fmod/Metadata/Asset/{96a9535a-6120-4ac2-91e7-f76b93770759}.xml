@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{96a9535a-6120-4ac2-91e7-f76b93770759}">
+		<property name="assetPath">
+			<value>SHARK ATTACK/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9689e01d-c10c-4857-bbc9-9681d102458e}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -4912,26 +4912,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Path
-      value: event:/BgMusic/TempBgMusic
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data1
-      value: 1343852497
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data2
-      value: 1311966311
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data3
-      value: -293401946
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data4
-      value: 830988631
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{8660f51b-f965-4005-b213-5f9836708294}">
+		<property name="assetPath">
+			<value>POWER UP PICK/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9689e01d-c10c-4857-bbc9-9681d102458e}</destination>
+		</relationship>
+	</object>
+</objects>

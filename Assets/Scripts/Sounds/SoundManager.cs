@@ -38,7 +38,7 @@ public class SoundManager : MonoBehaviour
 
     private void InitializeBuses()
     {
-        musicBus = RuntimeManager.GetBus("bus:/Music");
+        //musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
     
@@ -50,12 +50,12 @@ public class SoundManager : MonoBehaviour
     
     private void Start()
     {
-        PlayBgMusic(FModEvents.Instance.BgMusic);
+        //PlayBgMusic(FModEvents.Instance.BgMusic);
     }
 
     private void Update()
     {
-        musicBus.setVolume(bgMusicVolume);
+        //musicBus.setVolume(bgMusicVolume);
         sfxBus.setVolume(sfxVolume);
     }
 

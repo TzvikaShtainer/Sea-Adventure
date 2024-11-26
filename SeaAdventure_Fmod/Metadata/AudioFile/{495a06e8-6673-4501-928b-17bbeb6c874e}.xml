@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{495a06e8-6673-4501-928b-17bbeb6c874e}">
+		<property name="assetPath">
+			<value>POWER END/ESM_Robotic_Special_Item_Touch_9_Sci_Fi_Robotic_Glitch_Morph_Mechanism_Texture.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9689e01d-c10c-4857-bbc9-9681d102458e}</destination>
+		</relationship>
+	</object>
+</objects>
