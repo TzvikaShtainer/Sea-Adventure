@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouching = false;
     [SerializeField] private bool isTouchInput;
 
+    
     private void OnEnable()
     {
         TouchInputHandler.onStickValueUpdated += TouchInputHandler_OnStickValueUpdated;
@@ -28,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         TouchInputHandler.onStickValueUpdated -= TouchInputHandler_OnStickValueUpdated;
+    }
+
+    private void Start()
+    {
+        PositionPlayer();
     }
 
     void Update()
@@ -123,5 +129,14 @@ public class PlayerMovement : MonoBehaviour
     public void ReturnToIdleState()
     {
         isJumping = false;
+    }
+    
+    void PositionPlayer()
+    {
+        Camera cam = Camera.main;
+        Vector3 viewportPosition = new Vector3(0.1f, 0.2f, cam.nearClipPlane); 
+        Vector3 worldPosition = cam.ViewportToWorldPoint(viewportPosition);
+
+        transform.position = new Vector3(worldPosition.x, worldPosition.y, transform.position.z);
     }
 }
