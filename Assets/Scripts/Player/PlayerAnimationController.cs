@@ -24,8 +24,8 @@ namespace Player
         private void Update()
         {
             animator.SetBool(IS_Jumping, playerMovement.GetJumpState());
-            Debug.Log(animator.GetBool(IS_Jumping));
-            Debug.Log(animator.GetBool(IS_Dead));
+            //Debug.Log(animator.GetBool(IS_Jumping));
+            //Debug.Log(animator.GetBool(IS_Dead));
         }
 
         public void SetAnimator(RuntimeAnimatorController  newAnimatorController)

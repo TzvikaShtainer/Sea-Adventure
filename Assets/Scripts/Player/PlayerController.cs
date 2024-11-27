@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
         enemy.Electrified();
         
         shieldCounter++;
-        Debug.Log(shieldCounter);
+       // Debug.Log(shieldCounter);
         hasHitWithShield = true;
         
         if (shieldCounter >= 3)

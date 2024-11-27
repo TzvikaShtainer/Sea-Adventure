@@ -38,7 +38,7 @@ public class SoundManager : MonoBehaviour
 
     private void InitializeBuses()
     {
-        musicBus = RuntimeManager.GetBus("bus:/Music");
+        //musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
     
@@ -55,7 +55,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        musicBus.setVolume(bgMusicVolume);
+        //musicBus.setVolume(bgMusicVolume);
         sfxBus.setVolume(sfxVolume);
     }
 
