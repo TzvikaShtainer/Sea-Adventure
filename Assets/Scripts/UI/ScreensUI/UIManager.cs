@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,6 +22,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button inventoryButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
+    [SerializeField] private TextMeshProUGUI moneyText;
     
     [Header("Shop")]
     [SerializeField] private Transform Shop_InventoryUI;
@@ -55,6 +57,8 @@ public class UIManager : MonoBehaviour
         SetupButtons();
 
         SetScreen(mainMenuUI);
+        
+        UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
     }
 
     private void SetupButtons()
@@ -81,6 +85,11 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void UpdateMoney(int currMoneyAmount, int newMoneyAmount)
+    {
+        moneyText.SetText(currMoneyAmount.ToString());
+    }
+    
     private void OnStartGameClicked()
     {
         SoundManager.Instance.PlayClickSound();

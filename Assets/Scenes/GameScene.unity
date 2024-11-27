@@ -441,6 +441,182 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BgMusic>k__BackingField.Path
+      value: event:/Music/BgMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <JumpSound>k__BackingField.Path
+      value: event:/SFX/JumpSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BtnClicked>k__BackingField.Path
+      value: event:/UI/BthClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <CoinPickup>k__BackingField.Path
+      value: event:/SFX/CoinPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BgMusic>k__BackingField.Guid.Data1
+      value: 856296858
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BgMusic>k__BackingField.Guid.Data2
+      value: 1297084218
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BgMusic>k__BackingField.Guid.Data3
+      value: 1440234388
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BgMusic>k__BackingField.Guid.Data4
+      value: -307436167
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <GameOver>k__BackingField.Guid.Data1
+      value: 1834816308
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <GameOver>k__BackingField.Guid.Data2
+      value: 1238508557
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <GameOver>k__BackingField.Guid.Data3
+      value: 2015143324
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <GameOver>k__BackingField.Guid.Data4
+      value: -202777766
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <JumpSound>k__BackingField.Guid.Data1
+      value: 702813541
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <JumpSound>k__BackingField.Guid.Data2
+      value: 1338741831
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <JumpSound>k__BackingField.Guid.Data3
+      value: -774043770
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <JumpSound>k__BackingField.Guid.Data4
+      value: -1126167987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BtnClicked>k__BackingField.Guid.Data1
+      value: 1881972141
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BtnClicked>k__BackingField.Guid.Data2
+      value: 1084066780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BtnClicked>k__BackingField.Guid.Data3
+      value: 896444071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <BtnClicked>k__BackingField.Guid.Data4
+      value: -21835800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <CoinPickup>k__BackingField.Guid.Data1
+      value: 255677353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <CoinPickup>k__BackingField.Guid.Data2
+      value: 1187582015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <CoinPickup>k__BackingField.Guid.Data3
+      value: -1347308647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <CoinPickup>k__BackingField.Guid.Data4
+      value: 685032413
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data1
+      value: 332282038
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data2
+      value: 1249359688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data3
+      value: 226196927
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data4
+      value: -1232301884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data1
+      value: -956881865
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data2
+      value: 1267079771
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data3
+      value: -412491115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data4
+      value: -115587886
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data1
+      value: 1687730051
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data2
+      value: 1228740439
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data3
+      value: 2007010999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data4
+      value: 925795048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data1
+      value: -785950036
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data2
+      value: 1115844883
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data3
+      value: 783823778
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data4
+      value: -1027637299
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data1
+      value: 1093390438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data2
+      value: 1324088587
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data3
+      value: 632485544
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data4
+      value: -471004703
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
