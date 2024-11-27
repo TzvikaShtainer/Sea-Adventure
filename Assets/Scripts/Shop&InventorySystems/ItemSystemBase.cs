@@ -22,7 +22,11 @@ public abstract class ItemSystemBase<T> : MonoBehaviour where T : ItemUIBase
         newItemUI.Init(item);
         newItemUI.onItemSelected += OnItemSelected;
         itemsUI.Add(newItemUI);
+
+        itemsUI.Clear(); //i dont know why but it ordered the inventory items after buying new item
     }
 
     protected abstract void OnItemSelected(ItemUIBase item);
+    
+    
 }

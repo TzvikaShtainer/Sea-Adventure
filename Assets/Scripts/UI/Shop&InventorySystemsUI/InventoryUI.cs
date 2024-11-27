@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -41,6 +42,7 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
 
     
 
+
     protected override void OnItemSelected(ItemUIBase item)
     {
         selectedItem = (ShopItemUI)item;
@@ -55,6 +57,8 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     private void InventorySystem_onItemAdded(ShopItem item)
     {
         AddItemUI(item);
+        
+        //InitItems(inventorySystem.GetInventoryItems());
 
         DisablePriceOnItems();
     }
@@ -69,20 +73,25 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     
     private void UseSelectedItem()
     {
-       selectedItem.GetItem().UseItem();
+        selectedItem.GetItem().UseItem();
 
-       if (selectedItem.GetItem().shopItemType == ShopItemType.Background)
-       {
-           string originalString = selectedItem.GetItem().ToString();
-           string cleanedString = originalString.Replace(" (ShopItem)", "");
-           GameDataHandler.instance.SetBgCurrentColor(cleanedString);
-       }
-       
-       if (selectedItem.GetItem().shopItemType == ShopItemType.CharacterType)
-       {
-           string originalString = selectedItem.GetItem().ToString();
-           string cleanedString = originalString.Replace(" (ShopItem)", "");
-           GameDataHandler.instance.SetCurrentCharacter(cleanedString);
-       }
+        SaveData();
+    }
+
+    private void SaveData()
+    {
+        if (selectedItem.GetItem().shopItemType == ShopItemType.Background)
+        {
+            string originalString = selectedItem.GetItem().ToString();
+            string cleanedString = originalString.Replace(" (ShopItem)", "");
+            GameDataHandler.instance.SetBgCurrentColor(cleanedString);
+        }
+
+        if (selectedItem.GetItem().shopItemType == ShopItemType.CharacterType)
+        {
+            string originalString = selectedItem.GetItem().ToString();
+            string cleanedString = originalString.Replace(" (ShopItem)", "");
+            GameDataHandler.instance.SetCurrentCharacter(cleanedString);
+        }
     }
 }

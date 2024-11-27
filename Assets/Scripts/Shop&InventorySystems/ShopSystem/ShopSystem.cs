@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Shop/ShopSystem")]
@@ -24,5 +25,19 @@ public class ShopSystem :  ScriptableObject
         ShopItem[] items = Resources.LoadAll<ShopItem>("ShopItems");
         
         shopItems.AddRange(items);
+
+        OrderList();
+    }
+    
+    private void OrderList()
+    {
+        ShopItemType[] customOrder = {
+            ShopItemType.CharacterType, 
+            ShopItemType.Background
+        };
+
+        shopItems = shopItems
+            .OrderBy(item => System.Array.IndexOf(customOrder, item.shopItemType))
+            .ToList();
     }
 }

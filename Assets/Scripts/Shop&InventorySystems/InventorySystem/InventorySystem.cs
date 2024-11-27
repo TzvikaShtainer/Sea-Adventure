@@ -13,6 +13,8 @@ public class InventorySystem :  ScriptableObject
 
     public List<ShopItem> GetInventoryItems()
     {
+        OrderList();
+        
         return inventoryItems;
     }
 
@@ -21,6 +23,8 @@ public class InventorySystem :  ScriptableObject
         if (!inventoryItems.Contains(newItem))
         {
             inventoryItems.Add(newItem);
+            
+            OrderList();
             
             onItemAddedToInventory?.Invoke(newItem);
             
@@ -38,11 +42,27 @@ public class InventorySystem :  ScriptableObject
             if (item != null)
                 inventoryItems.Add(item);
         }
+        
+        OrderList();
     }
     
     
     public List<string> GetInventoryIDs()
     {
+        OrderList();
+        
         return inventoryItems.Select(item => item.name).ToList();
+    }
+    
+    private void OrderList()
+    {
+        ShopItemType[] customOrder = {
+            ShopItemType.CharacterType, 
+            ShopItemType.Background
+        };
+
+        inventoryItems = inventoryItems
+            .OrderBy(item => System.Array.IndexOf(customOrder, item.shopItemType))
+            .ToList();
     }
 }
