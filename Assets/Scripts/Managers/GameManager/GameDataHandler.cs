@@ -5,6 +5,8 @@ using UnityEngine.Android;
 
 public class GameDataHandler : MonoBehaviour
 {
+    //  C:\Users\tzvik\AppData\LocalLow\DefaultCompany\SeaAdventure - full path
+    
     public static GameDataHandler instance;
     
     [SerializeField] private InventorySystem playerInventory;

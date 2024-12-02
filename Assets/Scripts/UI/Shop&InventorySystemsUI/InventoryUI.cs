@@ -29,7 +29,8 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
 
     private void Start()
     {
-         InitItems(inventorySystem.GetInventoryItems());
+        bool isInventory = true;
+         InitItems(inventorySystem.GetInventoryItems(), isInventory);
          
          DisablePriceOnItems();
          
@@ -56,7 +57,7 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
     
     private void InventorySystem_onItemAdded(ShopItem item)
     {
-        AddItemUI(item);
+        AddItemUI(item, true);
         
         //InitItems(inventorySystem.GetInventoryItems());
 
@@ -65,8 +66,10 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
 
     private void DisablePriceOnItems()
     {
+        Debug.Log("DisablePriceOnItems");
         foreach (ShopItemUI item in itemsUI)
         {
+            Debug.Log("for");
             item.SetPriceTransformDisable();
         }
     }

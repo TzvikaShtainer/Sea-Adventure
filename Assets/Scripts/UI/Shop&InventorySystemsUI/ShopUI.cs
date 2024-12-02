@@ -28,8 +28,9 @@ public class ShopUI : ItemSystemBase<ShopItemUI>
         shopSystem.LoadShopItemsFromResources();
         
         DeleteItemsThatPlayerAlreadyHave();
-        
-        InitItems(shopSystem.GetShopItems());
+
+        bool isInventory = false;
+        InitItems(shopSystem.GetShopItems(), isInventory);
         
         buyBtn.onClick.AddListener(TryPurchaseItem);
         
