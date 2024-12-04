@@ -538,6 +538,10 @@ PrefabInstance:
       value: 685032413
       objectReference: {fileID: 0}
     - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
+      propertyPath: <EnemyElectrified>k__BackingField.Path
+      value: event:/SFX/EnemyElectrified
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
       propertyPath: <PowerUpEnded>k__BackingField.Guid.Data1
       value: 332282038
       objectReference: {fileID: 0}

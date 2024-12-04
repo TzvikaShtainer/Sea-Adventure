@@ -35,7 +35,7 @@ namespace Player
         
         private void PlayerHealthSystem_OnDeath()
         {
-            Debug.Log("Player is dead");
+            //   Debug.Log("Player is dead");
             //animator.updateMode = AnimatorUpdateMode.UnscaledTime; //changed in the component itself
             animator.SetBool(IS_Dead, true);
         }
