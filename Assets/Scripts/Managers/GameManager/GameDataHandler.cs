@@ -91,23 +91,23 @@ public class GameDataHandler : MonoBehaviour
         if (dataService.SaveData("/JsonGameData.json", gameData, encryptionEnabled))
         {
             saveTime = DateTime.Now.Ticks - startTime;
-            Debug.Log("time it took to save the data: "+ saveTime/1000f + " in ms");
+            //Debug.Log("time it took to save the data: "+ saveTime/1000f + " in ms");
             
             startTime = DateTime.Now.Ticks;
             try
             {
                 gameData = dataService.LoadData<GameData>("/JsonGameData.json", encryptionEnabled);
                 loadTime = DateTime.Now.Ticks - startTime;
-                Debug.Log("time it took to load the data: "+ saveTime/1000f + " in ms");
+                //Debug.Log("time it took to load the data: "+ saveTime/1000f + " in ms");
             }
             catch (Exception e)
             {
-                Debug.LogError($"could not read file! show something on the ui here!");
+                //Debug.LogError($"could not read file! show something on the ui here!");
             }
         }
         else
         {
-            Debug.Log("Could not save data file! show something on th UI about it!");
+            //Debug.Log("Could not save data file! show something on th UI about it!");
         }
     }
 
