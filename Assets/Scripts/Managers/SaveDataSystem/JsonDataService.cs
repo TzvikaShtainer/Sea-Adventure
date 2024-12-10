@@ -11,16 +11,16 @@ public class JsonDataService : IDataService
         
         try
         {
-            Debug.Log($"Saving file to: {path}");
+            ////Debug.Log($"Saving file to: {path}");
             
             if (File.Exists(path))
             {
-                Debug.Log("Data Exists. Deleting old file and writing a new one");
+                //Debug.Log("Data Exists. Deleting old file and writing a new one");
                 File.Delete(path);
             }
             else
             {
-                Debug.Log("Writing file for the first time");
+                //Debug.Log("Writing file for the first time");
             }
             
             File.WriteAllText(path, JsonConvert.SerializeObject(Data));
@@ -28,7 +28,7 @@ public class JsonDataService : IDataService
         }
         catch (Exception e)
         {
-            Debug.Log($"Unable to save data due to: {e.Message} {e.StackTrace}");
+            //Debug.Log($"Unable to save data due to: {e.Message} {e.StackTrace}");
             return false;
         }
     }
@@ -39,7 +39,7 @@ public class JsonDataService : IDataService
 
         if (!File.Exists(path))
         {
-            Debug.LogError($"Cannot load data due to file doesn't exist: {path}");
+            //Debug.LogError($"Cannot load data due to file doesn't exist: {path}");
             throw new FileNotFoundException($"{path} does not exist");
         }
 

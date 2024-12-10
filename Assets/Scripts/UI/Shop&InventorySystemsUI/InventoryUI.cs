@@ -66,10 +66,10 @@ public class InventoryUI : ItemSystemBase<ShopItemUI>
 
     private void DisablePriceOnItems()
     {
-        Debug.Log("DisablePriceOnItems");
+        //Debug.Log("DisablePriceOnItems");
         foreach (ShopItemUI item in itemsUI)
         {
-            Debug.Log("for");
+            //Debug.Log("for");
             item.SetPriceTransformDisable();
         }
     }

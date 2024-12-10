@@ -7,6 +7,7 @@ using UnityEngine;
 using FMODUnity;
 using UnityEngine.SceneManagement;
 
+
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance{get; private set;}
@@ -16,7 +17,7 @@ public class SoundManager : MonoBehaviour
     [Range(0, 1)] public float bgMusicVolume = 1;
     [Range(0, 1)] public float sfxVolume = 1;
 
-    private Bus musicBus;
+    //private Bus musicBus;
     private Bus sfxBus;
     
     [SerializeField] private static bool isMusicPlaying;
@@ -24,16 +25,16 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null && Instance != this)
-        {
+        { 
             Destroy(gameObject);
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        InitializeBuses();
-        LoadVolumeSettings();
+        
+        //InitializeBuses();
+        //LoadVolumeSettings();
     }
 
     private void InitializeBuses()
@@ -50,6 +51,7 @@ public class SoundManager : MonoBehaviour
     
     private void Start()
     {
+        
         PlayBgMusic(FModEvents.Instance.BgMusic);
     }
 
