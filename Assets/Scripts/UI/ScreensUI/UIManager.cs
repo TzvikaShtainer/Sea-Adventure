@@ -30,6 +30,10 @@ public class UIManager : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private Transform settingsMenuUI;
     [SerializeField] private Button returnButton;
+    
+    [Header("Credits Screen")]
+    [SerializeField] private Transform creditsUi;
+    [SerializeField] private Button creditsButton;
 
     private string mainSceneName = "GameScene"; //need to change to level loader
     
@@ -72,6 +76,9 @@ public class UIManager : MonoBehaviour
         
         //Settings btns
         returnButton.onClick.AddListener(OnReturnClicked);
+        
+        //Credits Btn
+        creditsButton.onClick.AddListener(OnCreditsClicked);
     }
 
     private void SetScreen(Transform screenToSet)
@@ -139,5 +146,14 @@ public class UIManager : MonoBehaviour
         SoundManager.Instance.PlayClickSound();
         
         bgImage.enabled = true;
+    }
+    
+    private void OnCreditsClicked()
+    {
+        SoundManager.Instance.PlayClickSound();
+        
+        SetScreen(creditsUi);
+        
+        
     }
 }
