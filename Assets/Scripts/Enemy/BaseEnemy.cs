@@ -37,7 +37,6 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
     public void Electrified()
     {
-        
         if (enemyAnimationController == null)
             return;
 
@@ -49,7 +48,7 @@ public class BaseEnemy : MonoBehaviour, ISpawn
 
         if (moveToPlayer.GetItemType() == ItemType.FishingRod || moveToPlayer.GetItemType() == ItemType.SeaMine )
         {
-            
+            MakeSound();
         }
         else
         {
@@ -71,5 +70,17 @@ public class BaseEnemy : MonoBehaviour, ISpawn
             return;
 
         enemyAnimationController.PlayDeathAnimation();
+    }
+
+    public void MakeSound()
+    {
+        if (moveToPlayer.GetItemType() == ItemType.FishingRod)
+        {
+            SoundManager.Instance.PlayOneShot(FModEvents.Instance.FisherNetHit, transform.position);
+        }
+        else if (moveToPlayer.GetItemType() == ItemType.SeaMine)
+        {
+            SoundManager.Instance.PlayOneShot(FModEvents.Instance.BombHit, transform.position);
+        }
     }
 }

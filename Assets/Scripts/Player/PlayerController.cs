@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour
         playerHealth.TakeDamage(1); //all enemies do the same damage for now
         
         BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+        enemy.MakeSound();
         enemy.EnemyDeath();
         
         isDamaged = true;

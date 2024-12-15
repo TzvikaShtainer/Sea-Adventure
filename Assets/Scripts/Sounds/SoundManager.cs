@@ -17,7 +17,7 @@ public class SoundManager : MonoBehaviour
     [Range(0, 1)] public float bgMusicVolume = 1;
     [Range(0, 1)] public float sfxVolume = 1;
 
-    //private Bus musicBus;
+    private Bus musicBus;
     private Bus sfxBus;
     
     [SerializeField] private static bool isMusicPlaying;
@@ -33,13 +33,13 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         
-        //InitializeBuses();
-        //LoadVolumeSettings();
+        InitializeBuses();
+        LoadVolumeSettings();
     }
 
     private void InitializeBuses()
     {
-        //musicBus = RuntimeManager.GetBus("bus:/Music");
+        musicBus = RuntimeManager.GetBus("bus:/Music");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
     }
     
@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        //musicBus.setVolume(bgMusicVolume);
+        musicBus.setVolume(bgMusicVolume);
         sfxBus.setVolume(sfxVolume);
     }
 

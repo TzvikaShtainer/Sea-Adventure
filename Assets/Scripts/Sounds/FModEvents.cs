@@ -38,6 +38,12 @@ public class FModEvents : MonoBehaviour
     [field: Header("Power Up Ended")]
     [field: SerializeField] public EventReference PowerUpEnded {get; private set;}
     
+    [field: Header("FisherNet Hit")]
+    [field: SerializeField] public EventReference FisherNetHit {get; private set;}
+    
+    [field: Header("Bomb Hit")]
+    [field: SerializeField] public EventReference BombHit {get; private set;}
+    
 
     private void Awake()
     {

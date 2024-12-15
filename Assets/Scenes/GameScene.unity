@@ -441,186 +441,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Path
-      value: event:/Music/BgMusic
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <JumpSound>k__BackingField.Path
-      value: event:/SFX/JumpSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BtnClicked>k__BackingField.Path
-      value: event:/UI/BthClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <CoinPickup>k__BackingField.Path
-      value: event:/SFX/CoinPickup
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data1
-      value: 856296858
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data2
-      value: 1297084218
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data3
-      value: 1440234388
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BgMusic>k__BackingField.Guid.Data4
-      value: -307436167
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <GameOver>k__BackingField.Guid.Data1
-      value: 1834816308
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <GameOver>k__BackingField.Guid.Data2
-      value: 1238508557
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <GameOver>k__BackingField.Guid.Data3
-      value: 2015143324
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <GameOver>k__BackingField.Guid.Data4
-      value: -202777766
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <JumpSound>k__BackingField.Guid.Data1
-      value: 702813541
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <JumpSound>k__BackingField.Guid.Data2
-      value: 1338741831
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <JumpSound>k__BackingField.Guid.Data3
-      value: -774043770
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <JumpSound>k__BackingField.Guid.Data4
-      value: -1126167987
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BtnClicked>k__BackingField.Guid.Data1
-      value: 1881972141
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BtnClicked>k__BackingField.Guid.Data2
-      value: 1084066780
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BtnClicked>k__BackingField.Guid.Data3
-      value: 896444071
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <BtnClicked>k__BackingField.Guid.Data4
-      value: -21835800
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <CoinPickup>k__BackingField.Guid.Data1
-      value: 255677353
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <CoinPickup>k__BackingField.Guid.Data2
-      value: 1187582015
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <CoinPickup>k__BackingField.Guid.Data3
-      value: -1347308647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <CoinPickup>k__BackingField.Guid.Data4
-      value: 685032413
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <EnemyElectrified>k__BackingField.Path
-      value: event:/SFX/EnemyElectrified
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data1
-      value: 332282038
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data2
-      value: 1249359688
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data3
-      value: 226196927
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpEnded>k__BackingField.Guid.Data4
-      value: -1232301884
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data1
-      value: -956881865
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data2
-      value: 1267079771
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data3
-      value: -412491115
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <HittedByEnemy>k__BackingField.Guid.Data4
-      value: -115587886
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data1
-      value: 1687730051
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data2
-      value: 1228740439
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data3
-      value: 2007010999
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <PowerUpPickup>k__BackingField.Guid.Data4
-      value: 925795048
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data1
-      value: -785950036
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data2
-      value: 1115844883
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data3
-      value: 783823778
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <SwordFishAttack>k__BackingField.Guid.Data4
-      value: -1027637299
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data1
-      value: 1093390438
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data2
-      value: 1324088587
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data3
-      value: 632485544
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804947037511575089, guid: 976b069a13aa5ee4aa41503bdf77ad83, type: 3}
-      propertyPath: <EnemyElectrified>k__BackingField.Guid.Data4
-      value: -471004703
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -642,6 +462,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4d5ece8f0550f499d06e8d3721b448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &232467881
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprite-Lit-Default (Instance)
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &261717225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3804,7 @@ PrefabInstance:
     - target: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: playerSprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2911513789563743365}
     - target: {fileID: 375814174964485436, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: powerUpManager
       value: 
@@ -3952,6 +3820,10 @@ PrefabInstance:
     - target: {fileID: 799713804316793954, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033133234517727512, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
+      propertyPath: health
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4145287240933716038, guid: f646007fb8b101c4ebac6c8a82920dde, type: 3}
       propertyPath: m_Sprite
@@ -4067,7 +3939,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 232467881}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4250,7 +4122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: spawnTime
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7139934767122611039, guid: a53f3f2499abc3d4db253c9020f43065, type: 3}
       propertyPath: nowSpawnedYet
