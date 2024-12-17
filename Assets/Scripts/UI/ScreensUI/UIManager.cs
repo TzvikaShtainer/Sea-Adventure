@@ -63,6 +63,10 @@ public class UIManager : MonoBehaviour
         SetScreen(mainMenuUI);
         
         UpdateMoney(MoneyManager.instance.GetMoneyAmount(), 0);
+        
+        SoundManager.Instance.SetSceneParameter(1);
+        
+        SoundManager.Instance.GetP();
     }
 
     private void SetupButtons()

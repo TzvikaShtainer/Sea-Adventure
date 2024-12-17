@@ -89,4 +89,17 @@ public class SoundManager : MonoBehaviour
     {
         PlayOneShot(FModEvents.Instance.BtnClicked, transform.position);
     }
+    
+    public void SetSceneParameter(float value)
+    {
+        bgMusicEventInstance.setParameterByName("SCENE", value); // "SCENE" is the parameter name in FMOD
+        Debug.Log(bgMusicEventInstance.getParameterByName("SCENE", out float vfdsf));
+    }
+
+    public void GetP()
+    {
+        string s = "SCENE";
+        bgMusicEventInstance.getParameterByName(s, out float value);
+       // Debug.Log(value);
+    }
 }

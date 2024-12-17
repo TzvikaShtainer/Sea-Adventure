@@ -64,6 +64,15 @@ public class InGameUIManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SetUpGameScreens();
+        
+        SoundManager.Instance.SetSceneParameter(1);
+        SoundManager.Instance.GetP();
+    }
+
+    private void Update()
+    {
+        SoundManager.Instance.SetSceneParameter(1f);
+        SoundManager.Instance.GetP();
     }
 
     private void OnEnable()
